@@ -4,6 +4,22 @@ This is the replication package for the paper "Curated Tools or Open Code? How T
 
 The study asks whether AI agents answer questions about software project data better when they are guided by curated tools that apply the project's definitions, or when they are free to write their own code. Five cost-efficient models answered 63 questions about six GitHub repositories in six setups that differ only in their tools: four coverage levels, from one tool that returns the needed values (Level 0) down to tools that cannot reach the needed data (Level 3), a padded Level 2 as a side check, and an open Python sandbox. Every condition ran twice, giving 3,402 runs.
 
+## Research questions
+
+- **RQ1.** With cost-efficient models, do curated tools give more accurate answers than open code execution, on diagnostic questions about repository data?
+- **RQ2.** How does accuracy change as the tools cover less of the question?
+- **RQ3.** When the tools do not cover a question, what does the agent do: say the data is missing, use a labeled stand-in, give a wrong answer without a warning, or give no answer? How does this compare with open code?
+
+## Main results
+
+- Accuracy fell at every step down in coverage: 84.6% of runs passed at Level 0, 71.7% at Level 1, 44.4% at Level 2 and 0.2% at Level 3.
+- The largest drop with the data still present (27 points) came between Level 1 and Level 2, where the agent has to apply the definitions itself.
+- The open Python sandbox passed 48.6% of runs, no different from Level 2 and far below Levels 0 and 1.
+- When the data was missing (Level 3), 64% of answers said so, and 13% gave a wrong answer with no warning.
+- Strong models lost 10 to 29 points without curated tools, and weak models lost 56 to 72.
+
+The planned analysis, its exact numbers and intervals are in analysis_results/main/stats.json. Exploratory analyses, which were not planned in advance, are in analysis_results/exploratory/.
+
 ## What is here
 
 | Folder | Contents |
@@ -105,4 +121,13 @@ MIT. See LICENSE.
 
 ## Citation
 
-To be added when the paper is published.
+If you use this package, please cite it. GitHub's "Cite this repository" button (from CITATION.cff) gives the same details. A citation for the paper itself will be added here once it is public.
+
+```
+@misc{moiz2026curatedtools,
+  author       = {Muhammad Moiz},
+  title        = {Curated Tools or Open Code? How Tool Coverage Shapes {LLM} Agents' Answers About Software Repository Data: Replication Package},
+  year         = {2026},
+  howpublished = {\url{https://github.com/Muhammad-Moiz-Shafiq/repo-investigator-replication}}
+}
+```

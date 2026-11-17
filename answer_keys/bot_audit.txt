@@ -8,9 +8,9 @@ commit login: 828 accounts, 6 caught by the rule
   eslint | pierluigilenoci | 1 rows, 1 distinct | person: 'ci' is part of the name | e.g. docs: add TypeScript config guidance for MCP server (##)
 
 commit email (no login): 26 accounts, 0 caught by the rule
-  prometheus | <email> | 2 rows, 1 distinct | person: a laptop email, normal code commits | e.g. tsdb: Optimize LabelValues for sparse intersections (Fixes #
-  prometheus | <email> | 1 rows, 1 distinct | person: a laptop email, normal code commit | e.g. util: enhance test coverage for strutil package
-  sqlalchemy | <email> | 1 rows, 1 distinct | person: a dev machine email, normal code commit | e.g. Add disconnect error handling for mssqlpython dialect
+  prometheus | <email 1> | 2 rows, 1 distinct | person: a laptop email, normal code commits | e.g. tsdb: Optimize LabelValues for sparse intersections (Fixes #
+  prometheus | <email 2> | 1 rows, 1 distinct | person: a laptop email, normal code commit | e.g. util: enhance test coverage for strutil package
+  sqlalchemy | <email 3> | 1 rows, 1 distinct | person: a dev machine email, normal code commit | e.g. Add disconnect error handling for mssqlpython dialect
 
 PR author: 1409 accounts, 10 caught by the rule
   prometheus | machine424 | 24 rows, 24 distinct | person: a prometheus maintainer with varied code commits, PRs and reviews | e.g. DO NOT MERGE: test

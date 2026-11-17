@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite it as below."
+title: "Curated Tools or Open Code? How Tool Coverage Shapes LLM Agents' Answers About Software Repository Data: Replication Package"
+type: software
+authors:
+  - family-names: Moiz
+    given-names: Muhammad
+    affiliation: "School of Electrical Engineering and Computer Science (SEECS), National University of Sciences and Technology (NUST)"
+repository-code: "https://github.com/Muhammad-Moiz-Shafiq/repo-investigator-replication"
+license: MIT
+date-released: 2026-11-17
+keywords:
+  - LLM agents
+  - tool use
+  - code execution
+  - mining software repositories
+  - empirical study

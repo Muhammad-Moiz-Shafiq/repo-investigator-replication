@@ -51,9 +51,9 @@ REVIEWED = {
     "rupert-madden-abbott": "person: 'bot' is inside the name",
     "JacobSobota": "person: 'bot' is inside the name",
     "NordicRealEstateServices": "person: 'services' is part of the name, one normal issue",
-    "<email>": "person: a laptop email, normal code commits",
-    "<email>": "person: a laptop email, normal code commit",
-    "<email>": "person: a dev machine email, normal code commit",
+    "<email 1>": "person: a laptop email, normal code commits",
+    "<email 2>": "person: a laptop email, normal code commit",
+    "<email 3>": "person: a dev machine email, normal code commit",
 }
 
 SOURCES = {
