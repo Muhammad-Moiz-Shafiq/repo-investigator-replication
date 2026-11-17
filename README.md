@@ -24,6 +24,7 @@ The planned analysis, its exact numbers and intervals are in analysis_results/ma
 
 | Folder | Contents |
 |---|---|
+| APPENDIX.pdf | The paper's appendix: the exact system prompt, one question for each template, the tool menus by level, the grading instruction, the sandbox setup, the definition-check method and the model identifiers |
 | docs/ | The pre-registration (PRE_REGISTRATION.md) and its amendment (PRE_REGISTRATION_AMENDMENT_1.md), the study log for reviewers (study_log.md), the design of the coverage levels, the question templates, the specification for the independent key check, the spot checks against GitHub, and the repository screening |
 | questions/ | All 63 questions as the agents saw them (questions.json) |
 | answer_keys/ | The answer keys, the accepted alternatives, the bot audit and FREEZE.json, the fingerprints of everything frozen before the main run |
