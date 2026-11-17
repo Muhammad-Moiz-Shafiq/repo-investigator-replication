@@ -67,6 +67,17 @@ def per_model_pass():
     return {k: passed[k] / n[k] for k in n}
 
 
+def setup_pass(setup):
+    """Share of runs that pass in a setup, computed exactly from the grades. Every question has
+    the same 10 runs, so this equals the pre-registered question-level estimate. stats.json keeps
+    only four decimals, and rounding that again can be off by 0.1 (71.75 printed as 71.8 when the
+    exact value is 71.746)."""
+    rows = [g for g in GRADES if g["setup"] == setup]
+    exact = sum(g["passed"] for g in rows) / len(rows)
+    assert abs(exact - STATS["scores"][setup]["pass"]["estimate"]) < 0.00006, setup
+    return exact
+
+
 # Tables
 
 
@@ -138,7 +149,7 @@ def table_scores():
     rows = []
     for setup in s.SETUPS:
         sc = STATS["scores"][setup]
-        rows.append([s.SETUP_NAME[setup], pct(sc["pass"]["estimate"]), ci(sc["pass"]["ci95"]),
+        rows.append([s.SETUP_NAME[setup], pct(setup_pass(setup)), ci(sc["pass"]["ci95"]),
                      pct(sc["items"]["estimate"]), ci(sc["items"]["ci95"])])
     write_table(
         "scores",
@@ -359,7 +370,7 @@ def fig_pass_by_setup():
     ax.axvline(3.7, color=s.GRID, lw=0.8)
     for setup, x in zip(s.SETUPS, xs, strict=True):
         p = STATS["scores"][setup]["pass"]
-        v = 100 * p["estimate"]
+        v = 100 * setup_pass(setup)
         lo, hi = (100 * c for c in p["ci95"])
         ax.bar(x, v, width=0.6, color=s.GRAYS[2])
         ax.errorbar(x, v, yerr=[[v - lo], [hi - v]], color=s.INK, lw=0.8, capsize=2, capthick=0.8)

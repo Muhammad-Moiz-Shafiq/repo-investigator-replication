@@ -88,5 +88,5 @@ def use():
 def save(fig, path):
     """Write a PDF for the paper and a PNG for quick viewing."""
     path.parent.mkdir(parents=True, exist_ok=True)
-    fig.savefig(path.with_suffix(".pdf"))
+    fig.savefig(path.with_suffix(".pdf"), metadata={"CreationDate": None})  # no timestamp, so rebuilds match
     fig.savefig(path.with_suffix(".png"))
