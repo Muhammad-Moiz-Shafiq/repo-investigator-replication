@@ -5,10 +5,13 @@ type: software
 authors:
   - family-names: Moiz
     given-names: Muhammad
+    orcid: "https://orcid.org/0009-0009-4826-8376"
     affiliation: "School of Electrical Engineering and Computer Science (SEECS), National University of Sciences and Technology (NUST)"
+doi: 10.5281/zenodo.24314682
 repository-code: "https://github.com/Muhammad-Moiz-Shafiq/repo-investigator-replication"
 license: MIT
 date-released: 2026-11-17
+version: v1.0
 keywords:
   - LLM agents
   - tool use
