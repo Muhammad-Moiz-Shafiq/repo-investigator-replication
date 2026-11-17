@@ -1,0 +1,50 @@
+Bot audit, from scripts/answer_keys/audit_bots.py
+
+commit login: 828 accounts, 6 caught by the rule
+  prometheus | machine424 | 22 rows, 22 distinct | person: a prometheus maintainer with varied code commits, PRs and reviews | e.g. chore: prepare #.#.#-rc.# (##)
+  prometheus | codeboten | 2 rows, 2 distinct | person: 'bot' is inside the name, normal code changes | e.g. update deprecated calls
+  prometheus | pierluigilenoci | 2 rows, 2 distinct | person: 'ci' is part of the name | e.g. promtool: redirect debug output to stderr (##)
+  vite | Menci | 2 rows, 2 distinct | person: 'ci' is part of the name | e.g. feat(wasm): direct .wasm imports (WASM ESM Integration) (##)
+  eslint | pierluigilenoci | 1 rows, 1 distinct | person: 'ci' is part of the name | e.g. docs: add TypeScript config guidance for MCP server (##)
+
+commit email (no login): 26 accounts, 0 caught by the rule
+  prometheus | <email> | 2 rows, 1 distinct | person: a laptop email, normal code commits | e.g. tsdb: Optimize LabelValues for sparse intersections (Fixes #
+  prometheus | <email> | 1 rows, 1 distinct | person: a laptop email, normal code commit | e.g. util: enhance test coverage for strutil package
+  sqlalchemy | <email> | 1 rows, 1 distinct | person: a dev machine email, normal code commit | e.g. Add disconnect error handling for mssqlpython dialect
+
+PR author: 1409 accounts, 10 caught by the rule
+  prometheus | machine424 | 24 rows, 24 distinct | person: a prometheus maintainer with varied code commits, PRs and reviews | e.g. DO NOT MERGE: test
+  eslint | pierluigilenoci | 2 rows, 2 distinct | person: 'ci' is part of the name | e.g. docs: add TypeScript config guidance for MCP server
+  prometheus | pierluigilenoci | 2 rows, 2 distinct | person: 'ci' is part of the name | e.g. promtool: redirect debug output to stderr
+  vite | Menci | 2 rows, 2 distinct | person: 'ci' is part of the name | e.g. fix(wasm): reset assetUrlRE.lastIndex before .test() in SSR 
+  eslint | edenbuilds | 1 rows, 1 distinct | person: 'builds' is part of the name, one normal PR | e.g. fix: do not autofix var that redeclares a catch param
+  prometheus | codeboten | 1 rows, 1 distinct | person: 'bot' is inside the name, normal code changes | e.g. chore: remove dependency on github.com/docker/docker
+  tokio | subotac | 1 rows, 1 distinct | person: 'bot' is inside the name | e.g. codec: fix length-delimited builder examples
+
+issue author: 2981 accounts, 6 caught by the rule
+  prometheus | machine424 | 13 rows, 13 distinct | person: a prometheus maintainer with varied code commits, PRs and reviews | e.g. TestDBReadOnly_Querier_NoAlteration is flaky on Windows
+  junit-framework | cbottomline | 1 rows, 1 distinct | person: 'bot' is inside the name | e.g. getRequiredTestMethod().getAnnotations() doesn't return meta
+  junit-framework | rupert-madden-abbott | 1 rows, 1 distinct | person: 'bot' is inside the name | e.g. Provide a synchronization mechanism for dynamic tests
+  junit-framework | tonyabbott | 1 rows, 1 distinct | person: 'bot' is inside the name | e.g. Searching for nested test classes fails if class file format
+  prometheus | pierluigilenoci | 1 rows, 1 distinct | person: 'ci' is part of the name | e.g. promtool: debug output writes to stdout instead of stderr
+  tokio | botirkhaltaev | 1 rows, 1 distinct | person: 'bot' is inside the name | e.g. tokio-util: exact-length adapter for byte chunk streams
+  vite | JacobSobota | 1 rows, 1 distinct | person: 'bot' is inside the name | e.g. transform.filter.code regexes with .+ and /s flag cause "Max
+  vite | Menci | 1 rows, 1 distinct | person: 'ci' is part of the name | e.g. [plugin-legacy] finer control for modern/legacy target polyf
+  vite | NordicRealEstateServices | 1 rows, 1 distinct | person: 'services' is part of the name, one normal issue | e.g. Vite: legacy Sass JS API deprecation  sass.render called fro
+
+reviewer: 510 accounts, 2 caught by the rule
+  prometheus | machine424 | 59 rows, 2 distinct | person: a prometheus maintainer with varied code commits, PRs and reviews | e.g. COMMENTED
+  eslint | pierluigilenoci | 1 rows, 1 distinct | person: 'ci' is part of the name | e.g. COMMENTED
+  prometheus | pierluigilenoci | 1 rows, 1 distinct | person: 'ci' is part of the name | e.g. COMMENTED
+
+Logins caught only by the 'ends in bot' part of the rule (check that none is a person):
+  AI-DEV-BOT (PRs in eslint)
+  eslint-github-bot (issues in eslint)
+  eslintbot (commits in eslint, PRs in eslint)
+  gradle-nexus-bot (issues in junit-framework)
+  guidou2013-bot (PRs in vite)
+  jlaportebot (PRs in prometheus, PRs in sqlalchemy)
+  sqlalchemy-bot (issues in sqlalchemy)
+  SuperNovaRobot (issues in eslint)
+  WSandboxedOCCodeBot (PRs in prometheus)
+  zskbot (PRs in eslint)

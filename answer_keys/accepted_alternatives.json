@@ -1,0 +1,13 @@
+{
+  "R7": {
+    "junit-framework": [
+      {
+        "first_failing_sha": "ad922b18343e76775da01227df73ed38e524f315",
+        "next_passing_sha": "05b4ea07977e156a122d5c4dec10ceb27eb8fcdf",
+        "failing_commits": 3,
+        "hours_red": 33.096,
+        "reason": "Within 1% of the longest streak (33.142 h), so either answer is accepted. Rule in docs/question_templates_draft.md, R7."
+      }
+    ]
+  }
+}

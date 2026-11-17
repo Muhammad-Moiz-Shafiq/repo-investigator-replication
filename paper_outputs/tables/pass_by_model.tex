@@ -1,0 +1,19 @@
+% Built by scripts/paper/make_paper_outputs.py. Do not edit by hand.
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{Share of runs that pass, per model and setup (\%). 126 runs per cell. Only two models ran the padded side check.}
+\label{tab:pass_by_model}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & Level 0 & Level 1 & Level 2 & Level 3 & Sandbox & Level 2 padded \\
+\midrule
+DeepSeek V4 Flash & 100.0 & 100.0 & 73.0 & 0.0 & 70.6 &  \\
+Gemini 2.5 Flash-Lite & 61.9 & 45.2 & 9.5 & 0.0 & 6.3 & 4.0 \\
+GLM 5.3 Flash & 100.0 & 98.4 & 88.1 & 0.0 & 89.7 & 92.1 \\
+MiniMax M3.1 Flash & 77.8 & 65.1 & 37.3 & 0.0 & 65.1 &  \\
+Ministral 14B & 83.3 & 50.0 & 14.3 & 0.8 & 11.1 &  \\
+\bottomrule
+\end{tabular}
+\end{table}

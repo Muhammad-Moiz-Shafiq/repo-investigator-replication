@@ -1,0 +1,95 @@
+# Files left out of the replication package
+
+These files are in the private study repository but not here. The reason is given for each.
+
+- api/__init__.py: pilot web demo
+- api/main.py: pilot web demo
+- docs/ground_truth_answers.md: pilot answer keys
+- evaluation_results/eval_deepseek_deepseek-v4-flash_20260924T184457Z_PRE_GROUNDING_FIX.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_deepseek_deepseek-v4-flash_20260924T185822Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_deepseek_deepseek-v4-flash_20260924T194923Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_deepseek_deepseek-v4-flash_20260924T201043Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_google_gemini-2.5-flash-lite_20260924T192635Z_PRE_FINISH_REASON_FIX.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_google_gemini-2.5-flash-lite_20260924T192956Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_google_gemini-2.5-flash-lite_20260924T200133Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_google_gemini-2.5-flash-lite_20260924T201200Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_google_gemini-2.5-pro_20260924T193623Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_google_gemini-2.5-pro_20260924T201413Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_varianta_anthropic_claude-haiku-4.5_20260925T095218Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_varianta_anthropic_claude-haiku-4.5_20260925T153957Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_varianta_deepseek_deepseek-v3.2_20260925T104530Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_varianta_deepseek_deepseek-v3.2_20260925T153159Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_varianta_deepseek_deepseek-v4-flash_20260925T153141Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_varianta_google_gemini-2.5-flash-lite_20260925T153150Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_varianta_google_gemini-2.5-pro_20260925T153949Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_varianta_openai_gpt-5-mini_20260925T100822Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_varianta_openai_gpt-5-mini_20260925T154005Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_anthropic_claude-haiku-4.5_20260925T095426Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_anthropic_claude-haiku-4.5_20260925T163109Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_deepseek_deepseek-v3.2_20260925T105232Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_deepseek_deepseek-v3.2_20260925T154409Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_deepseek_deepseek-v4-flash_20260924T211413Z_PRE_ITERATION_BUMP.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_deepseek_deepseek-v4-flash_20260924T212348Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_deepseek_deepseek-v4-flash_20260925T070828Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_deepseek_deepseek-v4-flash_20260925T154353Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_google_gemini-2.5-flash-lite_20260925T064449Z_DOCKER_DOWN.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_google_gemini-2.5-flash-lite_20260925T064743Z_PRE_PANDAS.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_google_gemini-2.5-flash-lite_20260925T070449Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_google_gemini-2.5-flash-lite_20260925T154401Z_PRE_EMPTY_MSG_FIX.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_google_gemini-2.5-flash-lite_20260925T162727Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_google_gemini-2.5-pro_20260925T072840Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_google_gemini-2.5-pro_20260925T163101Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_openai_gpt-5-mini_20260925T101142Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/eval_variantb_openai_gpt-5-mini_20260925T163119Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/figures/grading_scores.png: pilot results, with emails and a dead pilot password
+- evaluation_results/figures/tool_calls_by_question.png: pilot results, with emails and a dead pilot password
+- evaluation_results/figures/variant_comparison.png: pilot results, with emails and a dead pilot password
+- evaluation_results/followup_review_effectiveness_wording_20260925T131308Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/followup_review_effectiveness_wording_20260925T165251Z.json: pilot results, with emails and a dead pilot password
+- evaluation_results/graded_answers.json: pilot results, with emails and a dead pilot password
+- evaluation_results/graded_answers_PRE_FULL_PASS.json: pilot results, with emails and a dead pilot password
+- evaluation_results/grading_report.md: pilot results, with emails and a dead pilot password
+- evaluation_results/summary.md: pilot results, with emails and a dead pilot password
+- evaluation_results/variant_comparison.json: pilot results, with emails and a dead pilot password
+- evaluation_results/variant_comparison.md: pilot results, with emails and a dead pilot password
+- grading_results/recheck_sandbox.json: practice grading
+- grading_results/smoke_v2_regraded.json: practice grading
+- grading_results/trial_r2.json: pilot-period practice grading
+- grading_results/trial_r2_smoke.json: pilot-period practice grading
+- notebooks/.gitkeep: empty
+- scripts/compare_variants.py: pilot
+- scripts/create_sandbox_role.sql: pilot sandbox role
+- scripts/followup_review_effectiveness_wording.py: pilot
+- scripts/grade_answers.py: pilot
+- scripts/key_exploration/common.py: exploration before the keys were written
+- scripts/key_exploration/r11_r12_explore.py: exploration before the keys were written
+- scripts/key_exploration/r1_explore.py: exploration before the keys were written
+- scripts/key_exploration/r2_r5_r6_r8_r10_explore.py: exploration before the keys were written
+- scripts/key_exploration/r3_r4_r9_explore.py: exploration before the keys were written
+- scripts/key_exploration/r7_explore.py: exploration before the keys were written
+- scripts/plot_style.py: pilot
+- scripts/run_evaluation.py: pilot
+- scripts/smoke_test_models.py: pilot
+- scripts/summarize_evaluation.py: pilot
+- scripts/summarize_grades.py: pilot
+- study_runs/main/README.md: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/main/try1.sh: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/main/try1_runs.jsonl.gz: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/main/try2.sh: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/main/try2_cleanup.sh: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/main/try2_runs.jsonl.gz: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/prompt_v1_r1_gemini-2.5-flash-lite/runs.jsonl: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/prompt_v1_r1_glm-5.3-flash/runs.jsonl: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/prompt_v1_r1_glm-5.3-flash_L3/runs.jsonl: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/prompt_v1_r1_glm-5.3-flash_sandbox/runs.jsonl: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/prompt_v2_r2_gemini_a/runs.jsonl: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/prompt_v2_r2_gemini_b/runs.jsonl: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/prompt_v2_r2_glm_L0/runs.jsonl: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/prompt_v2_r2_glm_L1/runs.jsonl: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/prompt_v2_r2_glm_L2/runs.jsonl: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/prompt_v2_r2_glm_L3/runs.jsonl: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/prompt_v2_r2_glm_sandbox/runs.jsonl: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/recheck_sandbox/runs.jsonl: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/recheck_v3/runs.jsonl: transcripts hold contributor emails; stripped main runs are added below
+- study_runs/smoke_v2/runs.jsonl: transcripts hold contributor emails; stripped main runs are added below
+- vercel.json: pilot web demo

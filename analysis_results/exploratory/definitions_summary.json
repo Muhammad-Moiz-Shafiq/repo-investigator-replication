@@ -1,0 +1,65 @@
+{
+ "runs": 154,
+ "outcome": {
+  "missed a definition": 125,
+  "only a reading the key rejects": 15,
+  "nothing found": 14
+ },
+ "runs_missing_each_kind": {
+  "dates and periods": 60,
+  "bots and automation": 39,
+  "which records count": 37,
+  "picking and dividing": 32,
+  "one per unit": 26,
+  "author's own reviews": 19,
+  "text and file rules": 17,
+  "verdict test": 10,
+  "merge commits": 3
+ },
+ "by_model": {
+  "ministral-14b-2512": {
+   "dates and periods": 50,
+   "which records count": 23,
+   "one per unit": 21,
+   "missed a definition": 74,
+   "text and file rules": 9,
+   "verdict test": 2,
+   "bots and automation": 20,
+   "picking and dividing": 22,
+   "author's own reviews": 13
+  },
+  "gemini-2.5-flash-lite": {
+   "which records count": 11,
+   "missed a definition": 39,
+   "dates and periods": 10,
+   "one per unit": 4,
+   "text and file rules": 6,
+   "nothing found": 13,
+   "verdict test": 8,
+   "bots and automation": 17,
+   "author's own reviews": 5,
+   "picking and dividing": 5,
+   "merge commits": 3
+  },
+  "glm-5.3-flash": {
+   "which records count": 3,
+   "one per unit": 1,
+   "missed a definition": 10,
+   "only a reading the key rejects": 4,
+   "text and file rules": 1,
+   "bots and automation": 2,
+   "nothing found": 1,
+   "picking and dividing": 5
+  },
+  "deepseek-v4-flash": {
+   "only a reading the key rejects": 4,
+   "text and file rules": 1,
+   "missed a definition": 2,
+   "author's own reviews": 1
+  },
+  "minimax-m3.1-flash": {
+   "only a reading the key rejects": 7
+  }
+ },
+ "unmapped": []
+}

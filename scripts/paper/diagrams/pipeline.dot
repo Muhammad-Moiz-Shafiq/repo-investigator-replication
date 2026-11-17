@@ -1,0 +1,27 @@
+// The study pipeline. Built into paper_outputs/figures by make_paper_outputs.py.
+// The main path runs left to right on one row. Keys and the third judge sit below it.
+digraph pipeline {
+  graph [rankdir=LR, splines=ortho, nodesep=0.35, ranksep=0.3, pad=0.05, bgcolor="white", newrank=true];
+  node  [shape=box, style="rounded", color="#555555", penwidth=0.8, fontname="Times-Roman", fontsize=10,
+         fontcolor="#000000", margin="0.10,0.06", width=1.25, height=0.62, fixedsize=false];
+  edge  [color="#555555", penwidth=0.8, arrowsize=0.55];
+
+  data   [group=main, label="GitHub data\n6 repos, one year\n7 tables"];
+  qs     [group=main, label="Questions\n12 templates\n63 questions"];
+  runs   [group=main, label="Agent runs\n5 models, 6 setups\n2 tries each"];
+  judges [group=main, label="Two judges\ncopy the values\nfrom each answer"];
+  grade  [group=main, label="Grading code\ncompares values\nwith the keys"];
+  stats  [group=main, label="Analysis\nbootstrap over\ntemplates"];
+
+  keys   [label="Answer keys\nSQL, frozen\nbefore the runs"];
+  third  [label="Third judge\nand my review\nwhen they differ"];
+
+  data -> qs -> runs -> judges -> grade -> stats [weight=10];
+  data -> keys;
+  keys -> grade;
+  judges -> third;
+  third -> grade;
+
+  {rank=same; data; keys}
+  {rank=same; judges; third}
+}

@@ -1,0 +1,10 @@
+Grounding. A value the agent computed itself from tool output isn't found there, so the share found is a lower bound.
+
+| Setup | Values given | Found in tool results % | Runs that got data % |
+|---|---:|---:|---:|
+| Level 0 | 1542 | 97.9 | 98.2 |
+| Level 1 | 1471 | 83.2 | 97.1 |
+| Level 2 | 1157 | 84.3 | 96.0 |
+| Level 3 | 192 | 80.2 | 74.1 |
+| Sandbox | 1130 | 93.5 | 79.0 |
+| Level 2 padded | 497 | 84.9 | 91.3 |

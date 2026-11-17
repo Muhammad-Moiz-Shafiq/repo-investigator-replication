@@ -1,0 +1,270 @@
+[
+ {
+  "id": "ci_spike",
+  "model": "mistralai/mistral-small-2603",
+  "metrics": {
+   "converged": false,
+   "num_tool_calls": 0,
+   "distinct_tools_used": [],
+   "num_distinct_tools": 0,
+   "had_error": true,
+   "final_answer_length_chars": 0,
+   "final_answer_cites_a_number": false,
+   "bad_json_calls": 0,
+   "unknown_tool_calls": 0,
+   "other_tool_errors": 0,
+   "provider_failure": true,
+   "llm_calls": 0,
+   "cost_usd": 0,
+   "seconds": 17.0
+  },
+  "final_answer": null,
+  "steps": [
+   {
+    "step_type": "error",
+    "content": "LLM call failed: Failed after 3 attempts, last error: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'mistralai/mistral-small-2603 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Mistral', 'is_byok': False, 'limit_source': 'upstream_provider_shared_pool', 'remedy_hint': 'Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing', 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'Mistral', 'raw': 'mistralai/mistral-small-2603 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_366ik5b7AaKXR5Ed6KYAb1CLi2g'}",
+    "tool_name": null,
+    "tool_arguments": null
+   }
+  ],
+  "calls": []
+ },
+ {
+  "id": "review_effectiveness",
+  "model": "mistralai/mistral-small-2603",
+  "metrics": {
+   "converged": false,
+   "num_tool_calls": 3,
+   "distinct_tools_used": [
+    "query_contributor_associations",
+    "query_issues_prs",
+    "query_review_approval_stats"
+   ],
+   "num_distinct_tools": 3,
+   "had_error": true,
+   "final_answer_length_chars": 0,
+   "final_answer_cites_a_number": false,
+   "bad_json_calls": 0,
+   "unknown_tool_calls": 0,
+   "other_tool_errors": 0,
+   "provider_failure": true,
+   "llm_calls": 1,
+   "cost_usd": 0.0003066,
+   "seconds": 32.9
+  },
+  "final_answer": null,
+  "steps": [
+   {
+    "step_type": "tool_call",
+    "content": "Called query_review_approval_stats",
+    "tool_name": "query_review_approval_stats",
+    "tool_arguments": {
+     "repo": "tokio-rs/tokio",
+     "date_from": "2025-09-28",
+     "date_to": "2026-09-23"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"tokio-rs/tokio\", \"date_from\": \"2025-09-28\", \"date_to\": \"2026-09-23\", \"total_merged_prs\": 419, \"prs_with_approval\": 409, \"prs_without_approval\": 10, \"approval_rate\": 0.9761}",
+    "tool_name": "query_review_approval_stats",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_issues_prs",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": {
+     "repo": "tokio-rs/tokio",
+     "kind": "both",
+     "state": "closed",
+     "date_from": "2025-09-28",
+     "date_to": "2026-09-23"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"tokio-rs/tokio\", \"date_from\": \"2025-09-28\", \"date_to\": \"2026-09-23\", \"issues\": [], \"pull_requests\": []}",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_contributor_associations",
+    "tool_name": "query_contributor_associations",
+    "tool_arguments": {
+     "repo": "tokio-rs/tokio"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"tokio-rs/tokio\", \"computed_window_start\": \"2025-09-29\", \"computed_window_end\": \"2026-09-23\", \"contributors\": [{\"author_login\": \"KR-bluejay\", \"commit_count\": 2, \"implicated_commit_count\": 2, \"association_rate\": 1.0}, {\"author_login\": \"threecgreen\", \"commit_count\": 1, \"implicated_commit_count\": 1, \"association_rate\": 1.0}, {\"author_login\": \"Natural-selection1\", \"commit_count\": 1, \"implicated_commit_count\": 1, \"association_rate\": 1.0}, {\"author_login\": \"pacocartones\", \"commit_count\": 1, \"",
+    "tool_name": "query_contributor_associations",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "error",
+    "content": "LLM call failed: Failed after 3 attempts, last error: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'mistralai/mistral-small-2603 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Mistral', 'is_byok': False, 'limit_source': 'upstream_provider_shared_pool', 'remedy_hint': 'Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing', 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'Mistral', 'raw': 'mistralai/mistral-small-2603 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_366ik5b7AaKXR5Ed6KYAb1CLi2g'}",
+    "tool_name": null,
+    "tool_arguments": null
+   }
+  ],
+  "calls": [
+   {
+    "provider": "Mistral",
+    "served_model": "mistralai/mistral-small-2603",
+    "cost": 0.0003066,
+    "prompt_tokens": 1340,
+    "completion_tokens": 176
+   }
+  ]
+ },
+ {
+  "id": "contributor_association",
+  "model": "mistralai/mistral-small-2603",
+  "metrics": {
+   "converged": false,
+   "num_tool_calls": 0,
+   "distinct_tools_used": [],
+   "num_distinct_tools": 0,
+   "had_error": true,
+   "final_answer_length_chars": 0,
+   "final_answer_cites_a_number": false,
+   "bad_json_calls": 0,
+   "unknown_tool_calls": 0,
+   "other_tool_errors": 0,
+   "provider_failure": true,
+   "llm_calls": 0,
+   "cost_usd": 0,
+   "seconds": 15.7
+  },
+  "final_answer": null,
+  "steps": [
+   {
+    "step_type": "error",
+    "content": "LLM call failed: Failed after 3 attempts, last error: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'mistralai/mistral-small-2603 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Mistral', 'is_byok': False, 'limit_source': 'upstream_provider_shared_pool', 'remedy_hint': 'Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing', 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'Mistral', 'raw': 'mistralai/mistral-small-2603 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_366ik5b7AaKXR5Ed6KYAb1CLi2g'}",
+    "tool_name": null,
+    "tool_arguments": null
+   }
+  ],
+  "calls": []
+ },
+ {
+  "id": "cross_repo_ci_reliability",
+  "model": "mistralai/mistral-small-2603",
+  "metrics": {
+   "converged": false,
+   "num_tool_calls": 3,
+   "distinct_tools_used": [
+    "query_ci_history"
+   ],
+   "num_distinct_tools": 1,
+   "had_error": true,
+   "final_answer_length_chars": 0,
+   "final_answer_cites_a_number": false,
+   "bad_json_calls": 0,
+   "unknown_tool_calls": 0,
+   "other_tool_errors": 0,
+   "provider_failure": true,
+   "llm_calls": 1,
+   "cost_usd": 0.00017025,
+   "seconds": 41.5
+  },
+  "final_answer": null,
+  "steps": [
+   {
+    "step_type": "tool_call",
+    "content": "Called query_ci_history",
+    "tool_name": "query_ci_history",
+    "tool_arguments": {
+     "repo": "tokio-rs/tokio",
+     "date_from": "2025-09-28",
+     "date_to": "2026-09-23"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"tokio-rs/tokio\", \"date_from\": \"2025-09-28\", \"date_to\": \"2026-09-23\", \"total_runs\": 10536, \"failed_runs\": 883, \"overall_failure_rate\": 0.0838, \"by_workflow\": [{\"workflow_name\": \"benchmark\", \"total_runs\": 15, \"failed_runs\": 4, \"failure_rate\": 0.2667}, {\"workflow_name\": \"CI\", \"total_runs\": 2486, \"failed_runs\": 754, \"failure_rate\": 0.3033}, {\"workflow_name\": \"Loom\", \"total_runs\": 1225, \"failed_runs\": 58, \"failure_rate\": 0.0473}, {\"workflow_name\": \"Pull Request Labeler\", \"total_runs\": 2751,",
+    "tool_name": "query_ci_history",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_ci_history",
+    "tool_name": "query_ci_history",
+    "tool_arguments": {
+     "repo": "eslint/eslint",
+     "date_from": "2025-09-28",
+     "date_to": "2026-09-23"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"eslint/eslint\", \"date_from\": \"2025-09-28\", \"date_to\": \"2026-09-23\", \"total_runs\": 13049, \"failed_runs\": 606, \"overall_failure_rate\": 0.0464, \"by_workflow\": [{\"workflow_name\": \"Addressing comment on PR #20571\", \"total_runs\": 16, \"failed_runs\": 0, \"failure_rate\": 0.0}, {\"workflow_name\": \"CI\", \"total_runs\": 4124, \"failed_runs\": 481, \"failure_rate\": 0.1166}, {\"workflow_name\": \"CodeQL\", \"total_runs\": 2787, \"failed_runs\": 2, \"failure_rate\": 0.0007}, {\"workflow_name\": \"Copilot code review\", \"",
+    "tool_name": "query_ci_history",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_ci_history",
+    "tool_name": "query_ci_history",
+    "tool_arguments": {
+     "repo": "sqlalchemy/sqlalchemy",
+     "date_from": "2025-09-28",
+     "date_to": "2026-09-23"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"sqlalchemy/sqlalchemy\", \"date_from\": \"2025-09-28\", \"date_to\": \"2026-09-23\", \"total_runs\": 1017, \"failed_runs\": 315, \"overall_failure_rate\": 0.3097, \"by_workflow\": [{\"workflow_name\": \"Create wheel\", \"total_runs\": 17, \"failed_runs\": 11, \"failure_rate\": 0.6471}, {\"workflow_name\": \"Run tests\", \"total_runs\": 674, \"failed_runs\": 139, \"failure_rate\": 0.2062}, {\"workflow_name\": \"Run tests on a pr\", \"total_runs\": 326, \"failed_runs\": 165, \"failure_rate\": 0.5061}], \"by_day\": [{\"date\": \"2025-09-29",
+    "tool_name": "query_ci_history",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "error",
+    "content": "LLM call failed: Failed after 3 attempts, last error: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'mistralai/mistral-small-2603 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Mistral', 'is_byok': False, 'limit_source': 'upstream_provider_shared_pool', 'remedy_hint': 'Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing', 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'Mistral', 'raw': 'mistralai/mistral-small-2603 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_366ik5b7AaKXR5Ed6KYAb1CLi2g'}",
+    "tool_name": null,
+    "tool_arguments": null
+   }
+  ],
+  "calls": [
+   {
+    "provider": "Mistral",
+    "served_model": "mistralai/mistral-small-2603",
+    "cost": 0.00017025,
+    "prompt_tokens": 1339,
+    "completion_tokens": 237
+   }
+  ]
+ },
+ {
+  "id": "review_turnaround_trend",
+  "model": "mistralai/mistral-small-2603",
+  "metrics": {
+   "converged": false,
+   "num_tool_calls": 0,
+   "distinct_tools_used": [],
+   "num_distinct_tools": 0,
+   "had_error": true,
+   "final_answer_length_chars": 0,
+   "final_answer_cites_a_number": false,
+   "bad_json_calls": 0,
+   "unknown_tool_calls": 0,
+   "other_tool_errors": 0,
+   "provider_failure": true,
+   "llm_calls": 0,
+   "cost_usd": 0,
+   "seconds": 16.6
+  },
+  "final_answer": null,
+  "steps": [
+   {
+    "step_type": "error",
+    "content": "LLM call failed: Failed after 3 attempts, last error: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'mistralai/mistral-small-2603 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Mistral', 'is_byok': False, 'limit_source': 'upstream_provider_shared_pool', 'remedy_hint': 'Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing', 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'Mistral', 'raw': 'mistralai/mistral-small-2603 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_366ik5b7AaKXR5Ed6KYAb1CLi2g'}",
+    "tool_name": null,
+    "tool_arguments": null
+   }
+  ],
+  "calls": []
+ }
+]

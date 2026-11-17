@@ -1,0 +1,478 @@
+{
+ "note": "Exploratory, not pre-registered.",
+ "runs": 3402,
+ "level3_pass": [
+  {
+   "run_id": "R8-tokio__L3__mistralai_ministral-14b-2512__t1",
+   "answer": "### Final Answer\n\n- **Share of commits by the two most active people in H1 (2025-10-01 to 2026-03-31)**: 28.97%\n- **Share of commits by the two most active people in H2 (2026-04-01 to 2026-09-20)**: 32.20%\n- **Did the work become more or less concentrated?** No clear change\n\n---\n\n### RESULTS\nShare of commits by the two most active people in H1: 28.97%\nShare of commits by the two most active people in H2: 32.20%\nDid the work become more or less concentrated?: no clear change",
+   "tools_called": [
+    "fisher_test",
+    "query_commits",
+    "query_pull_requests",
+    "summarize"
+   ],
+   "menu": [
+    "query_pull_requests",
+    "query_pr_reviews",
+    "query_issues",
+    "query_workflows",
+    "summarize",
+    "fisher_test",
+    "binomial_test",
+    "compare_medians"
+   ],
+   "items": {
+    "h1 share within 3 points": true,
+    "h2 share within 3 points": true,
+    "verdict": true
+   }
+  }
+ ],
+ "cost": {
+  "all / L0": {
+   "runs": 630,
+   "passed": 533,
+   "cost": 3.63,
+   "pass_rate": 0.846,
+   "cost_per_run": 0.0058,
+   "cost_per_pass": 0.0068
+  },
+  "all / L1": {
+   "runs": 630,
+   "passed": 452,
+   "cost": 6.44,
+   "pass_rate": 0.7175,
+   "cost_per_run": 0.0102,
+   "cost_per_pass": 0.0142
+  },
+  "all / L2": {
+   "runs": 630,
+   "passed": 280,
+   "cost": 31.35,
+   "pass_rate": 0.4444,
+   "cost_per_run": 0.0498,
+   "cost_per_pass": 0.112
+  },
+  "all / L2_padded": {
+   "runs": 252,
+   "passed": 121,
+   "cost": 4.16,
+   "pass_rate": 0.4802,
+   "cost_per_run": 0.0165,
+   "cost_per_pass": 0.0344
+  },
+  "all / L3": {
+   "runs": 630,
+   "passed": 1,
+   "cost": 12.9,
+   "pass_rate": 0.0016,
+   "cost_per_run": 0.0205,
+   "cost_per_pass": 12.8981
+  },
+  "all / sandbox": {
+   "runs": 630,
+   "passed": 306,
+   "cost": 9.1,
+   "pass_rate": 0.4857,
+   "cost_per_run": 0.0144,
+   "cost_per_pass": 0.0297
+  },
+  "deepseek-v4-flash / L0": {
+   "runs": 126,
+   "passed": 126,
+   "cost": 0.54,
+   "pass_rate": 1.0,
+   "cost_per_run": 0.0043,
+   "cost_per_pass": 0.0043
+  },
+  "deepseek-v4-flash / L1": {
+   "runs": 126,
+   "passed": 126,
+   "cost": 1.65,
+   "pass_rate": 1.0,
+   "cost_per_run": 0.0131,
+   "cost_per_pass": 0.0131
+  },
+  "deepseek-v4-flash / L2": {
+   "runs": 126,
+   "passed": 92,
+   "cost": 16.29,
+   "pass_rate": 0.7302,
+   "cost_per_run": 0.1293,
+   "cost_per_pass": 0.1771
+  },
+  "deepseek-v4-flash / L3": {
+   "runs": 126,
+   "passed": 0,
+   "cost": 2.15,
+   "pass_rate": 0.0,
+   "cost_per_run": 0.0171,
+   "cost_per_pass": null
+  },
+  "deepseek-v4-flash / main": {
+   "runs": 630,
+   "passed": 433,
+   "cost": 22.99,
+   "pass_rate": 0.6873,
+   "cost_per_run": 0.0365,
+   "cost_per_pass": 0.0531
+  },
+  "deepseek-v4-flash / sandbox": {
+   "runs": 126,
+   "passed": 89,
+   "cost": 2.36,
+   "pass_rate": 0.7063,
+   "cost_per_run": 0.0187,
+   "cost_per_pass": 0.0265
+  },
+  "gemini-2.5-flash-lite / L0": {
+   "runs": 126,
+   "passed": 78,
+   "cost": 0.14,
+   "pass_rate": 0.619,
+   "cost_per_run": 0.0011,
+   "cost_per_pass": 0.0018
+  },
+  "gemini-2.5-flash-lite / L1": {
+   "runs": 126,
+   "passed": 57,
+   "cost": 0.36,
+   "pass_rate": 0.4524,
+   "cost_per_run": 0.0029,
+   "cost_per_pass": 0.0064
+  },
+  "gemini-2.5-flash-lite / L2": {
+   "runs": 126,
+   "passed": 12,
+   "cost": 0.83,
+   "pass_rate": 0.0952,
+   "cost_per_run": 0.0066,
+   "cost_per_pass": 0.0692
+  },
+  "gemini-2.5-flash-lite / L2_padded": {
+   "runs": 126,
+   "passed": 5,
+   "cost": 1.22,
+   "pass_rate": 0.0397,
+   "cost_per_run": 0.0097,
+   "cost_per_pass": 0.2436
+  },
+  "gemini-2.5-flash-lite / L3": {
+   "runs": 126,
+   "passed": 0,
+   "cost": 0.3,
+   "pass_rate": 0.0,
+   "cost_per_run": 0.0024,
+   "cost_per_pass": null
+  },
+  "gemini-2.5-flash-lite / main": {
+   "runs": 630,
+   "passed": 155,
+   "cost": 2.0,
+   "pass_rate": 0.246,
+   "cost_per_run": 0.0032,
+   "cost_per_pass": 0.0129
+  },
+  "gemini-2.5-flash-lite / sandbox": {
+   "runs": 126,
+   "passed": 8,
+   "cost": 0.36,
+   "pass_rate": 0.0635,
+   "cost_per_run": 0.0029,
+   "cost_per_pass": 0.0456
+  },
+  "glm-5.3-flash / L0": {
+   "runs": 126,
+   "passed": 126,
+   "cost": 0.43,
+   "pass_rate": 1.0,
+   "cost_per_run": 0.0034,
+   "cost_per_pass": 0.0034
+  },
+  "glm-5.3-flash / L1": {
+   "runs": 126,
+   "passed": 124,
+   "cost": 0.61,
+   "pass_rate": 0.9841,
+   "cost_per_run": 0.0048,
+   "cost_per_pass": 0.0049
+  },
+  "glm-5.3-flash / L2": {
+   "runs": 126,
+   "passed": 111,
+   "cost": 2.89,
+   "pass_rate": 0.881,
+   "cost_per_run": 0.0229,
+   "cost_per_pass": 0.026
+  },
+  "glm-5.3-flash / L2_padded": {
+   "runs": 126,
+   "passed": 116,
+   "cost": 2.94,
+   "pass_rate": 0.9206,
+   "cost_per_run": 0.0233,
+   "cost_per_pass": 0.0254
+  },
+  "glm-5.3-flash / L3": {
+   "runs": 126,
+   "passed": 0,
+   "cost": 1.01,
+   "pass_rate": 0.0,
+   "cost_per_run": 0.008,
+   "cost_per_pass": null
+  },
+  "glm-5.3-flash / main": {
+   "runs": 630,
+   "passed": 474,
+   "cost": 6.2,
+   "pass_rate": 0.7524,
+   "cost_per_run": 0.0098,
+   "cost_per_pass": 0.0131
+  },
+  "glm-5.3-flash / sandbox": {
+   "runs": 126,
+   "passed": 113,
+   "cost": 1.27,
+   "pass_rate": 0.8968,
+   "cost_per_run": 0.0101,
+   "cost_per_pass": 0.0112
+  },
+  "minimax-m3.1-flash / L0": {
+   "runs": 126,
+   "passed": 98,
+   "cost": 2.15,
+   "pass_rate": 0.7778,
+   "cost_per_run": 0.0171,
+   "cost_per_pass": 0.0219
+  },
+  "minimax-m3.1-flash / L1": {
+   "runs": 126,
+   "passed": 82,
+   "cost": 3.06,
+   "pass_rate": 0.6508,
+   "cost_per_run": 0.0243,
+   "cost_per_pass": 0.0374
+  },
+  "minimax-m3.1-flash / L2": {
+   "runs": 126,
+   "passed": 47,
+   "cost": 5.92,
+   "pass_rate": 0.373,
+   "cost_per_run": 0.047,
+   "cost_per_pass": 0.126
+  },
+  "minimax-m3.1-flash / L3": {
+   "runs": 126,
+   "passed": 0,
+   "cost": 4.99,
+   "pass_rate": 0.0,
+   "cost_per_run": 0.0396,
+   "cost_per_pass": null
+  },
+  "minimax-m3.1-flash / main": {
+   "runs": 630,
+   "passed": 309,
+   "cost": 19.15,
+   "pass_rate": 0.4905,
+   "cost_per_run": 0.0304,
+   "cost_per_pass": 0.062
+  },
+  "minimax-m3.1-flash / sandbox": {
+   "runs": 126,
+   "passed": 82,
+   "cost": 3.02,
+   "pass_rate": 0.6508,
+   "cost_per_run": 0.024,
+   "cost_per_pass": 0.0368
+  },
+  "ministral-14b-2512 / L0": {
+   "runs": 126,
+   "passed": 105,
+   "cost": 0.38,
+   "pass_rate": 0.8333,
+   "cost_per_run": 0.003,
+   "cost_per_pass": 0.0036
+  },
+  "ministral-14b-2512 / L1": {
+   "runs": 126,
+   "passed": 63,
+   "cost": 0.75,
+   "pass_rate": 0.5,
+   "cost_per_run": 0.006,
+   "cost_per_pass": 0.0119
+  },
+  "ministral-14b-2512 / L2": {
+   "runs": 126,
+   "passed": 18,
+   "cost": 5.41,
+   "pass_rate": 0.1429,
+   "cost_per_run": 0.043,
+   "cost_per_pass": 0.3008
+  },
+  "ministral-14b-2512 / L3": {
+   "runs": 126,
+   "passed": 1,
+   "cost": 4.45,
+   "pass_rate": 0.0079,
+   "cost_per_run": 0.0353,
+   "cost_per_pass": 4.448
+  },
+  "ministral-14b-2512 / main": {
+   "runs": 630,
+   "passed": 201,
+   "cost": 13.08,
+   "pass_rate": 0.319,
+   "cost_per_run": 0.0208,
+   "cost_per_pass": 0.0651
+  },
+  "ministral-14b-2512 / sandbox": {
+   "runs": 126,
+   "passed": 14,
+   "cost": 2.08,
+   "pass_rate": 0.1111,
+   "cost_per_run": 0.0165,
+   "cost_per_pass": 0.1487
+  }
+ },
+ "fan_out_threshold": 20,
+ "fan_out": {
+  "gemini-2.5-flash-lite / L2": {
+   "fan_out_runs": 3,
+   "fan_out_pass": 1,
+   "other_runs": 123,
+   "other_pass": 11
+  },
+  "gemini-2.5-flash-lite / L2_padded": {
+   "fan_out_runs": 4,
+   "fan_out_pass": 0,
+   "other_runs": 122,
+   "other_pass": 5
+  },
+  "gemini-2.5-flash-lite / L3": {
+   "fan_out_runs": 2,
+   "fan_out_pass": 0,
+   "other_runs": 124,
+   "other_pass": 0
+  },
+  "minimax-m3.1-flash / L1": {
+   "fan_out_runs": 1,
+   "fan_out_pass": 1,
+   "other_runs": 125,
+   "other_pass": 81
+  },
+  "ministral-14b-2512 / L1": {
+   "fan_out_runs": 2,
+   "fan_out_pass": 0,
+   "other_runs": 124,
+   "other_pass": 63
+  }
+ },
+ "context_limit": [
+  {
+   "run_id": "R3-prometheus__L2__deepseek_deepseek-v4-flash__t1",
+   "stop_reason": "budget",
+   "turns": 25,
+   "tool_calls": 37,
+   "prompt_tokens_all_turns": 5563365,
+   "passed": false
+  },
+  {
+   "run_id": "R4-prometheus__L2__deepseek_deepseek-v4-flash__t1",
+   "stop_reason": "budget",
+   "turns": 25,
+   "tool_calls": 35,
+   "prompt_tokens_all_turns": 4407473,
+   "passed": false
+  },
+  {
+   "run_id": "R12-vite__L2__deepseek_deepseek-v4-flash__t1",
+   "stop_reason": "answered",
+   "turns": 23,
+   "tool_calls": 40,
+   "prompt_tokens_all_turns": 3991704,
+   "passed": true
+  },
+  {
+   "run_id": "R12-vite__L2__deepseek_deepseek-v4-flash__t2",
+   "stop_reason": "budget",
+   "turns": 25,
+   "tool_calls": 25,
+   "prompt_tokens_all_turns": 3954930,
+   "passed": false
+  },
+  {
+   "run_id": "R9-junit-framework__L2_padded__google_gemini-2.5-flash-lite__t1",
+   "stop_reason": "budget",
+   "turns": 25,
+   "tool_calls": 25,
+   "prompt_tokens_all_turns": 3792916,
+   "passed": false
+  }
+ ],
+ "stand_ins_right_anyway": [
+  {
+   "run_id": "R5-prometheus__L2__z-ai_glm-5.3-flash__t1",
+   "label": "gives_values",
+   "would_pass": true,
+   "stand_in_fields": [
+    "median_days_to_close"
+   ]
+  },
+  {
+   "run_id": "R6-prometheus__L3__z-ai_glm-5.3-flash__t1",
+   "label": "stand_in",
+   "would_pass": true,
+   "stand_in_fields": [
+    "most_fixes_module",
+    "top_share_module"
+   ]
+  },
+  {
+   "run_id": "R8-tokio__L3__minimax_minimax-m3.1-flash__t1",
+   "label": "stand_in",
+   "would_pass": true,
+   "stand_in_fields": [
+    "h1_top2_pct",
+    "h2_top2_pct",
+    "verdict"
+   ]
+  },
+  {
+   "run_id": "R8-tokio__L3__z-ai_glm-5.3-flash__t2",
+   "label": "gives_values",
+   "would_pass": true,
+   "stand_in_fields": [
+    "h1_top2_pct",
+    "h2_top2_pct"
+   ]
+  },
+  {
+   "run_id": "R8-tokio__L3__minimax_minimax-m3.1-flash__t2",
+   "label": "gives_values",
+   "would_pass": true,
+   "stand_in_fields": [
+    "h1_top2_pct",
+    "h2_top2_pct"
+   ]
+  },
+  {
+   "run_id": "R8-prometheus__L3__minimax_minimax-m3.1-flash__t2",
+   "label": "stand_in",
+   "would_pass": true,
+   "stand_in_fields": [
+    "h1_top2_pct",
+    "h2_top2_pct",
+    "verdict"
+   ]
+  }
+ ],
+ "stand_ins_checked": 44,
+ "median_cost_per_run_by_setup": {
+  "L0": 0.00304,
+  "L1": 0.00415,
+  "L2": 0.02083,
+  "L3": 0.00586,
+  "sandbox": 0.01011,
+  "L2_padded": 0.0101
+ }
+}

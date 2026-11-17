@@ -1,0 +1,1140 @@
+{
+ "template": "R3",
+ "runs": 12,
+ "alternative_keys": {
+  "eslint": {
+   "split by opening date": {
+    "wait_h1_hours": 9.806944444444444,
+    "wait_h2_hours": 5.802083333333334,
+    "after_h1_hours": 3.283611111111111,
+    "after_h2_hours": 0.17638888888888887,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "last day left out": {
+    "wait_h1_hours": 6.831805555555556,
+    "wait_h2_hours": 6.001944444444445,
+    "after_h1_hours": 4.2716666666666665,
+    "after_h2_hours": 0.17638888888888887,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "bot PRs kept": {
+    "wait_h1_hours": 4.4225,
+    "wait_h2_hours": 6.7188888888888885,
+    "after_h1_hours": 1.5827777777777778,
+    "after_h2_hours": 0.013888888888888888,
+    "wait_verdict": "no clear change",
+    "after_verdict": "down"
+   },
+   "self reviews kept": {
+    "wait_h1_hours": 3.674722222222222,
+    "wait_h2_hours": 5.998472222222222,
+    "after_h1_hours": 5.726944444444445,
+    "after_h2_hours": 0.17638888888888887,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "dismissed left out": {
+    "wait_h1_hours": 7.08625,
+    "wait_h2_hours": 6.243888888888889,
+    "after_h1_hours": 3.771527777777778,
+    "after_h2_hours": 0.07861111111111112,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "approvals only": {
+    "wait_h1_hours": 15.75,
+    "wait_h2_hours": 12.083055555555555,
+    "after_h1_hours": 0.0125,
+    "after_h2_hours": 0.010833333333333334,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "reviews after merge kept": {
+    "wait_h1_hours": 6.831805555555556,
+    "wait_h2_hours": 6.001944444444445,
+    "after_h1_hours": 4.2716666666666665,
+    "after_h2_hours": 0.17638888888888887,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "bot reviewers kept": {
+    "wait_h1_hours": 4.011527777777778,
+    "wait_h2_hours": 6.001944444444445,
+    "after_h1_hours": 7.449583333333333,
+    "after_h2_hours": 0.2852777777777778,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "every review, not the first": {
+    "wait_h1_hours": 43.76111111111111,
+    "wait_h2_hours": 41.62638888888889,
+    "after_h1_hours": 25.50722222222222,
+    "after_h2_hours": 35.12097222222222,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "no-review PRs as infinite wait": {
+    "wait_h1_hours": 9.330555555555556,
+    "wait_h2_hours": 6.187777777777778,
+    "after_h1_hours": 4.2716666666666665,
+    "after_h2_hours": 0.17638888888888887,
+    "wait_verdict": null,
+    "after_verdict": "no clear change"
+   },
+   "dismissed left out, no-review PRs as infinite wait": {
+    "wait_h1_hours": 10.08986111111111,
+    "wait_h2_hours": 6.281944444444444,
+    "after_h1_hours": 3.771527777777778,
+    "after_h2_hours": 0.07861111111111112,
+    "wait_verdict": null,
+    "after_verdict": "no clear change"
+   },
+   "key (recomputed)": {
+    "wait_h1_hours": 6.831805555555556,
+    "wait_h2_hours": 6.001944444444445,
+    "after_h1_hours": 4.2716666666666665,
+    "after_h2_hours": 0.17638888888888887,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "bots": {
+    "authors": [
+     "copilot-swe-agent",
+     "dependabot",
+     "eslintbot",
+     "github-actions",
+     "renovate"
+    ],
+    "reviewers": [
+     "copilot-pull-request-reviewer",
+     "copilot-swe-agent"
+    ]
+   }
+  },
+  "junit-framework": {
+   "split by opening date": {
+    "wait_h1_hours": 19.128055555555555,
+    "wait_h2_hours": 11.2825,
+    "after_h1_hours": 24.983194444444443,
+    "after_h2_hours": 12.798333333333334,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "last day left out": {
+    "wait_h1_hours": 18.784444444444443,
+    "wait_h2_hours": 12.495,
+    "after_h1_hours": 25.374444444444446,
+    "after_h2_hours": 12.798333333333334,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "bot PRs kept": {
+    "wait_h1_hours": 7.092499999999999,
+    "wait_h2_hours": 9.10361111111111,
+    "after_h1_hours": 0.005,
+    "after_h2_hours": 0.18416666666666667,
+    "wait_verdict": "no clear change",
+    "after_verdict": "up"
+   },
+   "self reviews kept": {
+    "wait_h1_hours": 6.974583333333333,
+    "wait_h2_hours": 3.8833333333333333,
+    "after_h1_hours": 29.650972222222222,
+    "after_h2_hours": 18.180555555555557,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "dismissed left out": {
+    "wait_h1_hours": 18.784444444444443,
+    "wait_h2_hours": 13.946666666666667,
+    "after_h1_hours": 25.374444444444446,
+    "after_h2_hours": 12.798333333333334,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "approvals only": {
+    "wait_h1_hours": 47.10625,
+    "wait_h2_hours": 45.835277777777776,
+    "after_h1_hours": 2.4712500000000004,
+    "after_h2_hours": 1.4033333333333333,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "reviews after merge kept": {
+    "wait_h1_hours": 18.512083333333333,
+    "wait_h2_hours": 13.220833333333333,
+    "after_h1_hours": 24.983194444444443,
+    "after_h2_hours": 11.155138888888889,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "bot reviewers kept": {
+    "wait_h1_hours": 18.784444444444443,
+    "wait_h2_hours": 12.495,
+    "after_h1_hours": 25.374444444444446,
+    "after_h2_hours": 12.798333333333334,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "every review, not the first": {
+    "wait_h1_hours": 77.2975,
+    "wait_h2_hours": 55.04597222222222,
+    "after_h1_hours": 55.67,
+    "after_h2_hours": 37.341388888888886,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "no-review PRs as infinite wait": {
+    "wait_h1_hours": 47.75222222222222,
+    "wait_h2_hours": 45.58833333333333,
+    "after_h1_hours": 25.374444444444446,
+    "after_h2_hours": 12.798333333333334,
+    "wait_verdict": null,
+    "after_verdict": "no clear change"
+   },
+   "dismissed left out, no-review PRs as infinite wait": {
+    "wait_h1_hours": 47.75222222222222,
+    "wait_h2_hours": 67.28472222222223,
+    "after_h1_hours": 25.374444444444446,
+    "after_h2_hours": 12.798333333333334,
+    "wait_verdict": null,
+    "after_verdict": "no clear change"
+   },
+   "key (recomputed)": {
+    "wait_h1_hours": 18.784444444444443,
+    "wait_h2_hours": 12.495,
+    "after_h1_hours": 25.374444444444446,
+    "after_h2_hours": 12.798333333333334,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "bots": {
+    "authors": [
+     "renovate"
+    ],
+    "reviewers": [
+     "copilot-pull-request-reviewer"
+    ]
+   }
+  },
+  "prometheus": {
+   "split by opening date": {
+    "wait_h1_hours": 11.649583333333332,
+    "wait_h2_hours": 13.846388888888889,
+    "after_h1_hours": 3.2706944444444446,
+    "after_h2_hours": 1.0355555555555556,
+    "wait_verdict": "no clear change",
+    "after_verdict": "down"
+   },
+   "last day left out": {
+    "wait_h1_hours": 8.943055555555556,
+    "wait_h2_hours": 17.65888888888889,
+    "after_h1_hours": 2.2730555555555556,
+    "after_h2_hours": 1.5277777777777777,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "bot PRs kept": {
+    "wait_h1_hours": 11.974305555555556,
+    "wait_h2_hours": 17.485555555555557,
+    "after_h1_hours": 1.2022222222222223,
+    "after_h2_hours": 0.6097222222222223,
+    "wait_verdict": "no clear change",
+    "after_verdict": "down"
+   },
+   "self reviews kept": {
+    "wait_h1_hours": 8.452777777777778,
+    "wait_h2_hours": 16.214861111111112,
+    "after_h1_hours": 2.3313888888888887,
+    "after_h2_hours": 1.7816666666666667,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "dismissed left out": {
+    "wait_h1_hours": 8.943055555555556,
+    "wait_h2_hours": 17.667916666666667,
+    "after_h1_hours": 2.2730555555555556,
+    "after_h2_hours": 1.5061111111111112,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "approvals only": {
+    "wait_h1_hours": 19.025277777777777,
+    "wait_h2_hours": 21.53402777777778,
+    "after_h1_hours": 0.8205555555555556,
+    "after_h2_hours": 0.5016666666666667,
+    "wait_verdict": "no clear change",
+    "after_verdict": "no clear change"
+   },
+   "reviews after merge kept": {
+    "wait_h1_hours": 8.943055555555556,
+    "wait_h2_hours": 17.660833333333333,
+    "after_h1_hours": 2.2730555555555556,
+    "after_h2_hours": 1.5061111111111112,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "bot reviewers kept": {
+    "wait_h1_hours": 8.279166666666667,
+    "wait_h2_hours": 17.54277777777778,
+    "after_h1_hours": 2.3313888888888887,
+    "after_h2_hours": 1.7159722222222222,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "every review, not the first": {
+    "wait_h1_hours": 27.2125,
+    "wait_h2_hours": 71.42611111111111,
+    "after_h1_hours": 10.108194444444443,
+    "after_h2_hours": 7.1322222222222225,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "no-review PRs as infinite wait": {
+    "wait_h1_hours": 9.381388888888889,
+    "wait_h2_hours": 17.77791666666667,
+    "after_h1_hours": 2.2730555555555556,
+    "after_h2_hours": 1.5061111111111112,
+    "wait_verdict": null,
+    "after_verdict": "no clear change"
+   },
+   "dismissed left out, no-review PRs as infinite wait": {
+    "wait_h1_hours": 9.381388888888889,
+    "wait_h2_hours": 17.978055555555557,
+    "after_h1_hours": 2.2730555555555556,
+    "after_h2_hours": 1.5061111111111112,
+    "wait_verdict": null,
+    "after_verdict": "no clear change"
+   },
+   "key (recomputed)": {
+    "wait_h1_hours": 8.943055555555556,
+    "wait_h2_hours": 17.660833333333333,
+    "after_h1_hours": 2.2730555555555556,
+    "after_h2_hours": 1.5061111111111112,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "bots": {
+    "authors": [
+     "copilot-swe-agent",
+     "dependabot",
+     "renovate"
+    ],
+    "reviewers": [
+     "copilot-pull-request-reviewer"
+    ]
+   }
+  },
+  "tokio": {
+   "split by opening date": {
+    "wait_h1_hours": 4.228888888888889,
+    "wait_h2_hours": 8.865694444444443,
+    "after_h1_hours": 4.528472222222222,
+    "after_h2_hours": 1.3159722222222223,
+    "wait_verdict": "up",
+    "after_verdict": "down"
+   },
+   "last day left out": {
+    "wait_h1_hours": 4.074722222222222,
+    "wait_h2_hours": 9.440972222222221,
+    "after_h1_hours": 3.6693055555555554,
+    "after_h2_hours": 1.662777777777778,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "bot PRs kept": {
+    "wait_h1_hours": 4.074722222222222,
+    "wait_h2_hours": 9.253055555555555,
+    "after_h1_hours": 3.6693055555555554,
+    "after_h2_hours": 1.4813888888888889,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "self reviews kept": {
+    "wait_h1_hours": 3.7308333333333334,
+    "wait_h2_hours": 8.545555555555556,
+    "after_h1_hours": 3.6975,
+    "after_h2_hours": 1.662777777777778,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "dismissed left out": {
+    "wait_h1_hours": 4.074722222222222,
+    "wait_h2_hours": 9.440972222222221,
+    "after_h1_hours": 3.6693055555555554,
+    "after_h2_hours": 1.662777777777778,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "approvals only": {
+    "wait_h1_hours": 6.266388888888889,
+    "wait_h2_hours": 15.411944444444444,
+    "after_h1_hours": 0.67,
+    "after_h2_hours": 0.25916666666666666,
+    "wait_verdict": "up",
+    "after_verdict": "down"
+   },
+   "reviews after merge kept": {
+    "wait_h1_hours": 4.074722222222222,
+    "wait_h2_hours": 9.440972222222221,
+    "after_h1_hours": 3.6693055555555554,
+    "after_h2_hours": 1.662777777777778,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "bot reviewers kept": {
+    "wait_h1_hours": 4.074722222222222,
+    "wait_h2_hours": 9.253055555555555,
+    "after_h1_hours": 3.6693055555555554,
+    "after_h2_hours": 1.662777777777778,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "every review, not the first": {
+    "wait_h1_hours": 14.910277777777777,
+    "wait_h2_hours": 29.20138888888889,
+    "after_h1_hours": 12.453888888888889,
+    "after_h2_hours": 9.485277777777778,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "no-review PRs as infinite wait": {
+    "wait_h1_hours": 4.171805555555555,
+    "wait_h2_hours": 9.440972222222221,
+    "after_h1_hours": 3.6693055555555554,
+    "after_h2_hours": 1.662777777777778,
+    "wait_verdict": null,
+    "after_verdict": "no clear change"
+   },
+   "dismissed left out, no-review PRs as infinite wait": {
+    "wait_h1_hours": 4.171805555555555,
+    "wait_h2_hours": 9.440972222222221,
+    "after_h1_hours": 3.6693055555555554,
+    "after_h2_hours": 1.662777777777778,
+    "wait_verdict": null,
+    "after_verdict": "no clear change"
+   },
+   "key (recomputed)": {
+    "wait_h1_hours": 4.074722222222222,
+    "wait_h2_hours": 9.440972222222221,
+    "after_h1_hours": 3.6693055555555554,
+    "after_h2_hours": 1.662777777777778,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "bots": {
+    "authors": [
+     "dependabot"
+    ],
+    "reviewers": [
+     "copilot-pull-request-reviewer"
+    ]
+   }
+  },
+  "vite": {
+   "split by opening date": {
+    "wait_h1_hours": 13.219305555555556,
+    "wait_h2_hours": 21.488888888888887,
+    "after_h1_hours": 1.8218055555555557,
+    "after_h2_hours": 0.4488888888888889,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "last day left out": {
+    "wait_h1_hours": 11.700277777777778,
+    "wait_h2_hours": 22.884444444444444,
+    "after_h1_hours": 1.5031944444444445,
+    "after_h2_hours": 0.715,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "bot PRs kept": {
+    "wait_h1_hours": 7.940277777777778,
+    "wait_h2_hours": 19.865,
+    "after_h1_hours": 0.1527777777777778,
+    "after_h2_hours": 0.22027777777777777,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "self reviews kept": {
+    "wait_h1_hours": 10.727361111111112,
+    "wait_h2_hours": 19.950555555555557,
+    "after_h1_hours": 1.7080555555555557,
+    "after_h2_hours": 0.95,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "dismissed left out": {
+    "wait_h1_hours": 12.200972222222223,
+    "wait_h2_hours": 23.014722222222222,
+    "after_h1_hours": 0.9172222222222222,
+    "after_h2_hours": 0.37416666666666665,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "approvals only": {
+    "wait_h1_hours": 16.6475,
+    "wait_h2_hours": 35.2825,
+    "after_h1_hours": 0.06708333333333333,
+    "after_h2_hours": 0.018333333333333333,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "reviews after merge kept": {
+    "wait_h1_hours": 11.700277777777778,
+    "wait_h2_hours": 23.014722222222222,
+    "after_h1_hours": 1.4218055555555555,
+    "after_h2_hours": 0.6308333333333334,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "bot reviewers kept": {
+    "wait_h1_hours": 10.63375,
+    "wait_h2_hours": 20.118333333333332,
+    "after_h1_hours": 1.749861111111111,
+    "after_h2_hours": 1.04375,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "every review, not the first": {
+    "wait_h1_hours": 28.646527777777777,
+    "wait_h2_hours": 52.18402777777778,
+    "after_h1_hours": 2.5141666666666667,
+    "after_h2_hours": 2.2212500000000004,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "no-review PRs as infinite wait": {
+    "wait_h1_hours": 34.57138888888889,
+    "wait_h2_hours": 46.29638888888889,
+    "after_h1_hours": 1.5031944444444445,
+    "after_h2_hours": 0.715,
+    "wait_verdict": null,
+    "after_verdict": "no clear change"
+   },
+   "dismissed left out, no-review PRs as infinite wait": {
+    "wait_h1_hours": 35.169583333333335,
+    "wait_h2_hours": 55.54138888888889,
+    "after_h1_hours": 0.9172222222222222,
+    "after_h2_hours": 0.37416666666666665,
+    "wait_verdict": null,
+    "after_verdict": "no clear change"
+   },
+   "key (recomputed)": {
+    "wait_h1_hours": 11.700277777777778,
+    "wait_h2_hours": 22.884444444444444,
+    "after_h1_hours": 1.5031944444444445,
+    "after_h2_hours": 0.715,
+    "wait_verdict": "up",
+    "after_verdict": "no clear change"
+   },
+   "bots": {
+    "authors": [
+     "copilot-swe-agent",
+     "dependabot",
+     "github-actions",
+     "renovate"
+    ],
+    "reviewers": [
+     "copilot-pull-request-reviewer",
+     "copilot-swe-agent"
+    ]
+   }
+  }
+ },
+ "summary": {
+  "halves": {
+   "applied": 11,
+   "unclear": 1
+  },
+  "bot_prs": {
+   "missed": 4,
+   "applied": 6,
+   "unclear": 2
+  },
+  "not_author": {
+   "missed": 5,
+   "applied": 6,
+   "unclear": 1
+  },
+  "review_states": {
+   "unclear": 3,
+   "other_reading": 6,
+   "applied": 3
+  },
+  "before_merge": {
+   "missed": 5,
+   "applied": 6,
+   "unclear": 1
+  },
+  "bot_reviewers": {
+   "applied": 11,
+   "unclear": 1
+  },
+  "first_review": {
+   "applied": 8,
+   "missed": 3,
+   "unclear": 1
+  },
+  "no_review": {
+   "unclear": 6,
+   "applied": 5,
+   "missed": 1
+  },
+  "median_test": {
+   "applied": 12
+  }
+ },
+ "by_model": {
+  "gemini-2.5-flash-lite": {
+   "bot_prs: missed": 2,
+   "not_author: missed": 2,
+   "before_merge: missed": 2
+  },
+  "minimax-m3.1-flash": {
+   "review_states: other_reading": 3
+  },
+  "ministral-14b-2512": {
+   "bot_prs: missed": 2,
+   "not_author: missed": 3,
+   "before_merge: missed": 3,
+   "first_review: missed": 3
+  },
+  "glm-5.3-flash": {
+   "review_states: other_reading": 3,
+   "no_review: missed": 1
+  }
+ },
+ "rows": [
+  {
+   "run_id": "R3-eslint__L2__google_gemini-2.5-flash-lite__t1",
+   "repo": "eslint",
+   "model": "gemini-2.5-flash-lite",
+   "attempt": 1,
+   "verdicts": {
+    "halves": {
+     "verdict": "applied",
+     "evidence": "medians 3.57, 6.75, 2.99, 0.01 match no alternative; halves split on the merge date"
+    },
+    "bot_prs": {
+     "verdict": "missed",
+     "evidence": "no filter leaves out bot PR authors (copilot-swe-agent, dependabot, eslintbot, github-actions)"
+    },
+    "not_author": {
+     "verdict": "missed",
+     "evidence": "the duration queries keep self reviews (no reviewer ne pr_author)"
+    },
+    "review_states": {
+     "verdict": "unclear",
+     "evidence": "medians 3.57, 6.75, 2.99, 0.01 match no alternative; it left out DISMISSED, as the question's list reads (the key keeps them)"
+    },
+    "before_merge": {
+     "verdict": "missed",
+     "evidence": "the duration queries keep reviews after the merge"
+    },
+    "bot_reviewers": {
+     "verdict": "applied",
+     "evidence": "medians 3.57, 6.75, 2.99, 0.01 match no alternative; its filters leave out every bot reviewers in the data"
+    },
+    "first_review": {
+     "verdict": "applied",
+     "evidence": "medians 3.57, 6.75, 2.99, 0.01 match no alternative; first review per PR (first_per or min by pr_number)"
+    },
+    "no_review": {
+     "verdict": "unclear",
+     "evidence": "medians 3.57, 6.75, 2.99, 0.01 match no alternative; the values don't show how it treated PRs with no review"
+    },
+    "median_test": {
+     "verdict": "applied",
+     "evidence": "verdicts come from its compare_medians calls"
+    }
+   }
+  },
+  {
+   "run_id": "R3-eslint__L2__minimax_minimax-m3.1-flash__t2",
+   "repo": "eslint",
+   "model": "minimax-m3.1-flash",
+   "attempt": 2,
+   "verdicts": {
+    "halves": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "bot_prs": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "not_author": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "review_states": {
+     "verdict": "other_reading",
+     "evidence": "wait medians 7.09, 6.24 equal the key with 'dismissed left out'"
+    },
+    "before_merge": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "bot_reviewers": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "first_review": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "no_review": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "median_test": {
+     "verdict": "applied",
+     "evidence": "verdicts follow the rule on its own sample"
+    }
+   }
+  },
+  {
+   "run_id": "R3-eslint__L2__mistralai_ministral-14b-2512__t1",
+   "repo": "eslint",
+   "model": "ministral-14b-2512",
+   "attempt": 1,
+   "verdicts": {
+    "halves": {
+     "verdict": "applied",
+     "evidence": "medians 53.15, 42.19, 40.81, 41.67 match no alternative; halves split on the merge date"
+    },
+    "bot_prs": {
+     "verdict": "missed",
+     "evidence": "no filter leaves out bot PR authors (copilot-swe-agent, dependabot, eslintbot, github-actions)"
+    },
+    "not_author": {
+     "verdict": "missed",
+     "evidence": "the duration queries keep self reviews (no reviewer ne pr_author)"
+    },
+    "review_states": {
+     "verdict": "applied",
+     "evidence": "medians 53.15, 42.19, 40.81, 41.67 match no alternative; no state filter, so every submitted review counts"
+    },
+    "before_merge": {
+     "verdict": "missed",
+     "evidence": "the duration queries keep reviews after the merge"
+    },
+    "bot_reviewers": {
+     "verdict": "applied",
+     "evidence": "medians 53.15, 42.19, 40.81, 41.67 match no alternative; its filters leave out every bot reviewers in the data"
+    },
+    "first_review": {
+     "verdict": "missed",
+     "evidence": "the duration queries use every review, not the first per PR"
+    },
+    "no_review": {
+     "verdict": "unclear",
+     "evidence": "medians 53.15, 42.19, 40.81, 41.67 match no alternative; the values don't show how it treated PRs with no review"
+    },
+    "median_test": {
+     "verdict": "applied",
+     "evidence": "verdicts come from its compare_medians calls"
+    }
+   }
+  },
+  {
+   "run_id": "R3-eslint__L2__z-ai_glm-5.3-flash__t1",
+   "repo": "eslint",
+   "model": "glm-5.3-flash",
+   "attempt": 1,
+   "verdicts": {
+    "halves": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "bot_prs": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "not_author": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "review_states": {
+     "verdict": "other_reading",
+     "evidence": "wait medians 7.09, 6.24 equal the key with 'dismissed left out'"
+    },
+    "before_merge": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "bot_reviewers": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "first_review": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "no_review": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "median_test": {
+     "verdict": "applied",
+     "evidence": "verdicts follow the rule on its own sample"
+    }
+   }
+  },
+  {
+   "run_id": "R3-eslint__L2__z-ai_glm-5.3-flash__t2",
+   "repo": "eslint",
+   "model": "glm-5.3-flash",
+   "attempt": 2,
+   "verdicts": {
+    "halves": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "bot_prs": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "not_author": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "review_states": {
+     "verdict": "other_reading",
+     "evidence": "wait medians 7.09, 6.24 equal the key with 'dismissed left out'"
+    },
+    "before_merge": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "bot_reviewers": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "first_review": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "no_review": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "median_test": {
+     "verdict": "applied",
+     "evidence": "verdicts follow the rule on its own sample"
+    }
+   }
+  },
+  {
+   "run_id": "R3-junit-framework__L2__mistralai_ministral-14b-2512__t1",
+   "repo": "junit-framework",
+   "model": "ministral-14b-2512",
+   "attempt": 1,
+   "verdicts": {
+    "halves": {
+     "verdict": "applied",
+     "evidence": "medians 127.55, 45.71, 48.18, 54.69 match no alternative; halves split on the merge date"
+    },
+    "bot_prs": {
+     "verdict": "unclear",
+     "evidence": "medians 127.55, 45.71, 48.18, 54.69 match no alternative; it picked PRs by a list of numbers, which may leave bot PRs out"
+    },
+    "not_author": {
+     "verdict": "missed",
+     "evidence": "the duration queries keep self reviews (no reviewer ne pr_author)"
+    },
+    "review_states": {
+     "verdict": "applied",
+     "evidence": "medians 127.55, 45.71, 48.18, 54.69 match no alternative; no state filter, so every submitted review counts"
+    },
+    "before_merge": {
+     "verdict": "missed",
+     "evidence": "the duration queries keep reviews after the merge"
+    },
+    "bot_reviewers": {
+     "verdict": "applied",
+     "evidence": "medians 127.55, 45.71, 48.18, 54.69 match no alternative; its filters leave out every bot reviewers in the data"
+    },
+    "first_review": {
+     "verdict": "missed",
+     "evidence": "the duration queries use every review, not the first per PR"
+    },
+    "no_review": {
+     "verdict": "unclear",
+     "evidence": "medians 127.55, 45.71, 48.18, 54.69 match no alternative; the values don't show how it treated PRs with no review"
+    },
+    "median_test": {
+     "verdict": "applied",
+     "evidence": "verdicts come from its compare_medians calls"
+    }
+   }
+  },
+  {
+   "run_id": "R3-prometheus__L2__google_gemini-2.5-flash-lite__t2",
+   "repo": "prometheus",
+   "model": "gemini-2.5-flash-lite",
+   "attempt": 2,
+   "verdicts": {
+    "halves": {
+     "verdict": "applied",
+     "evidence": "medians -11.53, -16.13, -1.29, -0.65 match no alternative; halves split on the merge date"
+    },
+    "bot_prs": {
+     "verdict": "missed",
+     "evidence": "no filter leaves out bot PR authors (copilot-swe-agent, dependabot, renovate) (negative medians: hours_between reversed)"
+    },
+    "not_author": {
+     "verdict": "missed",
+     "evidence": "the duration queries keep self reviews (no reviewer ne pr_author) (negative medians: hours_between reversed)"
+    },
+    "review_states": {
+     "verdict": "unclear",
+     "evidence": "medians -11.53, -16.13, -1.29, -0.65 match no alternative; it left out DISMISSED, as the question's list reads (the key keeps them)"
+    },
+    "before_merge": {
+     "verdict": "missed",
+     "evidence": "the duration queries keep reviews after the merge (negative medians: hours_between reversed)"
+    },
+    "bot_reviewers": {
+     "verdict": "applied",
+     "evidence": "medians -11.53, -16.13, -1.29, -0.65 match no alternative; its filters leave out every bot reviewers in the data"
+    },
+    "first_review": {
+     "verdict": "applied",
+     "evidence": "medians -11.53, -16.13, -1.29, -0.65 match no alternative; first review per PR (first_per or min by pr_number)"
+    },
+    "no_review": {
+     "verdict": "unclear",
+     "evidence": "medians -11.53, -16.13, -1.29, -0.65 match no alternative; the values don't show how it treated PRs with no review"
+    },
+    "median_test": {
+     "verdict": "applied",
+     "evidence": "verdicts come from its compare_medians calls"
+    }
+   }
+  },
+  {
+   "run_id": "R3-tokio__L2__google_gemini-2.5-flash-lite__t1",
+   "repo": "tokio",
+   "model": "gemini-2.5-flash-lite",
+   "attempt": 1,
+   "verdicts": {
+    "halves": {
+     "verdict": "unclear",
+     "evidence": "medians 1.07, 2.59, 0.54, 1784.14 match no alternative; no half boundary in the duration queries"
+    },
+    "bot_prs": {
+     "verdict": "unclear",
+     "evidence": "medians 1.07, 2.59, 0.54, 1784.14 match no alternative; no query behind the values to check"
+    },
+    "not_author": {
+     "verdict": "unclear",
+     "evidence": "medians 1.07, 2.59, 0.54, 1784.14 match no alternative; it typed values into compare_medians by hand from pages of rows"
+    },
+    "review_states": {
+     "verdict": "unclear",
+     "evidence": "medians 1.07, 2.59, 0.54, 1784.14 match no alternative; it typed values into compare_medians by hand from pages of rows"
+    },
+    "before_merge": {
+     "verdict": "unclear",
+     "evidence": "medians 1.07, 2.59, 0.54, 1784.14 match no alternative; it typed values into compare_medians by hand from pages of rows"
+    },
+    "bot_reviewers": {
+     "verdict": "unclear",
+     "evidence": "medians 1.07, 2.59, 0.54, 1784.14 match no alternative; no query behind the values to check"
+    },
+    "first_review": {
+     "verdict": "unclear",
+     "evidence": "medians 1.07, 2.59, 0.54, 1784.14 match no alternative; it typed values into compare_medians by hand from pages of rows"
+    },
+    "no_review": {
+     "verdict": "unclear",
+     "evidence": "medians 1.07, 2.59, 0.54, 1784.14 match no alternative; it typed values into compare_medians by hand from pages of rows"
+    },
+    "median_test": {
+     "verdict": "applied",
+     "evidence": "verdicts come from its compare_medians calls"
+    }
+   }
+  },
+  {
+   "run_id": "R3-vite__L2__minimax_minimax-m3.1-flash__t1",
+   "repo": "vite",
+   "model": "minimax-m3.1-flash",
+   "attempt": 1,
+   "verdicts": {
+    "halves": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "bot_prs": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "not_author": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "review_states": {
+     "verdict": "other_reading",
+     "evidence": "wait medians 12.2, 23.01 equal the key with 'dismissed left out'"
+    },
+    "before_merge": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "bot_reviewers": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "first_review": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "no_review": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "median_test": {
+     "verdict": "applied",
+     "evidence": "verdicts follow the rule on its own sample"
+    }
+   }
+  },
+  {
+   "run_id": "R3-vite__L2__minimax_minimax-m3.1-flash__t2",
+   "repo": "vite",
+   "model": "minimax-m3.1-flash",
+   "attempt": 2,
+   "verdicts": {
+    "halves": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "bot_prs": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "not_author": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "review_states": {
+     "verdict": "other_reading",
+     "evidence": "wait medians 12.2, 23.01 equal the key with 'dismissed left out'"
+    },
+    "before_merge": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "bot_reviewers": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "first_review": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "no_review": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out', 'after': 'dismissed left out'})"
+    },
+    "median_test": {
+     "verdict": "applied",
+     "evidence": "verdicts follow the rule on its own sample"
+    }
+   }
+  },
+  {
+   "run_id": "R3-vite__L2__mistralai_ministral-14b-2512__t1",
+   "repo": "vite",
+   "model": "ministral-14b-2512",
+   "attempt": 1,
+   "verdicts": {
+    "halves": {
+     "verdict": "applied",
+     "evidence": "medians 13.3, 36.83, None, None match no alternative; halves split on the merge date"
+    },
+    "bot_prs": {
+     "verdict": "missed",
+     "evidence": "no filter leaves out bot PR authors (copilot-swe-agent, dependabot, github-actions, renovate)"
+    },
+    "not_author": {
+     "verdict": "missed",
+     "evidence": "the duration queries keep self reviews (no reviewer ne pr_author)"
+    },
+    "review_states": {
+     "verdict": "applied",
+     "evidence": "medians 13.3, 36.83, None, None match no alternative; no state filter, so every submitted review counts"
+    },
+    "before_merge": {
+     "verdict": "missed",
+     "evidence": "the duration queries keep reviews after the merge"
+    },
+    "bot_reviewers": {
+     "verdict": "applied",
+     "evidence": "medians 13.3, 36.83, None, None match no alternative; its filters leave out every bot reviewers in the data"
+    },
+    "first_review": {
+     "verdict": "missed",
+     "evidence": "the duration queries use every review, not the first per PR"
+    },
+    "no_review": {
+     "verdict": "unclear",
+     "evidence": "not every median given; the values don't show how it treated PRs with no review"
+    },
+    "median_test": {
+     "verdict": "applied",
+     "evidence": "verdicts come from its compare_medians calls"
+    }
+   }
+  },
+  {
+   "run_id": "R3-vite__L2__z-ai_glm-5.3-flash__t2",
+   "repo": "vite",
+   "model": "glm-5.3-flash",
+   "attempt": 2,
+   "verdicts": {
+    "halves": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out, no-review PRs as infinite wait', 'after': 'dismissed left out'})"
+    },
+    "bot_prs": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out, no-review PRs as infinite wait', 'after': 'dismissed left out'})"
+    },
+    "not_author": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out, no-review PRs as infinite wait', 'after': 'dismissed left out'})"
+    },
+    "review_states": {
+     "verdict": "other_reading",
+     "evidence": "wait medians 35.17, 55.54 equal the key with 'dismissed left out, no-review PRs as infinite wait'"
+    },
+    "before_merge": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out, no-review PRs as infinite wait', 'after': 'dismissed left out'})"
+    },
+    "bot_reviewers": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out, no-review PRs as infinite wait', 'after': 'dismissed left out'})"
+    },
+    "first_review": {
+     "verdict": "applied",
+     "evidence": "each part equals the key or an alternative that changes another definition ({'wait': 'dismissed left out, no-review PRs as infinite wait', 'after': 'dismissed left out'})"
+    },
+    "no_review": {
+     "verdict": "missed",
+     "evidence": "wait medians 35.17, 55.54 equal the key with 'dismissed left out, no-review PRs as infinite wait'"
+    },
+    "median_test": {
+     "verdict": "applied",
+     "evidence": "verdicts come from its compare_medians calls"
+    }
+   }
+  }
+ ]
+}

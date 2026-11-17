@@ -1,0 +1,790 @@
+[
+ {
+  "id": "R1-tokio",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 4,
+  "problems": [],
+  "guess": {
+   "h1_failure_rate_pct": 3.4682,
+   "h2_failure_rate_pct": 2.0408,
+   "verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R1-eslint",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 4,
+  "problems": [],
+  "guess": {
+   "h1_failure_rate_pct": 2.4911,
+   "h2_failure_rate_pct": 1.2195,
+   "verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R1-sqlalchemy",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 4,
+  "problems": [],
+  "guess": {
+   "h1_failure_rate_pct": 21.393,
+   "h2_failure_rate_pct": 7.5117,
+   "verdict": "down"
+  }
+ },
+ {
+  "id": "R1-vite",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 4,
+  "problems": [],
+  "guess": {
+   "h1_failure_rate_pct": 13.108600000000001,
+   "h2_failure_rate_pct": 34.331,
+   "verdict": "up"
+  }
+ },
+ {
+  "id": "R1-junit-framework",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 4,
+  "problems": [],
+  "guess": {
+   "h1_failure_rate_pct": 8.6758,
+   "h2_failure_rate_pct": 10.776900000000001,
+   "verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R1-prometheus",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 4,
+  "problems": [],
+  "guess": {
+   "h1_failure_rate_pct": 38.528099999999995,
+   "h2_failure_rate_pct": 29.835099999999997,
+   "verdict": "down"
+  }
+ },
+ {
+  "id": "R2-tokio",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "main_h1_minutes": 18.183333,
+   "main_h2_minutes": 21.066667,
+   "main_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R2-eslint",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "main_h1_minutes": 5.566667,
+   "main_h2_minutes": 5.075,
+   "main_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R2-sqlalchemy",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "main_h1_minutes": 43.333333,
+   "main_h2_minutes": 42.633333,
+   "main_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R2-vite",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "main_h1_minutes": 5.2,
+   "main_h2_minutes": 5.383333,
+   "main_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R2-junit-framework",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "main_h1_minutes": 7.716667,
+   "main_h2_minutes": 8.491667,
+   "main_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R2-prometheus",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "main_h1_minutes": 26.85,
+   "main_h2_minutes": 44.675,
+   "main_verdict": "up"
+  }
+ },
+ {
+  "id": "R3-tokio",
+  "pass": true,
+  "calls": 4,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "wait_h1_hours": 4.074722,
+   "wait_h2_hours": 9.440972,
+   "wait_verdict": "up",
+   "after_h1_hours": 3.669306,
+   "after_h2_hours": 1.662778,
+   "after_verdict": "no clear change",
+   "h2_no_review_pct": 0.0
+  }
+ },
+ {
+  "id": "R3-eslint",
+  "pass": true,
+  "calls": 4,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "wait_h1_hours": 6.831806,
+   "wait_h2_hours": 6.001944,
+   "wait_verdict": "no clear change",
+   "after_h1_hours": 4.271667,
+   "after_h2_hours": 0.176389,
+   "after_verdict": "no clear change",
+   "h2_no_review_pct": 1.3100436681222707
+  }
+ },
+ {
+  "id": "R3-vite",
+  "pass": true,
+  "calls": 4,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "wait_h1_hours": 11.700278,
+   "wait_h2_hours": 22.884444,
+   "wait_verdict": "up",
+   "after_h1_hours": 1.503194,
+   "after_h2_hours": 0.715,
+   "after_verdict": "no clear change",
+   "h2_no_review_pct": 19.28721174004193
+  }
+ },
+ {
+  "id": "R3-junit-framework",
+  "pass": true,
+  "calls": 4,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "wait_h1_hours": 18.784444,
+   "wait_h2_hours": 12.495,
+   "wait_verdict": "no clear change",
+   "after_h1_hours": 25.374444,
+   "after_h2_hours": 12.798333,
+   "after_verdict": "no clear change",
+   "h2_no_review_pct": 29.62962962962963
+  }
+ },
+ {
+  "id": "R3-prometheus",
+  "pass": true,
+  "calls": 4,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "wait_h1_hours": 8.943056,
+   "wait_h2_hours": 17.660833,
+   "wait_verdict": "up",
+   "after_h1_hours": 2.273056,
+   "after_h2_hours": 1.506111,
+   "after_verdict": "no clear change",
+   "h2_no_review_pct": 0.7575757575757576
+  }
+ },
+ {
+  "id": "R4-tokio",
+  "pass": true,
+  "calls": 2,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "unapproved": 3,
+   "unapproved_pct": 1.1904761904761905
+  }
+ },
+ {
+  "id": "R4-eslint",
+  "pass": true,
+  "calls": 2,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "unapproved": 4,
+   "unapproved_pct": 1.3888888888888888
+  }
+ },
+ {
+  "id": "R4-vite",
+  "pass": true,
+  "calls": 2,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "unapproved": 130,
+   "unapproved_pct": 23.76599634369287
+  }
+ },
+ {
+  "id": "R4-junit-framework",
+  "pass": true,
+  "calls": 2,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "unapproved": 29,
+   "unapproved_pct": 6.839622641509434
+  }
+ },
+ {
+  "id": "R4-prometheus",
+  "pass": true,
+  "calls": 2,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "unapproved": 6,
+   "unapproved_pct": 0.8733624454148472
+  }
+ },
+ {
+  "id": "R5-tokio",
+  "pass": true,
+  "calls": 5,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "opened": 57,
+   "closed": 66,
+   "verdict": "balanced",
+   "median_days_to_close": 2.250139
+  }
+ },
+ {
+  "id": "R5-eslint",
+  "pass": true,
+  "calls": 5,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "opened": 89,
+   "closed": 88,
+   "verdict": "balanced",
+   "median_days_to_close": 2.393843
+  }
+ },
+ {
+  "id": "R5-sqlalchemy",
+  "pass": true,
+  "calls": 5,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "opened": 103,
+   "closed": 115,
+   "verdict": "balanced",
+   "median_days_to_close": 1.968738
+  }
+ },
+ {
+  "id": "R5-vite",
+  "pass": true,
+  "calls": 5,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "opened": 61,
+   "closed": 62,
+   "verdict": "balanced",
+   "median_days_to_close": 87.733727
+  }
+ },
+ {
+  "id": "R5-junit-framework",
+  "pass": true,
+  "calls": 5,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "opened": 41,
+   "closed": 40,
+   "verdict": "balanced",
+   "median_days_to_close": 5.907969
+  }
+ },
+ {
+  "id": "R5-prometheus",
+  "pass": true,
+  "calls": 5,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "opened": 32,
+   "closed": 46,
+   "verdict": "balanced",
+   "median_days_to_close": 46.703189
+  }
+ },
+ {
+  "id": "R6-prometheus",
+  "pass": true,
+  "calls": 1,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "most_fixes_module": "promql",
+   "top_share_module": "model"
+  }
+ },
+ {
+  "id": "R6-sqlalchemy",
+  "pass": true,
+  "calls": 1,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "most_fixes_module": "lib/sqlalchemy/dialects",
+   "top_share_module": "lib/sqlalchemy/orm"
+  }
+ },
+ {
+  "id": "R7-tokio",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "first_failing_sha": "9c880b082b38187e670965b6f30872edf864ac80",
+   "next_passing_sha": "6858348ad2e576f1b5380bf3ec5cac1d19bd4608",
+   "hours_red": 171.79
+  }
+ },
+ {
+  "id": "R7-eslint",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "first_failing_sha": "9ac7eb60525ec768c2fdc6699e5a292aa913ce9e",
+   "next_passing_sha": "92086c87e042413a3d0363d8fc3fbb11db98d06a",
+   "hours_red": 17.1
+  }
+ },
+ {
+  "id": "R7-sqlalchemy",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "first_failing_sha": "aa1a5575358d3aa14953b04dced02f4763fed2e7",
+   "next_passing_sha": "2dd1451c5639f59d49111cf8eb34e0240b7f550a",
+   "hours_red": 119.89
+  }
+ },
+ {
+  "id": "R7-vite",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "first_failing_sha": "a07a4bd052ac75f916391c999c408ad5f2867e61",
+   "next_passing_sha": "dfc8aa5057dd8ec2b1223980d1e2eeb946ac3384",
+   "hours_red": 87.57
+  }
+ },
+ {
+  "id": "R7-junit-framework",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "first_failing_sha": "d2dd0bca20bddd16658ea6e501645a6d5ec3ebed",
+   "next_passing_sha": "f05dd1b2b42999e721a19da13208f15a04c07517",
+   "hours_red": 33.14
+  }
+ },
+ {
+  "id": "R7-prometheus",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "first_failing_sha": "e48be9d71a7b89cf6a05563ad8e4445c668022f6",
+   "next_passing_sha": "9c23509790a38e4f5ec38b0c60c91d2a4fb45bd0",
+   "hours_red": 169.45
+  }
+ },
+ {
+  "id": "R8-tokio",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 8,
+  "problems": [],
+  "guess": {
+   "h1_top2_pct": 27.868900000000004,
+   "h2_top2_pct": 29.317300000000003,
+   "verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R8-eslint",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 8,
+  "problems": [],
+  "guess": {
+   "h1_top2_pct": 34.482800000000005,
+   "h2_top2_pct": 25.8929,
+   "verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R8-sqlalchemy",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 8,
+  "problems": [],
+  "guess": {
+   "h1_top2_pct": 76.52170000000001,
+   "h2_top2_pct": 71.875,
+   "verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R8-vite",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 8,
+  "problems": [],
+  "guess": {
+   "h1_top2_pct": 63.01369999999999,
+   "h2_top2_pct": 49.004,
+   "verdict": "less concentrated"
+  }
+ },
+ {
+  "id": "R8-junit-framework",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 8,
+  "problems": [],
+  "guess": {
+   "h1_top2_pct": 82.5581,
+   "h2_top2_pct": 85.4922,
+   "verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R8-prometheus",
+  "pass": true,
+  "calls": 3,
+  "own_numbers": 8,
+  "problems": [],
+  "guess": {
+   "h1_top2_pct": 20.0542,
+   "h2_top2_pct": 28.015600000000003,
+   "verdict": "more concentrated"
+  }
+ },
+ {
+  "id": "R9-tokio",
+  "pass": true,
+  "calls": 1,
+  "own_numbers": 3,
+  "problems": [],
+  "guess": {
+   "reviewers": 26,
+   "top2_pct": 58.53658536585366
+  }
+ },
+ {
+  "id": "R9-eslint",
+  "pass": true,
+  "calls": 1,
+  "own_numbers": 3,
+  "problems": [],
+  "guess": {
+   "reviewers": 23,
+   "top2_pct": 53.94456289978678
+  }
+ },
+ {
+  "id": "R9-vite",
+  "pass": true,
+  "calls": 1,
+  "own_numbers": 3,
+  "problems": [],
+  "guess": {
+   "reviewers": 29,
+   "top2_pct": 81.195079086116
+  }
+ },
+ {
+  "id": "R9-junit-framework",
+  "pass": true,
+  "calls": 1,
+  "own_numbers": 3,
+  "problems": [],
+  "guess": {
+   "reviewers": 7,
+   "top2_pct": 95.93301435406698
+  }
+ },
+ {
+  "id": "R9-prometheus",
+  "pass": true,
+  "calls": 1,
+  "own_numbers": 3,
+  "problems": [],
+  "guess": {
+   "reviewers": 57,
+   "top2_pct": 38.336933045356375
+  }
+ },
+ {
+  "id": "R10-tokio",
+  "pass": true,
+  "calls": 2,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "fix_commits": 53,
+   "changed_test_pct": 39.62264150943396
+  }
+ },
+ {
+  "id": "R10-eslint",
+  "pass": true,
+  "calls": 2,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "fix_commits": 127,
+   "changed_test_pct": 77.95275590551181
+  }
+ },
+ {
+  "id": "R10-sqlalchemy",
+  "pass": true,
+  "calls": 2,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "fix_commits": 72,
+   "changed_test_pct": 55.55555555555556
+  }
+ },
+ {
+  "id": "R10-vite",
+  "pass": true,
+  "calls": 2,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "fix_commits": 322,
+   "changed_test_pct": 48.4472049689441
+  }
+ },
+ {
+  "id": "R10-junit-framework",
+  "pass": true,
+  "calls": 2,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "fix_commits": 42,
+   "changed_test_pct": 30.952380952380953
+  }
+ },
+ {
+  "id": "R10-prometheus",
+  "pass": true,
+  "calls": 2,
+  "own_numbers": 2,
+  "problems": [],
+  "guess": {
+   "fix_commits": 351,
+   "changed_test_pct": 60.11396011396011
+  }
+ },
+ {
+  "id": "R11-eslint",
+  "pass": true,
+  "calls": 4,
+  "own_numbers": 3,
+  "problems": [],
+  "guess": {
+   "opened": 79,
+   "merged_pct": 82.27848101265823,
+   "closed_unmerged_pct": 17.72151898734177,
+   "merge_h1_hours": 3.470972,
+   "merge_h2_hours": 7.676389,
+   "merge_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R11-vite",
+  "pass": true,
+  "calls": 4,
+  "own_numbers": 3,
+  "problems": [],
+  "guess": {
+   "opened": 167,
+   "merged_pct": 83.23353293413173,
+   "closed_unmerged_pct": 16.167664670658684,
+   "merge_h1_hours": 3.471389,
+   "merge_h2_hours": 6.51,
+   "merge_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R11-junit-framework",
+  "pass": true,
+  "calls": 4,
+  "own_numbers": 3,
+  "problems": [],
+  "guess": {
+   "opened": 625,
+   "merged_pct": 97.12,
+   "closed_unmerged_pct": 2.88,
+   "merge_h1_hours": 7.690556,
+   "merge_h2_hours": 10.235833,
+   "merge_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R11-prometheus",
+  "pass": true,
+  "calls": 4,
+  "own_numbers": 3,
+  "problems": [],
+  "guess": {
+   "opened": 339,
+   "merged_pct": 72.27138643067846,
+   "closed_unmerged_pct": 27.43362831858407,
+   "merge_h1_hours": 53.849722,
+   "merge_h2_hours": 20.157639,
+   "merge_verdict": "down"
+  }
+ },
+ {
+  "id": "R12-tokio",
+  "pass": true,
+  "calls": 7,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "h1_median_lines": 21.0,
+   "h2_median_lines": 34.0,
+   "verdict": "up",
+   "fix_median_lines": 12.0,
+   "other_median_lines": 30.0
+  }
+ },
+ {
+  "id": "R12-eslint",
+  "pass": true,
+  "calls": 7,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "h1_median_lines": 30.0,
+   "h2_median_lines": 27.0,
+   "verdict": "no clear change",
+   "fix_median_lines": 41.0,
+   "other_median_lines": 22.5
+  }
+ },
+ {
+  "id": "R12-sqlalchemy",
+  "pass": true,
+  "calls": 7,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "h1_median_lines": 35.0,
+   "h2_median_lines": 58.5,
+   "verdict": "no clear change",
+   "fix_median_lines": 22.0,
+   "other_median_lines": 59.0
+  }
+ },
+ {
+  "id": "R12-vite",
+  "pass": true,
+  "calls": 7,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "h1_median_lines": 20.0,
+   "h2_median_lines": 23.0,
+   "verdict": "no clear change",
+   "fix_median_lines": 18.5,
+   "other_median_lines": 23.0
+  }
+ },
+ {
+  "id": "R12-junit-framework",
+  "pass": true,
+  "calls": 7,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "h1_median_lines": 10.0,
+   "h2_median_lines": 10.0,
+   "verdict": "no clear change",
+   "fix_median_lines": 5.0,
+   "other_median_lines": 11.0
+  }
+ },
+ {
+  "id": "R12-prometheus",
+  "pass": true,
+  "calls": 7,
+  "own_numbers": 0,
+  "problems": [],
+  "guess": {
+   "h1_median_lines": 35.0,
+   "h2_median_lines": 33.0,
+   "verdict": "no clear change",
+   "fix_median_lines": 24.0,
+   "other_median_lines": 36.0
+  }
+ }
+]

@@ -1,0 +1,75 @@
+{
+  "frozen_at": "2026-11-13T22:15:04.559117+00:00",
+  "files": {
+    "answer_keys/keys_primary.json": "68933a367e9937c87b4be4781c3bed73e0372b3e58bffc08f96b60ed562e1fd1",
+    "answer_keys/accepted_alternatives.json": "415c915d4d3982919e0ff01d83a8c52f30c1b4ef96ad69ee519261fc52f99b52",
+    "answer_keys/comparison.md": "a745aa9d8db1852fc072d57800feb3c9a997b0079dbd581e1c6db927a8183f19",
+    "scripts/answer_keys/compute_keys.py": "ef16b98b18b48dc5109b322ee4119f988e6d5fb9b4d6ad9a84ab434854801331",
+    "independent_check/keys_pandas.json": "91abb6c725c3dfa61d28e6d4316c1feece6f9c0e287838093356ce00bb1ab9b6",
+    "independent_check/keys_pandas.py": "e338d3b175fb0fce378a6745e3d399116cd703f2a9d2f6464a764be6138dd8ae",
+    "docs/key_spec_for_independent_check.md": "3ec685aa84d59de0c0590e80901eb6e7241854ae93f3e41f9e6fdc9e9cffbf6d",
+    "docs/spot_checks.md": "9c9d9ae453827ecbf568b91c220c685d6a8b0c16d7aa3ae942b03c80842363cb",
+    "questions/questions.json": "cbbbee69487bcd5fa17a364af5f8b259fe4e00ad64a6257c87d8ec279cff7cb0",
+    "floor_results/floor_summary.json": "1544c22ccd1e0cd6daaed80d7b194bcb9e12d198c23769367615602c2a16da4b",
+    "tool_data/workflows.json": "8796d4ffa5c0692ad6e6561eacb714825b1eef9ef37b39fd8f7328d6b9f4d154"
+  },
+  "tables": {
+    "repos": {
+      "rows": 6,
+      "md5": "55095d1d208b54ce8a096d70826834ec"
+    },
+    "commits": {
+      "rows": 6582,
+      "md5": "c6d024bfe5ba0b6ddc6dc6854626ecfa"
+    },
+    "commit_files": {
+      "rows": 29764,
+      "md5": "09b24b03c0f3861a757483758a0deb76"
+    },
+    "pull_requests": {
+      "rows": 5722,
+      "md5": "e707060e8d9efd7a95c1d29d98401c91"
+    },
+    "pr_reviews": {
+      "rows": 11624,
+      "md5": "15af97c296d7118802079b8edc8e399a"
+    },
+    "issues": {
+      "rows": 5545,
+      "md5": "c4ba4e2b6d7c0c59ef2150c8f22a0f46"
+    },
+    "ci_runs": {
+      "rows": 124471,
+      "md5": "0996697bce8c3074485e2b73c29ed9e5"
+    }
+  },
+  "setup_files": {
+    "prompts/study_v3.md": "6f140af588a22df2e792fbc35c129007b0c613a9c9b3ffbdbab165a176883ef0",
+    "study_config/providers.json": "567b0599cefd0972c676adec72668c688393ea942cea868924162fe5cb721353",
+    "src/repo_investigator/study/harness.py": "01bfa54827ca908b9defc90b3b4c3725e1f6aab6bb93bc840c62a6587d534969",
+    "scripts/study/run_study.py": "36e2c47151472fc0dce14463f0207447e9cf3659a04bee4b7de61422ddc2a729",
+    "src/repo_investigator/agent/react_loop.py": "87e15b4f8cdf777860ff8e2dda5bd3444db1b8afcb87e6a6a540422612789142",
+    "src/repo_investigator/agent/db.py": "ec2f3d8c3fcc6236a49a0727be17bb0deb6bdd5cc858596b58296cf324786550",
+    "src/repo_investigator/agent/schemas.py": "e16bbff6db8fe4e79f6109a9433a2d047c43edff94a1e858403548d7cca7dbdd",
+    "src/repo_investigator/levels/calculators.py": "71655333a28cd95150f004173ccb0b93118c40dcfe9f1474f842bdffba6c55b1",
+    "src/repo_investigator/levels/definitions.py": "99a928ffbfb7b4ce8b7a6c876774ef2c2cef24a114738e448325656c4fdd6545",
+    "src/repo_investigator/levels/domain.py": "c1abe85e5302748c2f528e6940cb68315cb93b75fc3d10f0b98c1e5a5157ace8",
+    "src/repo_investigator/levels/fillers.py": "4db49583947fdbe363799c0960ea41d6878af59dd6308bbc780e4508f8b7dcc7",
+    "src/repo_investigator/levels/menus.py": "3642717124156047477d91495e358b7acbfeba6bd3177fb8d312093d3e53b391",
+    "src/repo_investigator/levels/query.py": "a5452d1b00cc1f0b6e7127e9d6c7916fe56c5a3c5d7ead9ab262505caaccd89a",
+    "src/repo_investigator/levels/tools.py": "0911b5fcb5c597d47b48778be25a4ef70bc07c54300b63bebb9afaac16af2c36",
+    "src/repo_investigator/sandbox/docker_runner.py": "06b56802ad8a42755f4a243b31d5254054d0134cd9338c9e4f92f9da85e5fceb",
+    "sandbox/study.Dockerfile": "29f8183bb94087f0d9e615920d018ab75f8fa8054a27ac035ee53fcb4cfa4d8d",
+    "sandbox/relay.Dockerfile": "4e179bf20240579f8d23985750ac815f43cd490931af0d70df2c57a1f177db4f",
+    "src/repo_investigator/grading/extract.py": "7d94b5afe1b6a4383c59164a1098270c6e6b867d1f2f7a3d625f65ebfdb48aeb",
+    "scripts/grading/try_judges.py": "c935d9b67154dfa50277f6290420d11e7652a87228f36e797e01fbf67ddb0410",
+    "scripts/grading/grade_study.py": "171b723e5b4779d42c052194623bee7db79bee52687a6a05901ded7068d47f29",
+    "scripts/grading/hand_sheet.py": "2a30d720b19f5dda157705a43d4c8ea0a87ea5028f99032f04090d5dbd1d0044",
+    "scripts/floor/must_haves.py": "b4532c5ef7ab6af5dbeb19b5cc3eb6a0d5ac69a2082a5cdf345ed48faf7d3f54",
+    "uv.lock": "568422d99612f12f3788baa8b391d3bb0bed08165e8040c8ab8745fc808861fb"
+  },
+  "images": {
+    "repo-investigator-study-sandbox:v2": "sha256:0b9edd5624fea7c7b5be5d88e95ef7b84e293e3b8730177f6ac3edffa75bb89c",
+    "repo-investigator-db-relay:v1": "sha256:521dcba2b5f6e9d2c1c5c87947c2ed2770de35b870d31780287dcab7789142b4"
+  }
+}

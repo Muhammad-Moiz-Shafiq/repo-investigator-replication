@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+        with:
+          python-version: "3.12"
+      # --all-groups, not just dev: several modules import pyspark/psycopg
+      # at module level (for type hints/schemas), so even importing a pure
+      # function for a unit test needs the full dependency set installed.
+      - run: uv sync --all-groups
+      - run: uv run ruff check .
+      - run: uv run pytest

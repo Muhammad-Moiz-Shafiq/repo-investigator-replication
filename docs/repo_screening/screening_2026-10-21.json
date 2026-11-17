@@ -1,0 +1,493 @@
+[
+  {
+    "repo": "tokio-rs/tokio",
+    "language": "Rust",
+    "owner_type": "Organization",
+    "stars": 33470,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 467,
+    "contributors": 165,
+    "bot_commit_share": 0.013,
+    "merged_prs": 439,
+    "reviewed_share": 1.0,
+    "issues_opened": 160,
+    "bug_labels": [
+      "C-bug"
+    ],
+    "bug_issues": 58,
+    "ci_runs": 14891,
+    "ci_runs_count": 14891,
+    "fails": []
+  },
+  {
+    "repo": "eslint/eslint",
+    "language": "JavaScript",
+    "owner_type": "Organization",
+    "stars": 27569,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 656,
+    "contributors": 88,
+    "bot_commit_share": 0.104,
+    "merged_prs": 558,
+    "reviewed_share": 0.99,
+    "issues_opened": 308,
+    "bug_labels": [
+      "bug"
+    ],
+    "bug_issues": 92,
+    "ci_runs": 13374,
+    "ci_runs_count": 13374,
+    "fails": []
+  },
+  {
+    "repo": "sqlalchemy/sqlalchemy",
+    "language": "Python",
+    "owner_type": "Organization",
+    "stars": 12253,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 652,
+    "contributors": 90,
+    "bot_commit_share": 0.015,
+    "merged_prs": 36,
+    "reviewed_share": 0.39,
+    "issues_opened": 212,
+    "bug_labels": [
+      "bug"
+    ],
+    "bug_issues": 105,
+    "ci_runs": 1221,
+    "ci_runs_count": 1221,
+    "fails": [
+      "merged PRs",
+      "reviews"
+    ]
+  },
+  {
+    "repo": "caddyserver/caddy",
+    "language": "Go",
+    "owner_type": "Organization",
+    "stars": 78224,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 340,
+    "contributors": 120,
+    "bot_commit_share": 0.062,
+    "merged_prs": 291,
+    "reviewed_share": 0.98,
+    "issues_opened": 265,
+    "bug_labels": [
+      "bug :lady_beetle:"
+    ],
+    "bug_issues": 51,
+    "ci_runs": 11541,
+    "ci_runs_count": 11541,
+    "fails": [
+      "merged PRs"
+    ]
+  },
+  {
+    "repo": "charmbracelet/bubbletea",
+    "language": "Go",
+    "owner_type": "Organization",
+    "stars": 45476,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 260,
+    "contributors": 27,
+    "bot_commit_share": 0.062,
+    "merged_prs": 74,
+    "reviewed_share": 0.72,
+    "issues_opened": 76,
+    "bug_labels": [
+      "bug"
+    ],
+    "bug_issues": 1,
+    "ci_runs": 2508,
+    "ci_runs_count": 2508,
+    "fails": [
+      "commits",
+      "merged PRs",
+      "bug issues"
+    ]
+  },
+  {
+    "repo": "golangci/golangci-lint",
+    "language": "Go",
+    "owner_type": "Organization",
+    "stars": 19462,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 445,
+    "contributors": 26,
+    "bot_commit_share": 0.593,
+    "merged_prs": 413,
+    "reviewed_share": 0.96,
+    "issues_opened": 162,
+    "bug_labels": [
+      "bug"
+    ],
+    "bug_issues": 39,
+    "ci_runs": 5974,
+    "ci_runs_count": 5974,
+    "fails": [
+      "bots"
+    ]
+  },
+  {
+    "repo": "gohugoio/hugo",
+    "language": "Go",
+    "owner_type": "Organization",
+    "stars": 90192,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 791,
+    "contributors": 35,
+    "bot_commit_share": 0.205,
+    "merged_prs": 570,
+    "reviewed_share": 0.23,
+    "issues_opened": 426,
+    "bug_labels": [
+      "Bug"
+    ],
+    "bug_issues": 232,
+    "ci_runs": 6787,
+    "ci_runs_count": 6787,
+    "fails": [
+      "reviews"
+    ]
+  },
+  {
+    "repo": "prometheus/prometheus",
+    "language": "Go",
+    "owner_type": "Organization",
+    "stars": 66670,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 2577,
+    "contributors": 253,
+    "bot_commit_share": 0.107,
+    "merged_prs": 1377,
+    "reviewed_share": 1.0,
+    "issues_opened": 354,
+    "bug_labels": [
+      "kind/bug"
+    ],
+    "bug_issues": 33,
+    "ci_runs": ">=30000",
+    "ci_runs_count": 30000,
+    "fails": []
+  },
+  {
+    "repo": "spf13/cobra",
+    "language": "Go",
+    "owner_type": "User",
+    "stars": 44714,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 13,
+    "contributors": 12,
+    "bot_commit_share": 0.0,
+    "merged_prs": 13,
+    "reviewed_share": 1.0,
+    "issues_opened": 44,
+    "bug_labels": [
+      "kind/bug"
+    ],
+    "bug_issues": 0,
+    "ci_runs": 370,
+    "ci_runs_count": 370,
+    "fails": [
+      "commits",
+      "merged PRs",
+      "bug issues",
+      "CI runs"
+    ]
+  },
+  {
+    "repo": "vitejs/vite",
+    "language": "TypeScript",
+    "owner_type": "Organization",
+    "stars": 83428,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 1226,
+    "contributors": 207,
+    "bot_commit_share": 0.12,
+    "merged_prs": 1064,
+    "reviewed_share": 0.87,
+    "issues_opened": 699,
+    "bug_labels": [
+      "bug: upstream",
+      "p3-minor-bug"
+    ],
+    "bug_issues": 153,
+    "ci_runs": ">=27079",
+    "ci_runs_count": 27079,
+    "fails": []
+  },
+  {
+    "repo": "prettier/prettier",
+    "language": "JavaScript",
+    "owner_type": "Organization",
+    "stars": 52375,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 1528,
+    "contributors": 87,
+    "bot_commit_share": 0.361,
+    "merged_prs": 1392,
+    "reviewed_share": 0.29,
+    "issues_opened": 385,
+    "bug_labels": [],
+    "bug_issues": 0,
+    "ci_runs": ">=27680",
+    "ci_runs_count": 27680,
+    "fails": [
+      "bots",
+      "reviews",
+      "bug issues"
+    ]
+  },
+  {
+    "repo": "vitest-dev/vitest",
+    "language": "TypeScript",
+    "owner_type": "Organization",
+    "stars": 17270,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 1203,
+    "contributors": 210,
+    "bot_commit_share": 0.078,
+    "merged_prs": 1172,
+    "reviewed_share": 0.77,
+    "issues_opened": 855,
+    "bug_labels": [
+      "p3-minor-bug"
+    ],
+    "bug_issues": 165,
+    "ci_runs": ">=26487",
+    "ci_runs_count": 26487,
+    "fails": []
+  },
+  {
+    "repo": "honojs/hono",
+    "language": "TypeScript",
+    "owner_type": "Organization",
+    "stars": 32616,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 419,
+    "contributors": 133,
+    "bot_commit_share": 0.005,
+    "merged_prs": 304,
+    "reviewed_share": 0.78,
+    "issues_opened": 216,
+    "bug_labels": [
+      "bug"
+    ],
+    "bug_issues": 9,
+    "ci_runs": 4213,
+    "ci_runs_count": 4213,
+    "fails": [
+      "bug issues"
+    ]
+  },
+  {
+    "repo": "square/okhttp",
+    "language": "Kotlin",
+    "owner_type": "Organization",
+    "stars": 47091,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 402,
+    "contributors": 26,
+    "bot_commit_share": 0.493,
+    "merged_prs": 0,
+    "reviewed_share": 0.0,
+    "issues_opened": 0,
+    "bug_labels": [
+      "bug"
+    ],
+    "bug_issues": 0,
+    "ci_runs": 6813,
+    "ci_runs_count": 6813,
+    "fails": [
+      "merged PRs",
+      "bots",
+      "reviews",
+      "bug issues"
+    ]
+  },
+  {
+    "repo": "mockito/mockito",
+    "language": "Java",
+    "owner_type": "Organization",
+    "stars": 15455,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 55,
+    "contributors": 16,
+    "bot_commit_share": 0.455,
+    "merged_prs": 53,
+    "reviewed_share": 0.32,
+    "issues_opened": 34,
+    "bug_labels": [
+      "bug"
+    ],
+    "bug_issues": 0,
+    "ci_runs": 516,
+    "ci_runs_count": 516,
+    "fails": [
+      "commits",
+      "merged PRs",
+      "bots",
+      "reviews",
+      "bug issues"
+    ]
+  },
+  {
+    "repo": "junit-team/junit-framework",
+    "language": "Java",
+    "owner_type": "Organization",
+    "stars": 7058,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 1063,
+    "contributors": 40,
+    "bot_commit_share": 0.446,
+    "merged_prs": 806,
+    "reviewed_share": 0.97,
+    "issues_opened": 132,
+    "bug_labels": [
+      "type: bug"
+    ],
+    "bug_issues": 41,
+    "ci_runs": 17352,
+    "ci_runs_count": 17352,
+    "fails": [
+      "bots"
+    ]
+  },
+  {
+    "repo": "Kotlin/kotlinx.coroutines",
+    "language": "Kotlin",
+    "owner_type": "Organization",
+    "stars": 13825,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 80,
+    "contributors": 27,
+    "bot_commit_share": 0.0,
+    "merged_prs": 117,
+    "reviewed_share": 0.79,
+    "issues_opened": 65,
+    "bug_labels": [
+      "bug"
+    ],
+    "bug_issues": 22,
+    "ci_runs": 0,
+    "ci_runs_count": 0,
+    "fails": [
+      "commits",
+      "merged PRs",
+      "CI runs"
+    ]
+  },
+  {
+    "repo": "astral-sh/ruff",
+    "language": "Rust",
+    "owner_type": "Organization",
+    "stars": 50202,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 5078,
+    "contributors": 312,
+    "bot_commit_share": 0.142,
+    "merged_prs": 5062,
+    "reviewed_share": 0.79,
+    "issues_opened": 1094,
+    "bug_labels": [
+      "bug"
+    ],
+    "bug_issues": 209,
+    "ci_runs": ">=30000",
+    "ci_runs_count": 30000,
+    "fails": []
+  },
+  {
+    "repo": "BurntSushi/ripgrep",
+    "language": "Rust",
+    "owner_type": "User",
+    "stars": 69301,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 156,
+    "contributors": 35,
+    "bot_commit_share": 0.0,
+    "merged_prs": 48,
+    "reviewed_share": 0.42,
+    "issues_opened": 108,
+    "bug_labels": [
+      "bug"
+    ],
+    "bug_issues": 8,
+    "ci_runs": 805,
+    "ci_runs_count": 805,
+    "fails": [
+      "commits",
+      "merged PRs",
+      "reviews",
+      "bug issues"
+    ]
+  },
+  {
+    "repo": "serde-rs/serde",
+    "language": "Rust",
+    "owner_type": "Organization",
+    "stars": 10893,
+    "archived": false,
+    "fork_or_mirror": false,
+    "issues_enabled": true,
+    "commits": 65,
+    "contributors": 6,
+    "bot_commit_share": 0.0,
+    "merged_prs": 15,
+    "reviewed_share": 0.6,
+    "issues_opened": 51,
+    "bug_labels": [
+      "bug",
+      "compiler bug"
+    ],
+    "bug_issues": 0,
+    "ci_runs": 508,
+    "ci_runs_count": 508,
+    "fails": [
+      "commits",
+      "merged PRs",
+      "contributors",
+      "bug issues"
+    ]
+  }
+]

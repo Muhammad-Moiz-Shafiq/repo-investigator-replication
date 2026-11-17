@@ -1,0 +1,10 @@
+{
+ "totals": {
+  "answers": 20,
+  "grader passes the same as me": 20,
+  "grader gives the same label as me": 20,
+  "items": 61,
+  "grader scores the item the same as me": 61
+ },
+ "differences": []
+}

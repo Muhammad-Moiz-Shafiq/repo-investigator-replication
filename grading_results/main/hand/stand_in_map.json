@@ -1,0 +1,142 @@
+{
+ "P01": [
+  "main",
+  "R8-prometheus__L3__minimax_minimax-m3.1-flash__t2"
+ ],
+ "P02": [
+  "main",
+  "R8-sqlalchemy__L3__z-ai_glm-5.3-flash__t2"
+ ],
+ "P03": [
+  "main",
+  "R6-sqlalchemy__L2__mistralai_ministral-14b-2512__t1"
+ ],
+ "P04": [
+  "main",
+  "R6-prometheus__L3__z-ai_glm-5.3-flash__t2"
+ ],
+ "P05": [
+  "main",
+  "R8-vite__L3__deepseek_deepseek-v4-flash__t2"
+ ],
+ "P06": [
+  "main",
+  "R8-tokio__L3__minimax_minimax-m3.1-flash__t1"
+ ],
+ "P07": [
+  "main",
+  "R8-prometheus__L3__deepseek_deepseek-v4-flash__t1"
+ ],
+ "P08": [
+  "main",
+  "R8-eslint__L3__z-ai_glm-5.3-flash__t2"
+ ],
+ "P09": [
+  "main",
+  "R8-sqlalchemy__L3__minimax_minimax-m3.1-flash__t1"
+ ],
+ "P10": [
+  "main",
+  "R6-sqlalchemy__L3__google_gemini-2.5-flash-lite__t2"
+ ],
+ "P11": [
+  "main",
+  "R8-sqlalchemy__L3__z-ai_glm-5.3-flash__t1"
+ ],
+ "P12": [
+  "main",
+  "R8-vite__L3__minimax_minimax-m3.1-flash__t2"
+ ],
+ "P13": [
+  "main",
+  "R6-prometheus__L3__z-ai_glm-5.3-flash__t1"
+ ],
+ "P14": [
+  "main",
+  "R8-tokio__L3__z-ai_glm-5.3-flash__t1"
+ ],
+ "P15": [
+  "main",
+  "R4-vite__sandbox__google_gemini-2.5-flash-lite__t2"
+ ],
+ "P16": [
+  "main",
+  "R8-prometheus__L3__z-ai_glm-5.3-flash__t2"
+ ],
+ "P17": [
+  "main",
+  "R8-vite__L3__z-ai_glm-5.3-flash__t2"
+ ],
+ "P18": [
+  "main",
+  "R8-junit-framework__L3__z-ai_glm-5.3-flash__t2"
+ ],
+ "P19": [
+  "main",
+  "R5-sqlalchemy__L3__minimax_minimax-m3.1-flash__t2"
+ ],
+ "P20": [
+  "main",
+  "R8-junit-framework__L3__z-ai_glm-5.3-flash__t1"
+ ],
+ "P21": [
+  "main",
+  "R8-sqlalchemy__L3__minimax_minimax-m3.1-flash__t2"
+ ],
+ "P22": [
+  "main",
+  "R8-vite__L3__minimax_minimax-m3.1-flash__t1"
+ ],
+ "P23": [
+  "main",
+  "R8-vite__L3__deepseek_deepseek-v4-flash__t1"
+ ],
+ "P24": [
+  "main",
+  "R11-prometheus__L3__z-ai_glm-5.3-flash__t2"
+ ],
+ "P25": [
+  "main",
+  "R9-eslint__L3__mistralai_ministral-14b-2512__t2"
+ ],
+ "P26": [
+  "main",
+  "R9-eslint__L3__mistralai_ministral-14b-2512__t1"
+ ],
+ "P27": [
+  "main",
+  "R8-eslint__L3__minimax_minimax-m3.1-flash__t1"
+ ],
+ "P28": [
+  "main",
+  "R8-vite__L3__z-ai_glm-5.3-flash__t1"
+ ],
+ "P29": [
+  "main",
+  "R9-vite__L3__mistralai_ministral-14b-2512__t1"
+ ],
+ "P30": [
+  "main",
+  "R8-eslint__L3__deepseek_deepseek-v4-flash__t1"
+ ],
+ "P31": [
+  "main",
+  "R6-prometheus__sandbox__mistralai_ministral-14b-2512__t2"
+ ],
+ "P32": [
+  "main",
+  "R8-eslint__L3__minimax_minimax-m3.1-flash__t2"
+ ],
+ "P33": [
+  "main",
+  "R8-junit-framework__L3__minimax_minimax-m3.1-flash__t2"
+ ],
+ "P34": [
+  "main",
+  "R4-eslint__L3__mistralai_ministral-14b-2512__t2"
+ ],
+ "P35": [
+  "main",
+  "R6-sqlalchemy__L3__z-ai_glm-5.3-flash__t1"
+ ]
+}

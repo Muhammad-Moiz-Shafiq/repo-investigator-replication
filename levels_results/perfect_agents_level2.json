@@ -1,0 +1,1049 @@
+[
+ {
+  "id": "R1-tokio",
+  "pass": true,
+  "steps": 3,
+  "own_numbers": 0,
+  "items": {
+   "h1 rate within 1.5 points": true,
+   "h2 rate within 1.5 points": true,
+   "verdict": true
+  },
+  "guess": {
+   "h1_failure_rate_pct": 3.4682,
+   "h2_failure_rate_pct": 2.0408,
+   "verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R1-eslint",
+  "pass": true,
+  "steps": 3,
+  "own_numbers": 0,
+  "items": {
+   "h1 rate within 1.5 points": true,
+   "h2 rate within 1.5 points": true,
+   "verdict": true
+  },
+  "guess": {
+   "h1_failure_rate_pct": 2.4911,
+   "h2_failure_rate_pct": 1.2195,
+   "verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R1-sqlalchemy",
+  "pass": true,
+  "steps": 3,
+  "own_numbers": 0,
+  "items": {
+   "h1 rate within 1.5 points": true,
+   "h2 rate within 1.5 points": true,
+   "verdict": true
+  },
+  "guess": {
+   "h1_failure_rate_pct": 21.393,
+   "h2_failure_rate_pct": 7.5117,
+   "verdict": "down"
+  }
+ },
+ {
+  "id": "R1-vite",
+  "pass": true,
+  "steps": 3,
+  "own_numbers": 0,
+  "items": {
+   "h1 rate within 1.5 points": true,
+   "h2 rate within 1.5 points": true,
+   "verdict": true
+  },
+  "guess": {
+   "h1_failure_rate_pct": 13.108600000000001,
+   "h2_failure_rate_pct": 34.331,
+   "verdict": "up"
+  }
+ },
+ {
+  "id": "R1-junit-framework",
+  "pass": true,
+  "steps": 3,
+  "own_numbers": 0,
+  "items": {
+   "h1 rate within 1.5 points": true,
+   "h2 rate within 1.5 points": true,
+   "verdict": true
+  },
+  "guess": {
+   "h1_failure_rate_pct": 8.6758,
+   "h2_failure_rate_pct": 10.776900000000001,
+   "verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R1-prometheus",
+  "pass": true,
+  "steps": 3,
+  "own_numbers": 0,
+  "items": {
+   "h1 rate within 1.5 points": true,
+   "h2 rate within 1.5 points": true,
+   "verdict": true
+  },
+  "guess": {
+   "h1_failure_rate_pct": 38.528099999999995,
+   "h2_failure_rate_pct": 29.835099999999997,
+   "verdict": "down"
+  }
+ },
+ {
+  "id": "R2-tokio",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 0,
+  "items": {
+   "main h1 median within 10%": true,
+   "main h2 median within 10%": true,
+   "main verdict": true
+  },
+  "guess": {
+   "main_h1_minutes": 18.183333333333334,
+   "main_h2_minutes": 21.066666666666666,
+   "main_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R2-eslint",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 0,
+  "items": {
+   "main h1 median within 10%": true,
+   "main h2 median within 10%": true,
+   "main verdict": true
+  },
+  "guess": {
+   "main_h1_minutes": 5.566666666666666,
+   "main_h2_minutes": 5.075,
+   "main_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R2-sqlalchemy",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 0,
+  "items": {
+   "main h1 median within 10%": true,
+   "main h2 median within 10%": true,
+   "main verdict": true
+  },
+  "guess": {
+   "main_h1_minutes": 43.333333333333336,
+   "main_h2_minutes": 42.63333333333333,
+   "main_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R2-vite",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 0,
+  "items": {
+   "main h1 median within 10%": true,
+   "main h2 median within 10%": true,
+   "main verdict": true
+  },
+  "guess": {
+   "main_h1_minutes": 5.2,
+   "main_h2_minutes": 5.383333333333334,
+   "main_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R2-junit-framework",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 0,
+  "items": {
+   "main h1 median within 10%": true,
+   "main h2 median within 10%": true,
+   "main verdict": true
+  },
+  "guess": {
+   "main_h1_minutes": 7.716666666666667,
+   "main_h2_minutes": 8.491666666666667,
+   "main_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R2-prometheus",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 0,
+  "items": {
+   "main h1 median within 10%": true,
+   "main h2 median within 10%": true,
+   "main verdict": true
+  },
+  "guess": {
+   "main_h1_minutes": 26.85,
+   "main_h2_minutes": 44.675,
+   "main_verdict": "up"
+  }
+ },
+ {
+  "id": "R3-tokio",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 0,
+  "items": {
+   "wait h1 within 15%": true,
+   "wait h2 within 15%": true,
+   "after h1 within 15%": true,
+   "after h2 within 15%": true,
+   "wait verdict": true,
+   "after verdict": true
+  },
+  "guess": {
+   "wait_h1_hours": 4.135556,
+   "wait_h2_hours": 9.440972,
+   "wait_verdict": "up",
+   "after_h1_hours": 3.6975,
+   "after_h2_hours": 1.662778,
+   "after_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R3-eslint",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 0,
+  "items": {
+   "wait h1 within 15%": true,
+   "wait h2 within 15%": true,
+   "after h1 within 15%": true,
+   "after h2 within 15%": true,
+   "wait verdict": true,
+   "after verdict": true
+  },
+  "guess": {
+   "wait_h1_hours": 6.831806,
+   "wait_h2_hours": 6.001944,
+   "wait_verdict": "no clear change",
+   "after_h1_hours": 4.271667,
+   "after_h2_hours": 0.176389,
+   "after_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R3-vite",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 0,
+  "items": {
+   "wait h1 within 15%": true,
+   "wait h2 within 15%": true,
+   "after h1 within 15%": true,
+   "after h2 within 15%": true,
+   "wait verdict": true,
+   "after verdict": true
+  },
+  "guess": {
+   "wait_h1_hours": 11.700278,
+   "wait_h2_hours": 22.884444,
+   "wait_verdict": "up",
+   "after_h1_hours": 1.503194,
+   "after_h2_hours": 0.715,
+   "after_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R3-junit-framework",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 0,
+  "items": {
+   "wait h1 within 15%": true,
+   "wait h2 within 15%": true,
+   "after h1 within 15%": true,
+   "after h2 within 15%": true,
+   "wait verdict": true,
+   "after verdict": true
+  },
+  "guess": {
+   "wait_h1_hours": 18.784444,
+   "wait_h2_hours": 12.495,
+   "wait_verdict": "no clear change",
+   "after_h1_hours": 25.374444,
+   "after_h2_hours": 12.798333,
+   "after_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R3-prometheus",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 0,
+  "items": {
+   "wait h1 within 15%": true,
+   "wait h2 within 15%": true,
+   "after h1 within 15%": true,
+   "after h2 within 15%": true,
+   "wait verdict": true,
+   "after verdict": true
+  },
+  "guess": {
+   "wait_h1_hours": 8.943056,
+   "wait_h2_hours": 17.660833,
+   "wait_verdict": "up",
+   "after_h1_hours": 2.273056,
+   "after_h2_hours": 1.506111,
+   "after_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R4-tokio",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 2,
+  "items": {
+   "unapproved count within 10% (at least 1)": true,
+   "unapproved share within 2 points": true
+  },
+  "guess": {
+   "unapproved": 3,
+   "unapproved_pct": 1.1904761904761905
+  }
+ },
+ {
+  "id": "R4-eslint",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 2,
+  "items": {
+   "unapproved count within 10% (at least 1)": true,
+   "unapproved share within 2 points": true
+  },
+  "guess": {
+   "unapproved": 4,
+   "unapproved_pct": 1.3888888888888888
+  }
+ },
+ {
+  "id": "R4-vite",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 2,
+  "items": {
+   "unapproved count within 10% (at least 1)": true,
+   "unapproved share within 2 points": true
+  },
+  "guess": {
+   "unapproved": 130,
+   "unapproved_pct": 23.76599634369287
+  }
+ },
+ {
+  "id": "R4-junit-framework",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 2,
+  "items": {
+   "unapproved count within 10% (at least 1)": true,
+   "unapproved share within 2 points": true
+  },
+  "guess": {
+   "unapproved": 29,
+   "unapproved_pct": 6.839622641509434
+  }
+ },
+ {
+  "id": "R4-prometheus",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 2,
+  "items": {
+   "unapproved count within 10% (at least 1)": true,
+   "unapproved share within 2 points": true
+  },
+  "guess": {
+   "unapproved": 6,
+   "unapproved_pct": 0.8733624454148472
+  }
+ },
+ {
+  "id": "R5-tokio",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 3,
+  "items": {
+   "opened within 2": true,
+   "closed within 2": true,
+   "verdict": true,
+   "median days within 10%": true
+  },
+  "guess": {
+   "opened": 57,
+   "closed": 66,
+   "verdict": "balanced",
+   "median_days_to_close": 2.2501388749999998
+  }
+ },
+ {
+  "id": "R5-eslint",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 3,
+  "items": {
+   "opened within 2": true,
+   "closed within 2": true,
+   "verdict": true,
+   "median days within 10%": true
+  },
+  "guess": {
+   "opened": 89,
+   "closed": 88,
+   "verdict": "balanced",
+   "median_days_to_close": 2.3938425833333334
+  }
+ },
+ {
+  "id": "R5-sqlalchemy",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 3,
+  "items": {
+   "opened within 2": true,
+   "closed within 2": true,
+   "verdict": true,
+   "median days within 10%": true
+  },
+  "guess": {
+   "opened": 103,
+   "closed": 115,
+   "verdict": "balanced",
+   "median_days_to_close": 1.9687384166666666
+  }
+ },
+ {
+  "id": "R5-vite",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 3,
+  "items": {
+   "opened within 2": true,
+   "closed within 2": true,
+   "verdict": true,
+   "median days within 10%": true
+  },
+  "guess": {
+   "opened": 61,
+   "closed": 62,
+   "verdict": "balanced",
+   "median_days_to_close": 87.73372683333334
+  }
+ },
+ {
+  "id": "R5-junit-framework",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 3,
+  "items": {
+   "opened within 2": true,
+   "closed within 2": true,
+   "verdict": true,
+   "median days within 10%": true
+  },
+  "guess": {
+   "opened": 41,
+   "closed": 40,
+   "verdict": "balanced",
+   "median_days_to_close": 5.907968749999999
+  }
+ },
+ {
+  "id": "R5-prometheus",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 3,
+  "items": {
+   "opened within 2": true,
+   "closed within 2": true,
+   "verdict": true,
+   "median days within 10%": true
+  },
+  "guess": {
+   "opened": 32,
+   "closed": 46,
+   "verdict": "balanced",
+   "median_days_to_close": 46.70318866666667
+  }
+ },
+ {
+  "id": "R6-prometheus",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 0,
+  "items": {
+   "most fixes module": true,
+   "top share module": true
+  },
+  "guess": {
+   "most_fixes_module": "promql",
+   "top_share_module": "model"
+  }
+ },
+ {
+  "id": "R6-sqlalchemy",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 0,
+  "items": {
+   "most fixes module": true,
+   "top share module": true
+  },
+  "guess": {
+   "most_fixes_module": "lib/sqlalchemy/dialects",
+   "top_share_module": "lib/sqlalchemy/orm"
+  }
+ },
+ {
+  "id": "R7-tokio",
+  "pass": true,
+  "steps": 3,
+  "own_numbers": 0,
+  "items": {
+   "first failing commit": true,
+   "next passing commit": true,
+   "time red within 10%": true
+  },
+  "guess": {
+   "first_failing_sha": "9c880b082b38187e670965b6f30872edf864ac80",
+   "next_passing_sha": "6858348ad2e576f1b5380bf3ec5cac1d19bd4608",
+   "hours_red": 171.79222222222222
+  }
+ },
+ {
+  "id": "R7-eslint",
+  "pass": true,
+  "steps": 3,
+  "own_numbers": 0,
+  "items": {
+   "first failing commit": true,
+   "next passing commit": true,
+   "time red within 10%": true
+  },
+  "guess": {
+   "first_failing_sha": "9ac7eb60525ec768c2fdc6699e5a292aa913ce9e",
+   "next_passing_sha": "92086c87e042413a3d0363d8fc3fbb11db98d06a",
+   "hours_red": 17.099166666666665
+  }
+ },
+ {
+  "id": "R7-sqlalchemy",
+  "pass": true,
+  "steps": 3,
+  "own_numbers": 0,
+  "items": {
+   "first failing commit": true,
+   "next passing commit": true,
+   "time red within 10%": true
+  },
+  "guess": {
+   "first_failing_sha": "aa1a5575358d3aa14953b04dced02f4763fed2e7",
+   "next_passing_sha": "2dd1451c5639f59d49111cf8eb34e0240b7f550a",
+   "hours_red": 119.89111111111112
+  }
+ },
+ {
+  "id": "R7-vite",
+  "pass": true,
+  "steps": 3,
+  "own_numbers": 0,
+  "items": {
+   "first failing commit": true,
+   "next passing commit": true,
+   "time red within 10%": true
+  },
+  "guess": {
+   "first_failing_sha": "a07a4bd052ac75f916391c999c408ad5f2867e61",
+   "next_passing_sha": "dfc8aa5057dd8ec2b1223980d1e2eeb946ac3384",
+   "hours_red": 87.57194444444444
+  }
+ },
+ {
+  "id": "R7-junit-framework",
+  "pass": true,
+  "steps": 3,
+  "own_numbers": 0,
+  "items": {
+   "first failing commit": true,
+   "next passing commit": true,
+   "time red within 10%": true
+  },
+  "guess": {
+   "first_failing_sha": "d2dd0bca20bddd16658ea6e501645a6d5ec3ebed",
+   "next_passing_sha": "f05dd1b2b42999e721a19da13208f15a04c07517",
+   "hours_red": 33.1425
+  }
+ },
+ {
+  "id": "R7-prometheus",
+  "pass": true,
+  "steps": 3,
+  "own_numbers": 0,
+  "items": {
+   "first failing commit": true,
+   "next passing commit": true,
+   "time red within 10%": true
+  },
+  "guess": {
+   "first_failing_sha": "e48be9d71a7b89cf6a05563ad8e4445c668022f6",
+   "next_passing_sha": "9c23509790a38e4f5ec38b0c60c91d2a4fb45bd0",
+   "hours_red": 169.44722222222222
+  }
+ },
+ {
+  "id": "R8-tokio",
+  "pass": true,
+  "steps": 5,
+  "own_numbers": 8,
+  "items": {
+   "h1 share within 3 points": true,
+   "h2 share within 3 points": true,
+   "verdict": true
+  },
+  "guess": {
+   "h1_top2_pct": 27.868852459016395,
+   "h2_top2_pct": 29.31726907630522,
+   "verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R8-eslint",
+  "pass": true,
+  "steps": 5,
+  "own_numbers": 8,
+  "items": {
+   "h1 share within 3 points": true,
+   "h2 share within 3 points": true,
+   "verdict": true
+  },
+  "guess": {
+   "h1_top2_pct": 34.48275862068966,
+   "h2_top2_pct": 25.892857142857142,
+   "verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R8-sqlalchemy",
+  "pass": true,
+  "steps": 5,
+  "own_numbers": 8,
+  "items": {
+   "h1 share within 3 points": true,
+   "h2 share within 3 points": true,
+   "verdict": true
+  },
+  "guess": {
+   "h1_top2_pct": 76.52173913043478,
+   "h2_top2_pct": 71.875,
+   "verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R8-vite",
+  "pass": true,
+  "steps": 5,
+  "own_numbers": 8,
+  "items": {
+   "h1 share within 3 points": true,
+   "h2 share within 3 points": true,
+   "verdict": true
+  },
+  "guess": {
+   "h1_top2_pct": 63.013698630136986,
+   "h2_top2_pct": 49.00398406374502,
+   "verdict": "less concentrated"
+  }
+ },
+ {
+  "id": "R8-junit-framework",
+  "pass": true,
+  "steps": 5,
+  "own_numbers": 8,
+  "items": {
+   "h1 share within 3 points": true,
+   "h2 share within 3 points": true,
+   "verdict": true
+  },
+  "guess": {
+   "h1_top2_pct": 82.55813953488372,
+   "h2_top2_pct": 85.49222797927462,
+   "verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R8-prometheus",
+  "pass": true,
+  "steps": 5,
+  "own_numbers": 8,
+  "items": {
+   "h1 share within 3 points": true,
+   "h2 share within 3 points": true,
+   "verdict": true
+  },
+  "guess": {
+   "h1_top2_pct": 20.05420054200542,
+   "h2_top2_pct": 28.01556420233463,
+   "verdict": "more concentrated"
+  }
+ },
+ {
+  "id": "R9-tokio",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 3,
+  "items": {
+   "top two share within 3 points": true
+  },
+  "guess": {
+   "reviewers": 26,
+   "top2_pct": 58.53658536585366
+  }
+ },
+ {
+  "id": "R9-eslint",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 3,
+  "items": {
+   "top two share within 3 points": true
+  },
+  "guess": {
+   "reviewers": 23,
+   "top2_pct": 53.94456289978678
+  }
+ },
+ {
+  "id": "R9-vite",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 3,
+  "items": {
+   "top two share within 3 points": true
+  },
+  "guess": {
+   "reviewers": 29,
+   "top2_pct": 81.195079086116
+  }
+ },
+ {
+  "id": "R9-junit-framework",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 3,
+  "items": {
+   "top two share within 3 points": true
+  },
+  "guess": {
+   "reviewers": 7,
+   "top2_pct": 95.93301435406698
+  }
+ },
+ {
+  "id": "R9-prometheus",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 3,
+  "items": {
+   "top two share within 3 points": true
+  },
+  "guess": {
+   "reviewers": 57,
+   "top2_pct": 38.336933045356375
+  }
+ },
+ {
+  "id": "R10-tokio",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 2,
+  "items": {
+   "share within 3 points": true
+  },
+  "guess": {
+   "fix_commits": 53,
+   "changed_test_pct": 39.62264150943396
+  }
+ },
+ {
+  "id": "R10-eslint",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 2,
+  "items": {
+   "share within 3 points": true
+  },
+  "guess": {
+   "fix_commits": 127,
+   "changed_test_pct": 77.95275590551181
+  }
+ },
+ {
+  "id": "R10-sqlalchemy",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 2,
+  "items": {
+   "share within 3 points": true
+  },
+  "guess": {
+   "fix_commits": 72,
+   "changed_test_pct": 55.55555555555556
+  }
+ },
+ {
+  "id": "R10-vite",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 2,
+  "items": {
+   "share within 3 points": true
+  },
+  "guess": {
+   "fix_commits": 322,
+   "changed_test_pct": 48.4472049689441
+  }
+ },
+ {
+  "id": "R10-junit-framework",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 2,
+  "items": {
+   "share within 3 points": true
+  },
+  "guess": {
+   "fix_commits": 42,
+   "changed_test_pct": 30.952380952380953
+  }
+ },
+ {
+  "id": "R10-prometheus",
+  "pass": true,
+  "steps": 2,
+  "own_numbers": 2,
+  "items": {
+   "share within 3 points": true
+  },
+  "guess": {
+   "fix_commits": 351,
+   "changed_test_pct": 60.11396011396011
+  }
+ },
+ {
+  "id": "R11-eslint",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 3,
+  "items": {
+   "opened within 5% (at least 2)": true,
+   "merged share within 3 points": true,
+   "merge h1 median within 15%": true,
+   "merge h2 median within 15%": true,
+   "merge verdict": true
+  },
+  "guess": {
+   "opened": 79,
+   "merged_pct": 82.27848101265823,
+   "closed_unmerged_pct": 17.72151898734177,
+   "merge_h1_hours": 3.470972,
+   "merge_h2_hours": 7.676389,
+   "merge_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R11-vite",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 3,
+  "items": {
+   "opened within 5% (at least 2)": true,
+   "merged share within 3 points": true,
+   "merge h1 median within 15%": true,
+   "merge h2 median within 15%": true,
+   "merge verdict": true
+  },
+  "guess": {
+   "opened": 167,
+   "merged_pct": 83.23353293413173,
+   "closed_unmerged_pct": 16.167664670658684,
+   "merge_h1_hours": 3.471389,
+   "merge_h2_hours": 6.51,
+   "merge_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R11-junit-framework",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 3,
+  "items": {
+   "opened within 5% (at least 2)": true,
+   "merged share within 3 points": true,
+   "merge h1 median within 15%": true,
+   "merge h2 median within 15%": true,
+   "merge verdict": true
+  },
+  "guess": {
+   "opened": 625,
+   "merged_pct": 97.12,
+   "closed_unmerged_pct": 2.88,
+   "merge_h1_hours": 7.690556,
+   "merge_h2_hours": 10.235833,
+   "merge_verdict": "no clear change"
+  }
+ },
+ {
+  "id": "R11-prometheus",
+  "pass": true,
+  "steps": 4,
+  "own_numbers": 3,
+  "items": {
+   "opened within 5% (at least 2)": true,
+   "merged share within 3 points": true,
+   "merge h1 median within 15%": true,
+   "merge h2 median within 15%": true,
+   "merge verdict": true
+  },
+  "guess": {
+   "opened": 339,
+   "merged_pct": 72.27138643067846,
+   "closed_unmerged_pct": 27.43362831858407,
+   "merge_h1_hours": 53.849722,
+   "merge_h2_hours": 20.157639,
+   "merge_verdict": "down"
+  }
+ },
+ {
+  "id": "R12-tokio",
+  "pass": true,
+  "steps": 7,
+  "own_numbers": 0,
+  "items": {
+   "h1 median within 10% (at least 1 line)": true,
+   "h2 median within 10% (at least 1 line)": true,
+   "verdict": true,
+   "fix median within 10% (at least 1 line)": true,
+   "other median within 10% (at least 1 line)": true
+  },
+  "guess": {
+   "h1_median_lines": 21.0,
+   "h2_median_lines": 34.0,
+   "verdict": "up",
+   "fix_median_lines": 12.0,
+   "other_median_lines": 30.0
+  }
+ },
+ {
+  "id": "R12-eslint",
+  "pass": true,
+  "steps": 7,
+  "own_numbers": 0,
+  "items": {
+   "h1 median within 10% (at least 1 line)": true,
+   "h2 median within 10% (at least 1 line)": true,
+   "verdict": true,
+   "fix median within 10% (at least 1 line)": true,
+   "other median within 10% (at least 1 line)": true
+  },
+  "guess": {
+   "h1_median_lines": 30.0,
+   "h2_median_lines": 27.0,
+   "verdict": "no clear change",
+   "fix_median_lines": 41.0,
+   "other_median_lines": 22.5
+  }
+ },
+ {
+  "id": "R12-sqlalchemy",
+  "pass": true,
+  "steps": 7,
+  "own_numbers": 0,
+  "items": {
+   "h1 median within 10% (at least 1 line)": true,
+   "h2 median within 10% (at least 1 line)": true,
+   "verdict": true,
+   "fix median within 10% (at least 1 line)": true,
+   "other median within 10% (at least 1 line)": true
+  },
+  "guess": {
+   "h1_median_lines": 35.0,
+   "h2_median_lines": 58.5,
+   "verdict": "no clear change",
+   "fix_median_lines": 22.0,
+   "other_median_lines": 59.0
+  }
+ },
+ {
+  "id": "R12-vite",
+  "pass": true,
+  "steps": 7,
+  "own_numbers": 0,
+  "items": {
+   "h1 median within 10% (at least 1 line)": true,
+   "h2 median within 10% (at least 1 line)": true,
+   "verdict": true,
+   "fix median within 10% (at least 1 line)": true,
+   "other median within 10% (at least 1 line)": true
+  },
+  "guess": {
+   "h1_median_lines": 20.0,
+   "h2_median_lines": 23.0,
+   "verdict": "no clear change",
+   "fix_median_lines": 18.5,
+   "other_median_lines": 23.0
+  }
+ },
+ {
+  "id": "R12-junit-framework",
+  "pass": true,
+  "steps": 7,
+  "own_numbers": 0,
+  "items": {
+   "h1 median within 10% (at least 1 line)": true,
+   "h2 median within 10% (at least 1 line)": true,
+   "verdict": true,
+   "fix median within 10% (at least 1 line)": true,
+   "other median within 10% (at least 1 line)": true
+  },
+  "guess": {
+   "h1_median_lines": 10.0,
+   "h2_median_lines": 10.0,
+   "verdict": "no clear change",
+   "fix_median_lines": 5.0,
+   "other_median_lines": 11.0
+  }
+ },
+ {
+  "id": "R12-prometheus",
+  "pass": true,
+  "steps": 7,
+  "own_numbers": 0,
+  "items": {
+   "h1 median within 10% (at least 1 line)": true,
+   "h2 median within 10% (at least 1 line)": true,
+   "verdict": true,
+   "fix median within 10% (at least 1 line)": true,
+   "other median within 10% (at least 1 line)": true
+  },
+  "guess": {
+   "h1_median_lines": 35.0,
+   "h2_median_lines": 33.0,
+   "verdict": "no clear change",
+   "fix_median_lines": 24.0,
+   "other_median_lines": 36.0
+  }
+ }
+]

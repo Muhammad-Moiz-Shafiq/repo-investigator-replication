@@ -1,0 +1,19 @@
+{
+  "dropped": [
+    "R6-eslint",
+    "R6-vite"
+  ],
+  "solved_once": [
+    "R1-eslint",
+    "R9-prometheus",
+    "R9-tokio"
+  ],
+  "cost_usd": 0.8871408666,
+  "replies": 585,
+  "unparsed": 0,
+  "models": [
+    "deepseek/deepseek-v4-flash",
+    "google/gemini-3.6-flash",
+    "openai/gpt-5-mini"
+  ]
+}

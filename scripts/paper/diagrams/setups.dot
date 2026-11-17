@@ -1,0 +1,16 @@
+// What each setup gives the agent. Built into paper_outputs/figures by make_paper_outputs.py.
+digraph setups {
+  graph [rankdir=TB, newrank=true, fontname="Times-Roman", fontsize=10, nodesep=0.18, ranksep=0.22, pad=0.05, bgcolor="white"];
+  node  [shape=box, style="rounded", color="#555555", penwidth=0.8, fontname="Times-Roman", fontsize=10, fontcolor="#000000", margin="0.10,0.05", width=2.6];
+  edge  [color="#9a9a9a", penwidth=0.8, arrowsize=0.5];
+
+  l0 [label="Level 0: one tool returns the answer's values"];
+  l1 [label="Level 1: tools return correctly defined parts"];
+  l2 [label="Level 2: a query tool per table, plus calculators"];
+  l3 [label="Level 3: Level 2 without the needed tables"];
+  sb [label="Sandbox: Python over all 7 tables, read only", style="rounded,bold"];
+
+  l0 -> l1 -> l2 -> l3 [label="  less help", fontsize=9, fontcolor="#000000"];
+  l2 -> sb [style=dashed, dir=none, label="same raw data", fontsize=9, fontcolor="#000000", minlen=2];
+  {rank=same; l2; sb}
+}

@@ -1,0 +1,282 @@
+[
+ {
+  "id": "P01",
+  "run_id": "R8-prometheus__L3__minimax_minimax-m3.1-flash__t2",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "The question is to know what happens if some people step away and that can be seen from the PR as well.",
+  "correct_workaround": true
+ },
+ {
+  "id": "P02",
+  "run_id": "R8-sqlalchemy__L3__z-ai_glm-5.3-flash__t2",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "same as 1",
+  "correct_workaround": true
+ },
+ {
+  "id": "P03",
+  "run_id": "R6-sqlalchemy__L2__mistralai_ministral-14b-2512__t1",
+  "labeled": "yes",
+  "reasonable": "no",
+  "reason": "the question was about modules in the folder but model returned answer about the folder which isn't helpful here.",
+  "correct_workaround": false
+ },
+ {
+  "id": "P04",
+  "run_id": "R6-prometheus__L3__z-ai_glm-5.3-flash__t2",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "groups commits by the area named at the start of the subject, which in this repo names the folder; says so",
+  "correct_workaround": true
+ },
+ {
+  "id": "P05",
+  "run_id": "R8-vite__L3__deepseek_deepseek-v4-flash__t2",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached.",
+  "correct_workaround": true
+ },
+ {
+  "id": "P06",
+  "run_id": "R8-tokio__L3__minimax_minimax-m3.1-flash__t1",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached; also checks squash-merges.",
+  "correct_workaround": true
+ },
+ {
+  "id": "P07",
+  "run_id": "R8-prometheus__L3__deepseek_deepseek-v4-flash__t1",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached. Same as 1 and 2.",
+  "correct_workaround": true
+ },
+ {
+  "id": "P08",
+  "run_id": "R8-eslint__L3__z-ai_glm-5.3-flash__t2",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached.",
+  "correct_workaround": true
+ },
+ {
+  "id": "P09",
+  "run_id": "R8-sqlalchemy__L3__minimax_minimax-m3.1-flash__t1",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached.",
+  "correct_workaround": true
+ },
+ {
+  "id": "P10",
+  "run_id": "R6-sqlalchemy__L3__google_gemini-2.5-flash-lite__t2",
+  "labeled": "yes",
+  "reasonable": "no",
+  "reason": "it can't see which files a commit touched, yet lists module counts anyway; the counts have no data behind them.",
+  "correct_workaround": false
+ },
+ {
+  "id": "P11",
+  "run_id": "R8-sqlalchemy__L3__z-ai_glm-5.3-flash__t1",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached.",
+  "correct_workaround": true
+ },
+ {
+  "id": "P12",
+  "run_id": "R8-vite__L3__minimax_minimax-m3.1-flash__t2",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached.",
+  "correct_workaround": true
+ },
+ {
+  "id": "P13",
+  "run_id": "R6-prometheus__L3__z-ai_glm-5.3-flash__t1",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "same subject-area method as P04, stated clearly as well.",
+  "correct_workaround": true
+ },
+ {
+  "id": "P14",
+  "run_id": "R8-tokio__L3__z-ai_glm-5.3-flash__t1",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached.",
+  "correct_workaround": true
+ },
+ {
+  "id": "P15",
+  "run_id": "R4-vite__sandbox__google_gemini-2.5-flash-lite__t2",
+  "labeled": "yes",
+  "reasonable": "no",
+  "reason": "says it simulated the data and made-up numbers are not a stand-in as this is not helpful at all.",
+  "correct_workaround": false
+ },
+ {
+  "id": "P16",
+  "run_id": "R8-prometheus__L3__z-ai_glm-5.3-flash__t2",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached.",
+  "correct_workaround": true
+ },
+ {
+  "id": "P17",
+  "run_id": "R8-vite__L3__z-ai_glm-5.3-flash__t2",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached. Same as previous such cases.",
+  "correct_workaround": true
+ },
+ {
+  "id": "P18",
+  "run_id": "R8-junit-framework__L3__z-ai_glm-5.3-flash__t2",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached.",
+  "correct_workaround": true
+ },
+ {
+  "id": "P19",
+  "run_id": "R5-sqlalchemy__L3__minimax_minimax-m3.1-flash__t2",
+  "labeled": "yes",
+  "reasonable": "no",
+  "reason": "all PRs are not bug reports. The model answer itself says not to read them as the answer",
+  "correct_workaround": false
+ },
+ {
+  "id": "P20",
+  "run_id": "R8-junit-framework__L3__z-ai_glm-5.3-flash__t1",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached.",
+  "correct_workaround": true
+ },
+ {
+  "id": "P21",
+  "run_id": "R8-sqlalchemy__L3__minimax_minimax-m3.1-flash__t2",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached",
+  "correct_workaround": true
+ },
+ {
+  "id": "P22",
+  "run_id": "R8-vite__L3__minimax_minimax-m3.1-flash__t1",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached",
+  "correct_workaround": true
+ },
+ {
+  "id": "P23",
+  "run_id": "R8-vite__L3__deepseek_deepseek-v4-flash__t1",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached",
+  "correct_workaround": true
+ },
+ {
+  "id": "P24",
+  "run_id": "R11-prometheus__L3__z-ai_glm-5.3-flash__t2",
+  "labeled": "yes",
+  "reasonable": "no",
+  "reason": "it only sees merged bot PRs, so 100% merged is true by construction but not helpful",
+  "correct_workaround": false
+ },
+ {
+  "id": "P25",
+  "run_id": "R9-eslint__L3__mistralai_ministral-14b-2512__t2",
+  "labeled": "yes",
+  "reasonable": "no",
+  "reason": "uses PR authors as reviewers but writing PRs is not reviewing them, so the answer is not useful.",
+  "correct_workaround": false
+ },
+ {
+  "id": "P26",
+  "run_id": "R9-eslint__L3__mistralai_ministral-14b-2512__t1",
+  "labeled": "yes",
+  "reasonable": "no",
+  "reason": "same as P25, PR authors used as reviewers.",
+  "correct_workaround": false
+ },
+ {
+  "id": "P27",
+  "run_id": "R8-eslint__L3__minimax_minimax-m3.1-flash__t1",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached",
+  "correct_workaround": true
+ },
+ {
+  "id": "P28",
+  "run_id": "R8-vite__L3__z-ai_glm-5.3-flash__t1",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached",
+  "correct_workaround": true
+ },
+ {
+  "id": "P29",
+  "run_id": "R9-vite__L3__mistralai_ministral-14b-2512__t1",
+  "labeled": "yes",
+  "reasonable": "no",
+  "reason": "uses committers as reviewers; committing is not reviewing and this answer is not useful.",
+  "correct_workaround": false
+ },
+ {
+  "id": "P30",
+  "run_id": "R8-eslint__L3__deepseek_deepseek-v4-flash__t1",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached",
+  "correct_workaround": true
+ },
+ {
+  "id": "P31",
+  "run_id": "R6-prometheus__sandbox__mistralai_ministral-14b-2512__t2",
+  "labeled": "yes",
+  "reasonable": "no",
+  "reason": "a guess from what the repo usually looks like, with no counts behind it.",
+  "correct_workaround": false
+ },
+ {
+  "id": "P32",
+  "run_id": "R8-eslint__L3__minimax_minimax-m3.1-flash__t2",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached",
+  "correct_workaround": true
+ },
+ {
+  "id": "P33",
+  "run_id": "R8-junit-framework__L3__minimax_minimax-m3.1-flash__t2",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "PR authors in place of commit authors, the usual proxy when commits can't be reached",
+  "correct_workaround": true
+ },
+ {
+  "id": "P34",
+  "run_id": "R4-eslint__L3__mistralai_ministral-14b-2512__t2",
+  "labeled": "yes",
+  "reasonable": "no",
+  "reason": "assumes every bot PR had no approval without checking; no approval data used",
+  "correct_workaround": false
+ },
+ {
+  "id": "P35",
+  "run_id": "R6-sqlalchemy__L3__z-ai_glm-5.3-flash__t1",
+  "labeled": "yes",
+  "reasonable": "yes",
+  "reason": "attributes fixes by the module named in the subject, says so and says the counts are rough.",
+  "correct_workaround": true
+ }
+]

@@ -1,0 +1,587 @@
+[
+  {
+    "id": "R1-tokio",
+    "template": "R1",
+    "repo": "tokio",
+    "repo_slug": "tokio-rs/tokio",
+    "question": "I maintain tokio-rs/tokio and I'm deciding whether to spend time on CI. Did the share of commits on the default branch that fail the CI workflow (.github/workflows/ci.yml) change between H1 and H2? How often did a failing run pass just because someone re-ran it? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. A failing run means a result of failure, timed_out or startup_failure. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R1-eslint",
+    "template": "R1",
+    "repo": "eslint",
+    "repo_slug": "eslint/eslint",
+    "question": "I maintain eslint/eslint and I'm deciding whether to spend time on CI. Did the share of commits on the default branch that fail the CI workflow (.github/workflows/ci.yml) change between H1 and H2? How often did a failing run pass just because someone re-ran it? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. A failing run means a result of failure, timed_out or startup_failure. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R1-sqlalchemy",
+    "template": "R1",
+    "repo": "sqlalchemy",
+    "repo_slug": "sqlalchemy/sqlalchemy",
+    "question": "I maintain sqlalchemy/sqlalchemy and I'm deciding whether to spend time on CI. Did the share of commits on the default branch that fail the Run tests workflow (.github/workflows/run-test.yaml) change between H1 and H2? How often did a failing run pass just because someone re-ran it? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. A failing run means a result of failure, timed_out or startup_failure. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R1-vite",
+    "template": "R1",
+    "repo": "vite",
+    "repo_slug": "vitejs/vite",
+    "question": "I maintain vitejs/vite and I'm deciding whether to spend time on CI. Did the share of commits on the default branch that fail the CI workflow (.github/workflows/ci.yml) change between H1 and H2? How often did a failing run pass just because someone re-ran it? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. A failing run means a result of failure, timed_out or startup_failure. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R1-junit-framework",
+    "template": "R1",
+    "repo": "junit-framework",
+    "repo_slug": "junit-team/junit-framework",
+    "question": "I maintain junit-team/junit-framework and I'm deciding whether to spend time on CI. Did the share of commits on the default branch that fail the CI workflow (.github/workflows/main.yml, renamed to ci.yml on 2026-05-15; treat both as one workflow) change between H1 and H2? How often did a failing run pass just because someone re-ran it? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. A failing run means a result of failure, timed_out or startup_failure. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R1-prometheus",
+    "template": "R1",
+    "repo": "prometheus",
+    "repo_slug": "prometheus/prometheus",
+    "question": "I maintain prometheus/prometheus and I'm deciding whether to spend time on CI. Did the share of commits on the default branch that fail the CI workflow (.github/workflows/ci.yml) change between H1 and H2? How often did a failing run pass just because someone re-ran it? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. A failing run means a result of failure, timed_out or startup_failure. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R2-tokio",
+    "template": "R2",
+    "repo": "tokio",
+    "repo_slug": "tokio-rs/tokio",
+    "question": "I contribute to tokio-rs/tokio and I'm tired of waiting for CI feedback. Did successful runs of the CI workflow (.github/workflows/ci.yml) on the default branch get slower or faster between H1 and H2? Is the change the same for successful pull request runs of the same workflow? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. Measure a run's duration from its start to its finish. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R2-eslint",
+    "template": "R2",
+    "repo": "eslint",
+    "repo_slug": "eslint/eslint",
+    "question": "I contribute to eslint/eslint and I'm tired of waiting for CI feedback. Did successful runs of the CI workflow (.github/workflows/ci.yml) on the default branch get slower or faster between H1 and H2? Is the change the same for successful pull request runs of the same workflow? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. Measure a run's duration from its start to its finish. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R2-sqlalchemy",
+    "template": "R2",
+    "repo": "sqlalchemy",
+    "repo_slug": "sqlalchemy/sqlalchemy",
+    "question": "I contribute to sqlalchemy/sqlalchemy and I'm tired of waiting for CI feedback. Did successful runs of the Run tests workflow (.github/workflows/run-test.yaml) on the default branch get slower or faster between H1 and H2? Is the change the same for successful pull request runs of the same workflow? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. Measure a run's duration from its start to its finish. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R2-vite",
+    "template": "R2",
+    "repo": "vite",
+    "repo_slug": "vitejs/vite",
+    "question": "I contribute to vitejs/vite and I'm tired of waiting for CI feedback. Did successful runs of the CI workflow (.github/workflows/ci.yml) on the default branch get slower or faster between H1 and H2? Is the change the same for successful pull request runs of the same workflow? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. Measure a run's duration from its start to its finish. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R2-junit-framework",
+    "template": "R2",
+    "repo": "junit-framework",
+    "repo_slug": "junit-team/junit-framework",
+    "question": "I contribute to junit-team/junit-framework and I'm tired of waiting for CI feedback. Did successful runs of the CI workflow (.github/workflows/main.yml, renamed to ci.yml on 2026-05-15; treat both as one workflow) on the default branch get slower or faster between H1 and H2? Is the change the same for successful pull request runs of the same workflow? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. Measure a run's duration from its start to its finish. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R2-prometheus",
+    "template": "R2",
+    "repo": "prometheus",
+    "repo_slug": "prometheus/prometheus",
+    "question": "I contribute to prometheus/prometheus and I'm tired of waiting for CI feedback. Did successful runs of the CI workflow (.github/workflows/ci.yml) on the default branch get slower or faster between H1 and H2? Is the change the same for successful pull request runs of the same workflow? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. Measure a run's duration from its start to its finish. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R3-tokio",
+    "template": "R3",
+    "repo": "tokio",
+    "repo_slug": "tokio-rs/tokio",
+    "question": "I maintain tokio-rs/tokio and pull requests seem to sit too long before they get merged. For PRs merged in H1 and in H2 (split by merge date, PRs opened by bots left out), what is the median time from opening to the first review by someone other than the author, and from that first review to the merge? Did either part change between H1 and H2, and which part takes longer? A review here is any submitted review (approved, commented or changes requested) before the merge, not counting bots. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R3-eslint",
+    "template": "R3",
+    "repo": "eslint",
+    "repo_slug": "eslint/eslint",
+    "question": "I maintain eslint/eslint and pull requests seem to sit too long before they get merged. For PRs merged in H1 and in H2 (split by merge date, PRs opened by bots left out), what is the median time from opening to the first review by someone other than the author, and from that first review to the merge? Did either part change between H1 and H2, and which part takes longer? A review here is any submitted review (approved, commented or changes requested) before the merge, not counting bots. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R3-vite",
+    "template": "R3",
+    "repo": "vite",
+    "repo_slug": "vitejs/vite",
+    "question": "I maintain vitejs/vite and pull requests seem to sit too long before they get merged. For PRs merged in H1 and in H2 (split by merge date, PRs opened by bots left out), what is the median time from opening to the first review by someone other than the author, and from that first review to the merge? Did either part change between H1 and H2, and which part takes longer? A review here is any submitted review (approved, commented or changes requested) before the merge, not counting bots. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R3-junit-framework",
+    "template": "R3",
+    "repo": "junit-framework",
+    "repo_slug": "junit-team/junit-framework",
+    "question": "I maintain junit-team/junit-framework and pull requests seem to sit too long before they get merged. For PRs merged in H1 and in H2 (split by merge date, PRs opened by bots left out), what is the median time from opening to the first review by someone other than the author, and from that first review to the merge? Did either part change between H1 and H2, and which part takes longer? A review here is any submitted review (approved, commented or changes requested) before the merge, not counting bots. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R3-prometheus",
+    "template": "R3",
+    "repo": "prometheus",
+    "repo_slug": "prometheus/prometheus",
+    "question": "I maintain prometheus/prometheus and pull requests seem to sit too long before they get merged. For PRs merged in H1 and in H2 (split by merge date, PRs opened by bots left out), what is the median time from opening to the first review by someone other than the author, and from that first review to the merge? Did either part change between H1 and H2, and which part takes longer? A review here is any submitted review (approved, commented or changes requested) before the merge, not counting bots. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R4-tokio",
+    "template": "R4",
+    "repo": "tokio",
+    "repo_slug": "tokio-rs/tokio",
+    "question": "I'm doing a security review of tokio-rs/tokio. Of the PRs merged in H2, how many were merged without an approval from someone other than the author before the merge, and how many of those were opened by bots? Bots that approve PRs don't count as approvals. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R4-eslint",
+    "template": "R4",
+    "repo": "eslint",
+    "repo_slug": "eslint/eslint",
+    "question": "I'm doing a security review of eslint/eslint. Of the PRs merged in H2, how many were merged without an approval from someone other than the author before the merge, and how many of those were opened by bots? Bots that approve PRs don't count as approvals. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R4-vite",
+    "template": "R4",
+    "repo": "vite",
+    "repo_slug": "vitejs/vite",
+    "question": "I'm doing a security review of vitejs/vite. Of the PRs merged in H2, how many were merged without an approval from someone other than the author before the merge, and how many of those were opened by bots? Bots that approve PRs don't count as approvals. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R4-junit-framework",
+    "template": "R4",
+    "repo": "junit-framework",
+    "repo_slug": "junit-team/junit-framework",
+    "question": "I'm doing a security review of junit-team/junit-framework. Of the PRs merged in H2, how many were merged without an approval from someone other than the author before the merge, and how many of those were opened by bots? Bots that approve PRs don't count as approvals. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R4-prometheus",
+    "template": "R4",
+    "repo": "prometheus",
+    "repo_slug": "prometheus/prometheus",
+    "question": "I'm doing a security review of prometheus/prometheus. Of the PRs merged in H2, how many were merged without an approval from someone other than the author before the merge, and how many of those were opened by bots? Bots that approve PRs don't count as approvals. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R5-tokio",
+    "template": "R5",
+    "repo": "tokio",
+    "repo_slug": "tokio-rs/tokio",
+    "question": "I triage bugs for tokio-rs/tokio. In the window, how many issues labeled \"C-bug\" were opened, and how many were closed (whenever they were opened)? Is the bug backlog growing, shrinking or roughly balanced? For bugs opened in H1, what was the median time to close? Count a bug still open at the end of the window as not closed yet. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R5-eslint",
+    "template": "R5",
+    "repo": "eslint",
+    "repo_slug": "eslint/eslint",
+    "question": "I triage bugs for eslint/eslint. In the window, how many issues labeled \"bug\" were opened, and how many were closed (whenever they were opened)? Is the bug backlog growing, shrinking or roughly balanced? For bugs opened in H1, what was the median time to close? Count a bug still open at the end of the window as not closed yet. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R5-sqlalchemy",
+    "template": "R5",
+    "repo": "sqlalchemy",
+    "repo_slug": "sqlalchemy/sqlalchemy",
+    "question": "I triage bugs for sqlalchemy/sqlalchemy. In the window, how many issues labeled \"bug\" were opened, and how many were closed (whenever they were opened)? Is the bug backlog growing, shrinking or roughly balanced? For bugs opened in H1, what was the median time to close? Count a bug still open at the end of the window as not closed yet. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R5-vite",
+    "template": "R5",
+    "repo": "vite",
+    "repo_slug": "vitejs/vite",
+    "question": "I triage bugs for vitejs/vite. In the window, how many issues labeled \"p3-minor-bug\" were opened, and how many were closed (whenever they were opened)? Is the bug backlog growing, shrinking or roughly balanced? For bugs opened in H1, what was the median time to close? Count a bug still open at the end of the window as not closed yet. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R5-junit-framework",
+    "template": "R5",
+    "repo": "junit-framework",
+    "repo_slug": "junit-team/junit-framework",
+    "question": "I triage bugs for junit-team/junit-framework. In the window, how many issues labeled \"type: bug\" were opened, and how many were closed (whenever they were opened)? Is the bug backlog growing, shrinking or roughly balanced? For bugs opened in H1, what was the median time to close? Count a bug still open at the end of the window as not closed yet. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R5-prometheus",
+    "template": "R5",
+    "repo": "prometheus",
+    "repo_slug": "prometheus/prometheus",
+    "question": "I triage bugs for prometheus/prometheus. In the window, how many issues labeled \"kind/bug\" were opened, and how many were closed (whenever they were opened)? Is the bug backlog growing, shrinking or roughly balanced? For bugs opened in H1, what was the median time to close? Count a bug still open at the end of the window as not closed yet. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R6-eslint",
+    "template": "R6",
+    "repo": "eslint",
+    "repo_slug": "eslint/eslint",
+    "question": "I'm new to reviewing code in eslint/eslint and want to know where fixes cluster. Count a commit as a fix if it is not a merge commit, is not from a bot, and the first line of its message contains the word fix, fixes, fixed, fixing or bugfix. A module is a folder directly under lib/, written as lib/<name>. Leave out test files, documentation files and files at the repo root. In the window, which module had the most fix commits? Among modules with at least 20 commits in the window, which had the highest share of fix commits? A test file is a file inside a test folder (such as test, tests, __tests__, testdata, testing, fixtures, or vite's playground) or with a test-style name (such as *_test.go, test_*.py, *Test.java or *.spec.ts). All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": false,
+    "dropped_by": "no-tool floor"
+  },
+  {
+    "id": "R6-prometheus",
+    "template": "R6",
+    "repo": "prometheus",
+    "repo_slug": "prometheus/prometheus",
+    "question": "I'm new to reviewing code in prometheus/prometheus and want to know where fixes cluster. Count a commit as a fix if it is not a merge commit, is not from a bot, and the first line of its message contains the word fix, fixes, fixed, fixing or bugfix. A module is the top-level folder. Leave out test files, documentation files and files at the repo root. In the window, which module had the most fix commits? Among modules with at least 20 commits in the window, which had the highest share of fix commits? A test file is a file inside a test folder (such as test, tests, __tests__, testdata, testing, fixtures, or vite's playground) or with a test-style name (such as *_test.go, test_*.py, *Test.java or *.spec.ts). All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R6-sqlalchemy",
+    "template": "R6",
+    "repo": "sqlalchemy",
+    "repo_slug": "sqlalchemy/sqlalchemy",
+    "question": "I'm new to reviewing code in sqlalchemy/sqlalchemy and want to know where fixes cluster. Count a commit as a fix if it is not a merge commit, is not from a bot, and the first line of its message contains the word fix, fixes, fixed, fixing or bugfix. A module is a folder directly under lib/sqlalchemy/, written as lib/sqlalchemy/<name>. Leave out test files, documentation files and files at the repo root. In the window, which module had the most fix commits? Among modules with at least 20 commits in the window, which had the highest share of fix commits? A test file is a file inside a test folder (such as test, tests, __tests__, testdata, testing, fixtures, or vite's playground) or with a test-style name (such as *_test.go, test_*.py, *Test.java or *.spec.ts). All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R6-vite",
+    "template": "R6",
+    "repo": "vite",
+    "repo_slug": "vitejs/vite",
+    "question": "I'm new to reviewing code in vitejs/vite and want to know where fixes cluster. Count a commit as a fix if it is not a merge commit, is not from a bot, and the first line of its message contains the word fix, fixes, fixed, fixing or bugfix. A module is a folder directly under packages/, written as packages/<name>. Leave out test files, documentation files and files at the repo root. In the window, which module had the most fix commits? Among modules with at least 20 commits in the window, which had the highest share of fix commits? A test file is a file inside a test folder (such as test, tests, __tests__, testdata, testing, fixtures, or vite's playground) or with a test-style name (such as *_test.go, test_*.py, *Test.java or *.spec.ts). All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": false,
+    "dropped_by": "no-tool floor"
+  },
+  {
+    "id": "R7-tokio",
+    "template": "R7",
+    "repo": "tokio",
+    "repo_slug": "tokio-rs/tokio",
+    "question": "I'm on build duty for tokio-rs/tokio. Find the longest stretch starting in H2 where the CI workflow (.github/workflows/ci.yml) stayed red on the default branch, measured from when the first failing run finished to when the next passing run finished. Which commit did it first fail on, what did that commit change, which commit did it next pass on, and how long was it red? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. A failing run means a result of failure, timed_out or startup_failure. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R7-eslint",
+    "template": "R7",
+    "repo": "eslint",
+    "repo_slug": "eslint/eslint",
+    "question": "I'm on build duty for eslint/eslint. Find the longest stretch starting in H2 where the CI workflow (.github/workflows/ci.yml) stayed red on the default branch, measured from when the first failing run finished to when the next passing run finished. Which commit did it first fail on, what did that commit change, which commit did it next pass on, and how long was it red? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. A failing run means a result of failure, timed_out or startup_failure. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R7-sqlalchemy",
+    "template": "R7",
+    "repo": "sqlalchemy",
+    "repo_slug": "sqlalchemy/sqlalchemy",
+    "question": "I'm on build duty for sqlalchemy/sqlalchemy. Find the longest stretch starting in H2 where the Run tests workflow (.github/workflows/run-test.yaml) stayed red on the default branch, measured from when the first failing run finished to when the next passing run finished. Which commit did it first fail on, what did that commit change, which commit did it next pass on, and how long was it red? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. A failing run means a result of failure, timed_out or startup_failure. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R7-vite",
+    "template": "R7",
+    "repo": "vite",
+    "repo_slug": "vitejs/vite",
+    "question": "I'm on build duty for vitejs/vite. Find the longest stretch starting in H2 where the CI workflow (.github/workflows/ci.yml) stayed red on the default branch, measured from when the first failing run finished to when the next passing run finished. Which commit did it first fail on, what did that commit change, which commit did it next pass on, and how long was it red? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. A failing run means a result of failure, timed_out or startup_failure. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R7-junit-framework",
+    "template": "R7",
+    "repo": "junit-framework",
+    "repo_slug": "junit-team/junit-framework",
+    "question": "I'm on build duty for junit-team/junit-framework. Find the longest stretch starting in H2 where the CI workflow (.github/workflows/main.yml, renamed to ci.yml on 2026-05-15; treat both as one workflow) stayed red on the default branch, measured from when the first failing run finished to when the next passing run finished. Which commit did it first fail on, what did that commit change, which commit did it next pass on, and how long was it red? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. A failing run means a result of failure, timed_out or startup_failure. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R7-prometheus",
+    "template": "R7",
+    "repo": "prometheus",
+    "repo_slug": "prometheus/prometheus",
+    "question": "I'm on build duty for prometheus/prometheus. Find the longest stretch starting in H2 where the CI workflow (.github/workflows/ci.yml) stayed red on the default branch, measured from when the first failing run finished to when the next passing run finished. Which commit did it first fail on, what did that commit change, which commit did it next pass on, and how long was it red? For each commit, use the run from when it landed on the default branch (its earliest push run of that workflow), with its final result. Count each commit once, and leave out cancelled and skipped runs. A failing run means a result of failure, timed_out or startup_failure. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R8-tokio",
+    "template": "R8",
+    "repo": "tokio",
+    "repo_slug": "tokio-rs/tokio",
+    "question": "I lead tokio-rs/tokio and I'm thinking about what happens if key people step away. What share of non-merge commits by humans (bots left out) came from the two most active people in H1, and in H2? Did the work become more or less concentrated? All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R8-eslint",
+    "template": "R8",
+    "repo": "eslint",
+    "repo_slug": "eslint/eslint",
+    "question": "I lead eslint/eslint and I'm thinking about what happens if key people step away. What share of non-merge commits by humans (bots left out) came from the two most active people in H1, and in H2? Did the work become more or less concentrated? All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R8-sqlalchemy",
+    "template": "R8",
+    "repo": "sqlalchemy",
+    "repo_slug": "sqlalchemy/sqlalchemy",
+    "question": "I lead sqlalchemy/sqlalchemy and I'm thinking about what happens if key people step away. What share of non-merge commits by humans (bots left out) came from the two most active people in H1, and in H2? Did the work become more or less concentrated? All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R8-vite",
+    "template": "R8",
+    "repo": "vite",
+    "repo_slug": "vitejs/vite",
+    "question": "I lead vitejs/vite and I'm thinking about what happens if key people step away. What share of non-merge commits by humans (bots left out) came from the two most active people in H1, and in H2? Did the work become more or less concentrated? All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R8-junit-framework",
+    "template": "R8",
+    "repo": "junit-framework",
+    "repo_slug": "junit-team/junit-framework",
+    "question": "I lead junit-team/junit-framework and I'm thinking about what happens if key people step away. What share of non-merge commits by humans (bots left out) came from the two most active people in H1, and in H2? Did the work become more or less concentrated? All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R8-prometheus",
+    "template": "R8",
+    "repo": "prometheus",
+    "repo_slug": "prometheus/prometheus",
+    "question": "I lead prometheus/prometheus and I'm thinking about what happens if key people step away. What share of non-merge commits by humans (bots left out) came from the two most active people in H1, and in H2? Did the work become more or less concentrated? All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R9-tokio",
+    "template": "R9",
+    "repo": "tokio",
+    "repo_slug": "tokio-rs/tokio",
+    "question": "I maintain tokio-rs/tokio and I'm worried about reviewer burnout. In H2, how many people reviewed pull requests, and what share of the review work did the two busiest reviewers do? Count one reviewer on one PR once, however many reviews they left. Leave out bots and authors reviewing their own PRs. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R9-eslint",
+    "template": "R9",
+    "repo": "eslint",
+    "repo_slug": "eslint/eslint",
+    "question": "I maintain eslint/eslint and I'm worried about reviewer burnout. In H2, how many people reviewed pull requests, and what share of the review work did the two busiest reviewers do? Count one reviewer on one PR once, however many reviews they left. Leave out bots and authors reviewing their own PRs. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R9-vite",
+    "template": "R9",
+    "repo": "vite",
+    "repo_slug": "vitejs/vite",
+    "question": "I maintain vitejs/vite and I'm worried about reviewer burnout. In H2, how many people reviewed pull requests, and what share of the review work did the two busiest reviewers do? Count one reviewer on one PR once, however many reviews they left. Leave out bots and authors reviewing their own PRs. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R9-junit-framework",
+    "template": "R9",
+    "repo": "junit-framework",
+    "repo_slug": "junit-team/junit-framework",
+    "question": "I maintain junit-team/junit-framework and I'm worried about reviewer burnout. In H2, how many people reviewed pull requests, and what share of the review work did the two busiest reviewers do? Count one reviewer on one PR once, however many reviews they left. Leave out bots and authors reviewing their own PRs. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R9-prometheus",
+    "template": "R9",
+    "repo": "prometheus",
+    "repo_slug": "prometheus/prometheus",
+    "question": "I maintain prometheus/prometheus and I'm worried about reviewer burnout. In H2, how many people reviewed pull requests, and what share of the review work did the two busiest reviewers do? Count one reviewer on one PR once, however many reviews they left. Leave out bots and authors reviewing their own PRs. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R10-tokio",
+    "template": "R10",
+    "repo": "tokio",
+    "repo_slug": "tokio-rs/tokio",
+    "question": "I review code in tokio-rs/tokio. Count a commit as a fix if it is not a merge commit, is not from a bot, and the first line of its message contains the word fix, fixes, fixed, fixing or bugfix. In the window, how many fix commits were there, and what share of them also changed a test file? A test file is a file inside a test folder (such as test, tests, __tests__, testdata, testing, fixtures, or vite's playground) or with a test-style name (such as *_test.go, test_*.py, *Test.java or *.spec.ts). All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R10-eslint",
+    "template": "R10",
+    "repo": "eslint",
+    "repo_slug": "eslint/eslint",
+    "question": "I review code in eslint/eslint. Count a commit as a fix if it is not a merge commit, is not from a bot, and the first line of its message contains the word fix, fixes, fixed, fixing or bugfix. In the window, how many fix commits were there, and what share of them also changed a test file? A test file is a file inside a test folder (such as test, tests, __tests__, testdata, testing, fixtures, or vite's playground) or with a test-style name (such as *_test.go, test_*.py, *Test.java or *.spec.ts). All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R10-sqlalchemy",
+    "template": "R10",
+    "repo": "sqlalchemy",
+    "repo_slug": "sqlalchemy/sqlalchemy",
+    "question": "I review code in sqlalchemy/sqlalchemy. Count a commit as a fix if it is not a merge commit, is not from a bot, and the first line of its message contains the word fix, fixes, fixed, fixing or bugfix. In the window, how many fix commits were there, and what share of them also changed a test file? A test file is a file inside a test folder (such as test, tests, __tests__, testdata, testing, fixtures, or vite's playground) or with a test-style name (such as *_test.go, test_*.py, *Test.java or *.spec.ts). All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R10-vite",
+    "template": "R10",
+    "repo": "vite",
+    "repo_slug": "vitejs/vite",
+    "question": "I review code in vitejs/vite. Count a commit as a fix if it is not a merge commit, is not from a bot, and the first line of its message contains the word fix, fixes, fixed, fixing or bugfix. In the window, how many fix commits were there, and what share of them also changed a test file? A test file is a file inside a test folder (such as test, tests, __tests__, testdata, testing, fixtures, or vite's playground) or with a test-style name (such as *_test.go, test_*.py, *Test.java or *.spec.ts). All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R10-junit-framework",
+    "template": "R10",
+    "repo": "junit-framework",
+    "repo_slug": "junit-team/junit-framework",
+    "question": "I review code in junit-team/junit-framework. Count a commit as a fix if it is not a merge commit, is not from a bot, and the first line of its message contains the word fix, fixes, fixed, fixing or bugfix. In the window, how many fix commits were there, and what share of them also changed a test file? A test file is a file inside a test folder (such as test, tests, __tests__, testdata, testing, fixtures, or vite's playground) or with a test-style name (such as *_test.go, test_*.py, *Test.java or *.spec.ts). All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R10-prometheus",
+    "template": "R10",
+    "repo": "prometheus",
+    "repo_slug": "prometheus/prometheus",
+    "question": "I review code in prometheus/prometheus. Count a commit as a fix if it is not a merge commit, is not from a bot, and the first line of its message contains the word fix, fixes, fixed, fixing or bugfix. In the window, how many fix commits were there, and what share of them also changed a test file? A test file is a file inside a test folder (such as test, tests, __tests__, testdata, testing, fixtures, or vite's playground) or with a test-style name (such as *_test.go, test_*.py, *Test.java or *.spec.ts). All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R11-eslint",
+    "template": "R11",
+    "repo": "eslint",
+    "repo_slug": "eslint/eslint",
+    "question": "I maintain eslint/eslint and want to know whether dependency updates are keeping up. Look at pull requests opened by the dependency bots renovate and dependabot. In the window, how many did they open, what share was merged, and what share was closed without being merged? Why were the closed ones not merged? For bot PRs merged in H1 and in H2 (split by merge date), what was the median time from opening to merge, and did it change? All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R11-vite",
+    "template": "R11",
+    "repo": "vite",
+    "repo_slug": "vitejs/vite",
+    "question": "I maintain vitejs/vite and want to know whether dependency updates are keeping up. Look at pull requests opened by the dependency bots renovate and dependabot. In the window, how many did they open, what share was merged, and what share was closed without being merged? Why were the closed ones not merged? For bot PRs merged in H1 and in H2 (split by merge date), what was the median time from opening to merge, and did it change? All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R11-junit-framework",
+    "template": "R11",
+    "repo": "junit-framework",
+    "repo_slug": "junit-team/junit-framework",
+    "question": "I maintain junit-team/junit-framework and want to know whether dependency updates are keeping up. Look at pull requests opened by the dependency bots renovate and dependabot. In the window, how many did they open, what share was merged, and what share was closed without being merged? Why were the closed ones not merged? For bot PRs merged in H1 and in H2 (split by merge date), what was the median time from opening to merge, and did it change? All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R11-prometheus",
+    "template": "R11",
+    "repo": "prometheus",
+    "repo_slug": "prometheus/prometheus",
+    "question": "I maintain prometheus/prometheus and want to know whether dependency updates are keeping up. Look at pull requests opened by the dependency bots renovate and dependabot. In the window, how many did they open, what share was merged, and what share was closed without being merged? Why were the closed ones not merged? For bot PRs merged in H1 and in H2 (split by merge date), what was the median time from opening to merge, and did it change? All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R12-tokio",
+    "template": "R12",
+    "repo": "tokio",
+    "repo_slug": "tokio-rs/tokio",
+    "question": "I review code in tokio-rs/tokio and want to know whether changes are getting bigger. Look at non-merge commits by humans (bots left out), and measure a commit's size as lines added plus lines deleted. Did the median commit size change between H1 and H2? In the window, what is the median size of fix commits, and of all other commits? Count a commit as a fix if it is not a merge commit, is not from a bot, and the first line of its message contains the word fix, fixes, fixed, fixing or bugfix. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R12-eslint",
+    "template": "R12",
+    "repo": "eslint",
+    "repo_slug": "eslint/eslint",
+    "question": "I review code in eslint/eslint and want to know whether changes are getting bigger. Look at non-merge commits by humans (bots left out), and measure a commit's size as lines added plus lines deleted. Did the median commit size change between H1 and H2? In the window, what is the median size of fix commits, and of all other commits? Count a commit as a fix if it is not a merge commit, is not from a bot, and the first line of its message contains the word fix, fixes, fixed, fixing or bugfix. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R12-sqlalchemy",
+    "template": "R12",
+    "repo": "sqlalchemy",
+    "repo_slug": "sqlalchemy/sqlalchemy",
+    "question": "I review code in sqlalchemy/sqlalchemy and want to know whether changes are getting bigger. Look at non-merge commits by humans (bots left out), and measure a commit's size as lines added plus lines deleted. Did the median commit size change between H1 and H2? In the window, what is the median size of fix commits, and of all other commits? Count a commit as a fix if it is not a merge commit, is not from a bot, and the first line of its message contains the word fix, fixes, fixed, fixing or bugfix. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R12-vite",
+    "template": "R12",
+    "repo": "vite",
+    "repo_slug": "vitejs/vite",
+    "question": "I review code in vitejs/vite and want to know whether changes are getting bigger. Look at non-merge commits by humans (bots left out), and measure a commit's size as lines added plus lines deleted. Did the median commit size change between H1 and H2? In the window, what is the median size of fix commits, and of all other commits? Count a commit as a fix if it is not a merge commit, is not from a bot, and the first line of its message contains the word fix, fixes, fixed, fixing or bugfix. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R12-junit-framework",
+    "template": "R12",
+    "repo": "junit-framework",
+    "repo_slug": "junit-team/junit-framework",
+    "question": "I review code in junit-team/junit-framework and want to know whether changes are getting bigger. Look at non-merge commits by humans (bots left out), and measure a commit's size as lines added plus lines deleted. Did the median commit size change between H1 and H2? In the window, what is the median size of fix commits, and of all other commits? Count a commit as a fix if it is not a merge commit, is not from a bot, and the first line of its message contains the word fix, fixes, fixed, fixing or bugfix. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  },
+  {
+    "id": "R12-prometheus",
+    "template": "R12",
+    "repo": "prometheus",
+    "repo_slug": "prometheus/prometheus",
+    "question": "I review code in prometheus/prometheus and want to know whether changes are getting bigger. Look at non-merge commits by humans (bots left out), and measure a commit's size as lines added plus lines deleted. Did the median commit size change between H1 and H2? In the window, what is the median size of fix commits, and of all other commits? Count a commit as a fix if it is not a merge commit, is not from a bot, and the first line of its message contains the word fix, fixes, fixed, fixing or bugfix. All dates are in UTC. The window is 2025-10-01 to 2026-09-20. H1 is 2025-10-01 to 2026-03-31 and H2 is 2026-04-01 to 2026-09-20, both inclusive.",
+    "in_study": true,
+    "dropped_by": null
+  }
+]

@@ -1,0 +1,229 @@
+{
+  "P-R1-vite-B": {
+    "template": "R1",
+    "key": {
+      "h1_failing": 103,
+      "h1_counted": 291,
+      "h1_rate": 0.3539518900343643,
+      "h2_failing": 92,
+      "h2_counted": 277,
+      "h2_rate": 0.33212996389891697,
+      "verdict": "no clear change",
+      "h1_rerun_pass_share": 0.024054982817869414,
+      "h2_rerun_pass_share": 0.0036101083032490976
+    },
+    "direct_tool": "ci_failure_trend",
+    "args": {
+      "repo": "vitejs/vite",
+      "workflow_paths": [
+        ".github/workflows/ci.yml"
+      ],
+      "period_a_start": "2026-04-01",
+      "period_a_end": "2026-06-30",
+      "period_b_start": "2026-07-01",
+      "period_b_end": "2026-09-20"
+    }
+  },
+  "P-R2-prometheus-A": {
+    "template": "R2",
+    "key": {
+      "main_h1_min": 22.883333333333333,
+      "main_h2_min": 35.15,
+      "main_verdict": "up",
+      "pr_h1_min": 16.55,
+      "pr_h2_min": 26.05,
+      "pr_verdict": "up"
+    },
+    "direct_tool": "ci_duration_trend",
+    "args": {
+      "repo": "prometheus/prometheus",
+      "workflow_paths": [
+        ".github/workflows/ci.yml"
+      ],
+      "period_a_start": "2025-10-01",
+      "period_a_end": "2025-12-31",
+      "period_b_start": "2026-01-01",
+      "period_b_end": "2026-03-31"
+    }
+  },
+  "P-R3-eslint-A": {
+    "template": "R3",
+    "key": {
+      "wait_h1_h": 7.267222222222222,
+      "wait_h2_h": 6.499444444444444,
+      "wait_verdict": "no clear change",
+      "after_h1_h": 3.580833333333333,
+      "after_h2_h": 4.9775,
+      "after_verdict": "no clear change",
+      "h2_no_review_share": 0.03333333333333333
+    },
+    "direct_tool": "pr_review_timing_trend",
+    "args": {
+      "repo": "eslint/eslint",
+      "period_a_start": "2025-10-01",
+      "period_a_end": "2025-12-31",
+      "period_b_start": "2026-01-01",
+      "period_b_end": "2026-03-31"
+    }
+  },
+  "P-R4-junit-framework-A": {
+    "template": "R4",
+    "key": {
+      "merged_h2": 202,
+      "unapproved": 10,
+      "unapproved_share": 0.04950495049504951,
+      "unapproved_bot_prs": 1
+    },
+    "direct_tool": "unapproved_merges",
+    "args": {
+      "repo": "junit-team/junit-framework",
+      "start": "2026-01-01",
+      "end": "2026-03-31"
+    }
+  },
+  "P-R5-prometheus-B": {
+    "template": "R5",
+    "key": {
+      "opened": 8,
+      "closed": 22,
+      "verdict": "shrinking",
+      "h1_bugs": 6,
+      "median_days_to_close": 55.21438657407407,
+      "share_not_closed": 0.16666666666666669
+    },
+    "direct_tool": "bug_backlog_report",
+    "args": {
+      "repo": "prometheus/prometheus",
+      "label": "kind/bug",
+      "window_start": "2026-04-01",
+      "window_end": "2026-09-20",
+      "opened_start": "2026-04-01",
+      "opened_end": "2026-06-30"
+    }
+  },
+  "P-R6-prometheus-B": {
+    "template": "R6",
+    "key": {
+      "most_fixes_module": "promql",
+      "most_fixes_count": 32,
+      "most_fixes_module_commits": 114,
+      "top_share_module": "model",
+      "top_share": 0.3846153846153846
+    },
+    "direct_tool": "fix_hotspots",
+    "args": {
+      "repo": "prometheus/prometheus",
+      "module_under": "",
+      "start": "2026-04-01",
+      "end": "2026-09-20",
+      "min_commits": 20
+    }
+  },
+  "P-R7-junit-framework-A": {
+    "template": "R7",
+    "key": {
+      "first_failing_sha": "b97bfe0dd689900fc9a8fe609ad3dcecea831d07",
+      "next_passing_sha": "3e55764da73f4a432e55ac80056f0fd7fe1ab45d",
+      "failing_commits": 1,
+      "hours_red": 48.52444444444444
+    },
+    "direct_tool": "longest_red_streak",
+    "args": {
+      "repo": "junit-team/junit-framework",
+      "workflow_paths": [
+        ".github/workflows/main.yml",
+        "ci.yml"
+      ],
+      "start": "2026-01-01",
+      "end": "2026-03-31"
+    }
+  },
+  "P-R8-vite-A": {
+    "template": "R8",
+    "key": {
+      "h1_top2_share": 0.688715953307393,
+      "h2_top2_share": 0.6141732283464567,
+      "verdict": "no clear change"
+    },
+    "direct_tool": "commit_concentration_trend",
+    "args": {
+      "repo": "vitejs/vite",
+      "period_a_start": "2025-10-01",
+      "period_a_end": "2025-12-31",
+      "period_b_start": "2026-01-01",
+      "period_b_end": "2026-03-31"
+    }
+  },
+  "P-R9-prometheus-B": {
+    "template": "R9",
+    "key": {
+      "reviewers": 44,
+      "top2_share": 0.44163424124513617
+    },
+    "direct_tool": "review_load",
+    "args": {
+      "repo": "prometheus/prometheus",
+      "start": "2026-07-01",
+      "end": "2026-09-20"
+    }
+  },
+  "P-R10-junit-framework-B": {
+    "template": "R10",
+    "key": {
+      "fix_commits": 11,
+      "share_changed_test": 0.36363636363636365
+    },
+    "direct_tool": "fix_test_coverage",
+    "args": {
+      "repo": "junit-team/junit-framework",
+      "start": "2026-04-01",
+      "end": "2026-09-20"
+    }
+  },
+  "P-R11-vite-B": {
+    "template": "R11",
+    "key": {
+      "opened": 80,
+      "merged_share": 0.775,
+      "closed_unmerged_share": 0.225,
+      "closed_autoclosed_share": 0.16666666666666669,
+      "merge_h1_h": 6.152222222222222,
+      "merge_h2_h": 7.385555555555555,
+      "merge_verdict": "no clear change"
+    },
+    "direct_tool": "dependency_pr_report",
+    "args": {
+      "repo": "vitejs/vite",
+      "authors": [
+        "renovate",
+        "dependabot"
+      ],
+      "window_start": "2026-04-01",
+      "window_end": "2026-09-20",
+      "period_a_start": "2026-04-01",
+      "period_a_end": "2026-06-30",
+      "period_b_start": "2026-07-01",
+      "period_b_end": "2026-09-20"
+    }
+  },
+  "P-R12-tokio-A": {
+    "template": "R12",
+    "key": {
+      "h1_median_lines": 20.0,
+      "h2_median_lines": 23.0,
+      "verdict": "no clear change",
+      "fix_median_lines": 8.0,
+      "other_median_lines": 23.0
+    },
+    "direct_tool": "commit_size_trend",
+    "args": {
+      "repo": "tokio-rs/tokio",
+      "period_a_start": "2025-10-01",
+      "period_a_end": "2025-12-31",
+      "period_b_start": "2026-01-01",
+      "period_b_end": "2026-03-31",
+      "window_start": "2025-10-01",
+      "window_end": "2026-03-31"
+    }
+  }
+}

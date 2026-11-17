@@ -1,0 +1,724 @@
+[
+ {
+  "id": "ci_spike",
+  "model": "z-ai/glm-5.3-flash",
+  "metrics": {
+   "converged": true,
+   "num_tool_calls": 7,
+   "distinct_tools_used": [
+    "fetch_commit_diff",
+    "query_ci_history",
+    "query_issues_prs"
+   ],
+   "num_distinct_tools": 3,
+   "had_error": false,
+   "final_answer_length_chars": 3050,
+   "final_answer_cites_a_number": true,
+   "bad_json_calls": 0,
+   "unknown_tool_calls": 0,
+   "other_tool_errors": 0,
+   "provider_failure": false,
+   "llm_calls": 4,
+   "cost_usd": 0.0009315456,
+   "seconds": 64.3
+  },
+  "final_answer": "I have enough evidence to answer, with one caveat about tool limits. Here's what the data shows.\n\n## Summary: August 2026 CI failures roughly doubled (3.2% \u2192 6.6%), driven by two short, distinct spike clusters\n\n**The headline numbers** (from `query_ci_history` for Jul 1\u201331 and Aug 1\u201331):\n- July: 49 failures / 1,541 runs = **3.18%**\n- August: 87 failures / 1,313 runs = **6.63%**\n\nThis was not a steady, month-long degradation \u2014 the daily breakdown shows August was actually *clean* (0% failures) on 16 of 31 days. Essentially all of the excess failures came from two concentrated bursts:\n\n### Spike 1: August 5\u20136 (27 + 14 failures, daily rates of 22.1% and 19.4%)\n\nThe workflow-level comparison points strongly at integration/CI workflows rather than the repo's own unit tests:\n- **Test Ecosystem Plugins**: 3.95% (July) \u2192 **10.61%** (August), 12 \u2192 28 failed runs\n- **Docs CI**: 2.74% \u2192 12.64%\n- **CI workflow**: 9.97% \u2192 17.83%\n\nThe strongest direct evidence for what happened here is PR **#21191 \u2014 \"test: fix failing ecosystem test for `eslint-plugin-unicorn`\"**, merged on **Aug 6 at 08:49 UTC** (`query_issues_prs`, MERGED, Aug 3\u20137). Its title and timing indicate an upstream ecosystem plugin (unicorn) was breaking the `Test Ecosystem Plugins` workflow, and the spike collapsed to **0.0% on Aug 7\u20139 immediately after it merged**. That correlation is compelling.\n\n### Spike 2: August 27\u201328 (5 + 18 failures, peaking at 23.7% on Aug 28)\n\nAgain the spike ended right after a targeted CI fix: PR **#21265 \u2014 \"ci: skip EMFILE test on Node.js 26\"**, created Aug 28 and merged **Aug 29 at 08:08 UTC** (`query_issues_prs`, MERGED, Aug 25\u201329). The title indicates CI test runs were failing on Node.js 26 due to EMFILE (\"too many open files\") errors \u2014 an environment/platform issue rather than a code regression. Failure rates dropped from 23.7% (Aug 28) to 2.7% (Aug 29) after it merged.\n\nNotably, the Aug 27\u201328 window was also heavy with newly-merged feature work (PRs #21260 `no-extra-bind`, #21269 `new-cap`, #21271 `object-shorthand`, plus a flurry of bug reports #21255, #21258, #21267, #21273 filed that same week), so a burst of merged feature PRs likely contributed to the elevated run volume and failure count on those days.\n\n### Important caveat\n\nI attempted to confirm root causes at the code level by pulling the diffs of the two fix PRs via `fetch_commit_diff`, but the tool returned `found: false` for both \u2014 it requires commit SHAs, and I have no tool that maps PR numbers to SHAs or lists commits by date. So the attribution above rests on **strong timing correlations** (spikes starting before, and collapsing immediately after, PRs titled as fixes for ecosystem-test and Node.js-26-EMFILE failures) plus the workflow-level breakdown, not on direct inspection of the failing runs' logs or the fix diffs. Within the evidence available to me, that's as far as the data can definitively take me \u2014 the two-cluster story (upstream plugin breakage Aug 5\u20136, Node.js 26 EMFILE incompatibility Aug 27\u201328) is well-supported but not code-confirmed.",
+  "steps": [
+   {
+    "step_type": "tool_call",
+    "content": "Called query_ci_history",
+    "tool_name": "query_ci_history",
+    "tool_arguments": {
+     "date_from": "2026-07-01",
+     "date_to": "2026-07-31",
+     "repo": "eslint/eslint"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"eslint/eslint\", \"date_from\": \"2026-07-01\", \"date_to\": \"2026-07-31\", \"total_runs\": 1541, \"failed_runs\": 49, \"overall_failure_rate\": 0.0318, \"by_workflow\": [{\"workflow_name\": \"CI\", \"total_runs\": 311, \"failed_runs\": 31, \"failure_rate\": 0.0997}, {\"workflow_name\": \"CodeQL\", \"total_runs\": 301, \"failed_runs\": 0, \"failure_rate\": 0.0}, {\"workflow_name\": \"Data Fetch\", \"total_runs\": 31, \"failed_runs\": 0, \"failure_rate\": 0.0}, {\"workflow_name\": \"Docs CI\", \"total_runs\": 73, \"failed_runs\": 2, \"failu",
+    "tool_name": "query_ci_history",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_ci_history",
+    "tool_name": "query_ci_history",
+    "tool_arguments": {
+     "date_from": "2026-08-01",
+     "date_to": "2026-08-31",
+     "repo": "eslint/eslint"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"eslint/eslint\", \"date_from\": \"2026-08-01\", \"date_to\": \"2026-08-31\", \"total_runs\": 1313, \"failed_runs\": 87, \"overall_failure_rate\": 0.0663, \"by_workflow\": [{\"workflow_name\": \"CI\", \"total_runs\": 230, \"failed_runs\": 41, \"failure_rate\": 0.1783}, {\"workflow_name\": \"CodeQL\", \"total_runs\": 236, \"failed_runs\": 1, \"failure_rate\": 0.0042}, {\"workflow_name\": \"Data Fetch\", \"total_runs\": 31, \"failed_runs\": 1, \"failure_rate\": 0.0323}, {\"workflow_name\": \"Docs CI\", \"total_runs\": 87, \"failed_runs\": 11,",
+    "tool_name": "query_ci_history",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_issues_prs",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": {
+     "date_from": "2026-08-03",
+     "date_to": "2026-08-07",
+     "kind": "pull_requests",
+     "repo": "eslint/eslint",
+     "state": "MERGED"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"eslint/eslint\", \"date_from\": \"2026-08-03\", \"date_to\": \"2026-08-07\", \"issues\": [], \"pull_requests\": [{\"number\": 21182, \"title\": \"chore: update ecosystem plugins\", \"state\": \"MERGED\", \"author_login\": \"eslintbot\", \"created_at\": \"2026-08-03T00:26:23Z\", \"merged_at\": \"2026-08-03T06:51:42Z\", \"review_comment_count\": 1, \"approval_count\": 1, \"time_to_merge_seconds\": 23119}, {\"number\": 21183, \"title\": \"docs: add missing backticks to `no-duplicate-imports.js`\", \"state\": \"MERGED\", \"author_login\": \"d",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_issues_prs",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": {
+     "date_from": "2026-08-25",
+     "date_to": "2026-08-29",
+     "kind": "pull_requests",
+     "repo": "eslint/eslint",
+     "state": "MERGED"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"eslint/eslint\", \"date_from\": \"2026-08-25\", \"date_to\": \"2026-08-29\", \"issues\": [], \"pull_requests\": [{\"number\": 21256, \"title\": \"docs: Clarify eqeqeq suggestion behavior\", \"state\": \"MERGED\", \"author_login\": \"MuslumYilmaz\", \"created_at\": \"2026-08-25T12:30:23Z\", \"merged_at\": \"2026-08-25T16:04:54Z\", \"review_comment_count\": 2, \"approval_count\": 1, \"time_to_merge_seconds\": 12871}, {\"number\": 21260, \"title\": \"feat: no-extra-bind false negatives with class fields and static blocks\", \"state\": \"",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_issues_prs",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": {
+     "date_from": "2026-08-01",
+     "date_to": "2026-08-31",
+     "is_bug": true,
+     "kind": "issues",
+     "repo": "eslint/eslint"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"eslint/eslint\", \"date_from\": \"2026-08-01\", \"date_to\": \"2026-08-31\", \"issues\": [{\"number\": 21180, \"title\": \"Bug: `one-var` `separateRequires` misidentifies shadowed `require` calls\", \"state\": \"OPEN\", \"author_login\": \"sethamus\", \"created_at\": \"2026-08-01T20:56:03Z\", \"closed_at\": null, \"labels\": [\"bug\", \"accepted\", \"repro:yes\"], \"is_bug\": true, \"comment_count\": 4}, {\"number\": 21193, \"title\": \"Bug: `no-var` autofix produces ReferenceError when a hoisted function reads the variable before i",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called fetch_commit_diff",
+    "tool_name": "fetch_commit_diff",
+    "tool_arguments": {
+     "repo": "eslint/eslint",
+     "sha": "21191"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"eslint/eslint\", \"sha\": \"21191\", \"found\": false, \"message\": null, \"author_login\": null, \"committed_at\": null, \"is_bugfix\": null, \"files\": []}",
+    "tool_name": "fetch_commit_diff",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called fetch_commit_diff",
+    "tool_name": "fetch_commit_diff",
+    "tool_arguments": {
+     "repo": "eslint/eslint",
+     "sha": "21265"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"eslint/eslint\", \"sha\": \"21265\", \"found\": false, \"message\": null, \"author_login\": null, \"committed_at\": null, \"is_bugfix\": null, \"files\": []}",
+    "tool_name": "fetch_commit_diff",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "final_answer",
+    "content": "I have enough evidence to answer, with one caveat about tool limits. Here's what the data shows.\n\n## Summary: August 2026 CI failures roughly doubled (3.2% \u2192 6.6%), driven by two short, distinct spike clusters\n\n**The headline numbers** (from `query_ci_history` for Jul 1\u201331 and Aug 1\u201331):\n- July: 49 failures / 1,541 runs = **3.18%**\n- August: 87 failures / 1,313 runs = **6.63%**\n\nThis was not a steady, month-long degradation \u2014 the daily breakdown shows August was actually *clean* (0% failures) on 16 of 31 days. Essentially all of the excess failures came from two concentrated bursts:\n\n### Spike 1: August 5\u20136 (27 + 14 failures, daily rates of 22.1% and 19.4%)\n\nThe workflow-level comparison points strongly at integration/CI workflows rather than the repo's own unit tests:\n- **Test Ecosystem Plugins**: 3.95% (July) \u2192 **10.61%** (August), 12 \u2192 28 failed runs\n- **Docs CI**: 2.74% \u2192 12.64%\n- **CI workflow**: 9.97% \u2192 17.83%\n\nThe strongest direct evidence for what happened here is PR **#21191 \u2014 \"test: fix failing ecosystem test for `eslint-plugin-unicorn`\"**, merged on **Aug 6 at 08:49 UTC** (`query_issues_prs`, MERGED, Aug 3\u20137). Its title and timing indicate an upstream ecosystem plugin (unicorn) was breaking the `Test Ecosystem Plugins` workflow, and the spike collapsed to **0.0% on Aug 7\u20139 immediately after it merged**. That correlation is compelling.\n\n### Spike 2: August 27\u201328 (5 + 18 failures, peaking at 23.7% on Aug 28)\n\nAgain the spike ended right after a targeted CI fix: PR **#21265 \u2014 \"ci: skip EMFILE test on Node.js 26\"**, created Aug 28 and merged **Aug 29 at 08:08 UTC** (`query_issues_prs`, MERGED, Aug 25\u201329). The title indicates CI test runs were failing on Node.js 26 due to EMFILE (\"too many open files\") errors \u2014 an environment/platform issue rather than a code regression. Failure rates dropped from 23.7% (Aug 28) to 2.7% (Aug 29) after it merged.\n\nNotably, the Aug 27\u201328 window was also heavy with newly-merged feature work (PRs #21260 `no-extra-bind`, #21269 `new-cap`, #21271 `object-shorthand`, plus a flurry of bug reports #21255, #21258, #21267, #21273 filed that same week), so a burst of merged feature PRs likely contributed to the elevated run volume and failure count on those days.\n\n### Important caveat\n\nI attempted to confirm root causes at the code level by pulling the diffs of the two fix PRs via `fetch_commit_diff`, but the tool returned `found: false` for both \u2014 it requires commit SHAs, and I have no tool that maps PR numbers to SHAs or lists commits by date. So the attribution above rests on **strong timing correlations** (spikes starting before, and collapsing immediately after, PRs titled as fixes for ecosystem-test and Node.js-26-EMFILE failures) plus the workflow-level breakdown, not on direct inspection of the failing runs' logs or the fix diffs. Within the evidence available to me, that's as far as the data can definitively take me \u2014 the two-cluster story (upstream plugin breakage Aug 5\u20136, Node.js 26 EMFILE incompatibility Aug 27\u201328) is well-supported but not code-confirmed.",
+    "tool_name": null,
+    "tool_arguments": null
+   }
+  ],
+  "calls": [
+   {
+    "provider": "OpenInference",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.0001282047,
+    "prompt_tokens": 1331,
+    "completion_tokens": 611
+   },
+   {
+    "provider": "OpenInference",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.0001951242,
+    "prompt_tokens": 4466,
+    "completion_tokens": 866
+   },
+   {
+    "provider": "OpenInference",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.000143705,
+    "prompt_tokens": 6335,
+    "completion_tokens": 558
+   },
+   {
+    "provider": "OpenInference",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.0004645117,
+    "prompt_tokens": 7906,
+    "completion_tokens": 2133
+   }
+  ]
+ },
+ {
+  "id": "review_effectiveness",
+  "model": "z-ai/glm-5.3-flash",
+  "metrics": {
+   "converged": true,
+   "num_tool_calls": 10,
+   "distinct_tools_used": [
+    "compare_periods",
+    "query_contributor_associations",
+    "query_issues_prs",
+    "query_review_approval_stats"
+   ],
+   "num_distinct_tools": 4,
+   "had_error": false,
+   "final_answer_length_chars": 4585,
+   "final_answer_cites_a_number": true,
+   "bad_json_calls": 0,
+   "unknown_tool_calls": 0,
+   "other_tool_errors": 0,
+   "provider_failure": false,
+   "llm_calls": 6,
+   "cost_usd": 0.0028245938,
+   "seconds": 107.1
+  },
+  "final_answer": "## Verdict: Review is nearly universal and works reasonably well \u2014 but bugs demonstrably slip through approval, and the pattern of how suggests review's limits rather than its absence\n\n### The evidence\n\n**1. Review approval is near-universal (97.6%)**\nPer `query_review_approval_stats` (2025-09-28 \u2192 2026-09-23): **419 merged PRs, 409 approved (97.6%), only 10 merged without approval**. Almost nothing lands unreviewed \u2014 so any bugs that reach production in this window were almost all *approved by review*, not merged around it.\n\n**2. Bugs are being filed at a steady rate despite that**\nFrom `query_issues_prs` (bug-labeled issues): **~59 C-bug issues** in the window \u2014 40 closed, 19 still open. These include genuinely serious ones that got past review, e.g.:\n- **#7712** \u2014 \"UB in multi-thread scheduler detected by Miri\" (closed 2025-10-29)\n- **#7981** \u2014 \"Soundness: Undefined Behavior in `oneshot::channel` and `mpsc::bounded::channel`\"\n- **#8056** \u2014 \"regression in `spawn_blocking` caused by **#7757** causes tests to hang\"\n- **#8471** \u2014 RUSTSEC-2026-0007: integer overflow in `BytesMut::reserve` (a security advisory)\n\nNote that several of these were found by *external tooling and users* (Miri, RUSTSEC, downstream users), not by review \u2014 the strongest sign review misses whole classes of problems (memory-safety subtleties, concurrency edge cases).\n\n**3. Concrete caught-and-reverted case: the #7757 regression**\nCross-referencing the PR lists:\n- PR **#7757** was merged (approved, like ~98% of PRs).\n- Within hours, issue **#8056** reported a hang regression in `spawn_blocking` caused by #7757 (filed 2026-04-16 17:48).\n- PR **#8057** (\"rt: revert #7757 to fix regression in `spawn_blocking`\", by hawkw, approval_count 1) merged the **same day** (2026-04-16 20:57), followed by #8059 cutting v1.52.1.\n\nSo: a bug got through review, but the community caught and reverted it within ~3 hours. **Approval did not catch it; downstream detection did.**\n\n**4. The contributor-association data shows bugs are broadly distributed, not concentrated**\n`query_contributor_associations` (full-history computation over 2025-09-29 \u2192 2026-09-23): of ~100 contributors, only **14 have any commits later implicated in a bug fix** (~28 implicated commits total). Most implicated contributors are one-offs (e.g., several contributors with 1 commit that was later fixed), not repeat offenders \u2014 except **ADD-SP** (6 of 37 commits implicated, ~16%) who is consistently involved in sync/runtime maintenance work. This suggests slips are random, subtle concurrency/edge-case bugs, not one careless author \u2014 consistent with the fact that even core maintainer Darksonn's code (88 commits, 2 implicated) and revert-heavy workflows exist.\n\n**5. Approving a fix doesn't guarantee the fix is right either**\nPR **#8043** (\"taskdump: skip double wake on `Trace::capture`/`Trace::trace_with`\", approved, merged 2026-05-12) itself generated follow-on bugs: issue **#8434** reports that the `trace_leaf` behavior introduced by #8043 permanently strands `FuturesUnordered` children, and issue **#8391** reports a `Handle::dump()` panic with \"RefCell already borrowed.\" Even approved *fixes* spawn new bugs.\n\n**6. Signals on process health over the year** (`compare_periods`, first half 2025-09-28\u21922026-03-25 vs. second half 2026-03-26\u21922026-09-23):\n- Time to first review nearly **doubled**: 33.1 h \u2192 64.8 h (+96%)\n- CI failure rate **improved slightly**: 9.5% \u2192 7.4%\n\nReview is getting slower, but CI is catching slightly more pre-merge.\n\n### Bottom line\n\n- **Bugs do slip through approval.** Given 97.6% of PRs are approved, essentially every regression (e.g., the #7757 `spawn_blocking` hang, the #8043 taskdump follow-on bugs, the RUSTSEC `BytesMut::reserve` overflow) landed *with* review approval.\n- **But review isn't the only or even the primary safety net** \u2014 the data shows the repo relies on a layered system: CI (7\u20139% failure rate catching things pre/post merge), fast follow-up issues, and rapid reverts/patch releases (#8057 reverted #7757 the same day; 1.52.1 released within hours).\n- **What review demonstrably struggles with**: concurrency edge cases, memory-safety UB, and platform-specific behavior \u2014 the exact categories being found by Miri, RUSTSEC, and external bug reports rather than in review.\n- **One caveat on the data**: 10 PRs (2.4%) did merge without any approval, and the contributor-association metric is heuristic (file-overlap-based), so it likely *undercounts* actual bug-causing commits. The true slip-through rate is probably higher than the 28 implicated commits suggest.",
+  "steps": [
+   {
+    "step_type": "tool_call",
+    "content": "Called query_review_approval_stats",
+    "tool_name": "query_review_approval_stats",
+    "tool_arguments": {
+     "date_from": "2025-09-28",
+     "date_to": "2026-09-23",
+     "repo": "tokio-rs/tokio"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"tokio-rs/tokio\", \"date_from\": \"2025-09-28\", \"date_to\": \"2026-09-23\", \"total_merged_prs\": 419, \"prs_with_approval\": 409, \"prs_without_approval\": 10, \"approval_rate\": 0.9761}",
+    "tool_name": "query_review_approval_stats",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_issues_prs",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": {
+     "date_from": "2025-09-28",
+     "date_to": "2026-09-23",
+     "is_bug": true,
+     "kind": "issues",
+     "repo": "tokio-rs/tokio",
+     "state": "OPEN"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"tokio-rs/tokio\", \"date_from\": \"2025-09-28\", \"date_to\": \"2026-09-23\", \"issues\": [{\"number\": 7708, \"title\": \"Connecting to a dual-stack (ipv4 & ipv6 available) endpoint can return EADDRNOTAVAIL\", \"state\": \"OPEN\", \"author_login\": \"mikekap\", \"created_at\": \"2025-10-24T17:32:31Z\", \"closed_at\": null, \"labels\": [\"C-bug\", \"A-tokio\", \"M-net\"], \"is_bug\": true, \"comment_count\": 8}, {\"number\": 7709, \"title\": \"Holding an OwnedPermit for mpsc deadlocks other senders, even when there are more free slo",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_contributor_associations",
+    "tool_name": "query_contributor_associations",
+    "tool_arguments": {
+     "repo": "tokio-rs/tokio"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"tokio-rs/tokio\", \"computed_window_start\": \"2025-09-29\", \"computed_window_end\": \"2026-09-23\", \"contributors\": [{\"author_login\": \"KR-bluejay\", \"commit_count\": 2, \"implicated_commit_count\": 2, \"association_rate\": 1.0}, {\"author_login\": \"threecgreen\", \"commit_count\": 1, \"implicated_commit_count\": 1, \"association_rate\": 1.0}, {\"author_login\": \"Natural-selection1\", \"commit_count\": 1, \"implicated_commit_count\": 1, \"association_rate\": 1.0}, {\"author_login\": \"pacocartones\", \"commit_count\": 1, \"",
+    "tool_name": "query_contributor_associations",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_issues_prs",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": {
+     "date_from": "2025-09-28",
+     "date_to": "2026-09-23",
+     "kind": "pull_requests",
+     "repo": "tokio-rs/tokio",
+     "state": "MERGED"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"tokio-rs/tokio\", \"date_from\": \"2025-09-28\", \"date_to\": \"2026-09-23\", \"issues\": [], \"pull_requests\": [{\"number\": 7651, \"title\": \"macros: suppress `clippy::unwrap_in_result` in `#[tokio::main]`\", \"state\": \"MERGED\", \"author_login\": \"ry-sun\", \"created_at\": \"2025-09-29T07:40:57Z\", \"merged_at\": \"2025-10-02T08:53:25Z\", \"review_comment_count\": 2, \"approval_count\": 1, \"time_to_merge_seconds\": 263548}, {\"number\": 7652, \"title\": \"ci: freeze rustc on nightly-2025-01-25 in `netlify.toml`\", \"state\":",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_issues_prs",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": {
+     "date_from": "2025-09-28",
+     "date_to": "2026-09-23",
+     "is_bug": true,
+     "kind": "issues",
+     "repo": "tokio-rs/tokio",
+     "state": "CLOSED"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"tokio-rs/tokio\", \"date_from\": \"2025-09-28\", \"date_to\": \"2026-09-23\", \"issues\": [{\"number\": 7650, \"title\": \"Bug: #[tokio::main] triggers clippy::unwrap_in_result via internal expect\", \"state\": \"CLOSED\", \"author_login\": \"ry-sun\", \"created_at\": \"2025-09-29T07:36:21Z\", \"closed_at\": \"2025-10-02T08:54:14Z\", \"labels\": [\"C-bug\", \"A-tokio\"], \"is_bug\": true, \"comment_count\": 1}, {\"number\": 7656, \"title\": \"`UdpSocket` and `UnixDatagram` methods `recv_buf` and `recv_buf_from` are technically imple",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_issues_prs",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": {
+     "date_from": "2026-08-20",
+     "date_to": "2026-09-23",
+     "kind": "pull_requests",
+     "repo": "tokio-rs/tokio",
+     "state": "MERGED"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"tokio-rs/tokio\", \"date_from\": \"2026-08-20\", \"date_to\": \"2026-09-23\", \"issues\": [], \"pull_requests\": [{\"number\": 8378, \"title\": \"net: add Safety docs and Default impls for named pipe options\", \"state\": \"MERGED\", \"author_login\": \"philphauler\", \"created_at\": \"2026-08-21T21:29:13Z\", \"merged_at\": \"2026-09-23T14:12:30Z\", \"review_comment_count\": 3, \"approval_count\": 2, \"time_to_merge_seconds\": 2824997}, {\"number\": 8382, \"title\": \"rt: move the multi-thread inject queue to its own mutex\", \"stat",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_issues_prs",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": {
+     "date_from": "2025-10-20",
+     "date_to": "2025-11-10",
+     "kind": "pull_requests",
+     "repo": "tokio-rs/tokio",
+     "state": "MERGED"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"tokio-rs/tokio\", \"date_from\": \"2025-10-20\", \"date_to\": \"2025-11-10\", \"issues\": [], \"pull_requests\": [{\"number\": 7697, \"title\": \"task: add tests for `task::Builder::spawn_local`\", \"state\": \"MERGED\", \"author_login\": \"mattiapitossi\", \"created_at\": \"2025-10-20T09:29:05Z\", \"merged_at\": \"2025-10-20T12:43:41Z\", \"review_comment_count\": 0, \"approval_count\": 2, \"time_to_merge_seconds\": 11676}, {\"number\": 7698, \"title\": \"Use #[tokio::test] explicitly in `tests/task_builder.rs`\", \"state\": \"MERGED\"",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_issues_prs",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": {
+     "date_from": "2026-04-10",
+     "date_to": "2026-04-20",
+     "kind": "pull_requests",
+     "repo": "tokio-rs/tokio",
+     "state": "MERGED"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"tokio-rs/tokio\", \"date_from\": \"2026-04-10\", \"date_to\": \"2026-04-20\", \"issues\": [], \"pull_requests\": [{\"number\": 8035, \"title\": \"sync: hide `#[tokio::main]` attribute in the docs of `sync::watch`\", \"state\": \"MERGED\", \"author_login\": \"abh1nav10\", \"created_at\": \"2026-04-10T19:14:54Z\", \"merged_at\": \"2026-04-10T20:15:37Z\", \"review_comment_count\": 0, \"approval_count\": 1, \"time_to_merge_seconds\": 3643}, {\"number\": 8036, \"title\": \"temporarily disable `tcp_stream` `try_read_buf` test on WASI\", ",
+    "tool_name": "query_issues_prs",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called compare_periods",
+    "tool_name": "compare_periods",
+    "tool_arguments": {
+     "metric": "avg_hours_to_first_review",
+     "period_a_end": "2026-03-25",
+     "period_a_start": "2025-09-28",
+     "period_b_end": "2026-09-23",
+     "period_b_start": "2026-03-26",
+     "repo": "tokio-rs/tokio"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"tokio-rs/tokio\", \"metric\": \"avg_hours_to_first_review\", \"period_a\": {\"start\": \"2025-09-28\", \"end\": \"2026-03-25\"}, \"period_a_value\": 33.1076, \"period_b\": {\"start\": \"2026-03-26\", \"end\": \"2026-09-23\"}, \"period_b_value\": 64.8431, \"absolute_change\": 31.7355, \"percent_change\": 95.86}",
+    "tool_name": "compare_periods",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called compare_periods",
+    "tool_name": "compare_periods",
+    "tool_arguments": {
+     "metric": "ci_failure_rate",
+     "period_a_end": "2026-03-25",
+     "period_a_start": "2025-09-28",
+     "period_b_end": "2026-09-23",
+     "period_b_start": "2026-03-26",
+     "repo": "tokio-rs/tokio"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"tokio-rs/tokio\", \"metric\": \"ci_failure_rate\", \"period_a\": {\"start\": \"2025-09-28\", \"end\": \"2026-03-25\"}, \"period_a_value\": 0.0949, \"period_b\": {\"start\": \"2026-03-26\", \"end\": \"2026-09-23\"}, \"period_b_value\": 0.074, \"absolute_change\": -0.0209, \"percent_change\": -21.99}",
+    "tool_name": "compare_periods",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "final_answer",
+    "content": "## Verdict: Review is nearly universal and works reasonably well \u2014 but bugs demonstrably slip through approval, and the pattern of how suggests review's limits rather than its absence\n\n### The evidence\n\n**1. Review approval is near-universal (97.6%)**\nPer `query_review_approval_stats` (2025-09-28 \u2192 2026-09-23): **419 merged PRs, 409 approved (97.6%), only 10 merged without approval**. Almost nothing lands unreviewed \u2014 so any bugs that reach production in this window were almost all *approved by review*, not merged around it.\n\n**2. Bugs are being filed at a steady rate despite that**\nFrom `query_issues_prs` (bug-labeled issues): **~59 C-bug issues** in the window \u2014 40 closed, 19 still open. These include genuinely serious ones that got past review, e.g.:\n- **#7712** \u2014 \"UB in multi-thread scheduler detected by Miri\" (closed 2025-10-29)\n- **#7981** \u2014 \"Soundness: Undefined Behavior in `oneshot::channel` and `mpsc::bounded::channel`\"\n- **#8056** \u2014 \"regression in `spawn_blocking` caused by **#7757** causes tests to hang\"\n- **#8471** \u2014 RUSTSEC-2026-0007: integer overflow in `BytesMut::reserve` (a security advisory)\n\nNote that several of these were found by *external tooling and users* (Miri, RUSTSEC, downstream users), not by review \u2014 the strongest sign review misses whole classes of problems (memory-safety subtleties, concurrency edge cases).\n\n**3. Concrete caught-and-reverted case: the #7757 regression**\nCross-referencing the PR lists:\n- PR **#7757** was merged (approved, like ~98% of PRs).\n- Within hours, issue **#8056** reported a hang regression in `spawn_blocking` caused by #7757 (filed 2026-04-16 17:48).\n- PR **#8057** (\"rt: revert #7757 to fix regression in `spawn_blocking`\", by hawkw, approval_count 1) merged the **same day** (2026-04-16 20:57), followed by #8059 cutting v1.52.1.\n\nSo: a bug got through review, but the community caught and reverted it within ~3 hours. **Approval did not catch it; downstream detection did.**\n\n**4. The contributor-association data shows bugs are broadly distributed, not concentrated**\n`query_contributor_associations` (full-history computation over 2025-09-29 \u2192 2026-09-23): of ~100 contributors, only **14 have any commits later implicated in a bug fix** (~28 implicated commits total). Most implicated contributors are one-offs (e.g., several contributors with 1 commit that was later fixed), not repeat offenders \u2014 except **ADD-SP** (6 of 37 commits implicated, ~16%) who is consistently involved in sync/runtime maintenance work. This suggests slips are random, subtle concurrency/edge-case bugs, not one careless author \u2014 consistent with the fact that even core maintainer Darksonn's code (88 commits, 2 implicated) and revert-heavy workflows exist.\n\n**5. Approving a fix doesn't guarantee the fix is right either**\nPR **#8043** (\"taskdump: skip double wake on `Trace::capture`/`Trace::trace_with`\", approved, merged 2026-05-12) itself generated follow-on bugs: issue **#8434** reports that the `trace_leaf` behavior introduced by #8043 permanently strands `FuturesUnordered` children, and issue **#8391** reports a `Handle::dump()` panic with \"RefCell already borrowed.\" Even approved *fixes* spawn new bugs.\n\n**6. Signals on process health over the year** (`compare_periods`, first half 2025-09-28\u21922026-03-25 vs. second half 2026-03-26\u21922026-09-23):\n- Time to first review nearly **doubled**: 33.1 h \u2192 64.8 h (+96%)\n- CI failure rate **improved slightly**: 9.5% \u2192 7.4%\n\nReview is getting slower, but CI is catching slightly more pre-merge.\n\n### Bottom line\n\n- **Bugs do slip through approval.** Given 97.6% of PRs are approved, essentially every regression (e.g., the #7757 `spawn_blocking` hang, the #8043 taskdump follow-on bugs, the RUSTSEC `BytesMut::reserve` overflow) landed *with* review approval.\n- **But review isn't the only or even the primary safety net** \u2014 the data shows the repo relies on a layered system: CI (7\u20139% failure rate catching things pre/post merge), fast follow-up issues, and rapid reverts/patch releases (#8057 reverted #7757 the same day; 1.52.1 released within hours).\n- **What review demonstrably struggles with**: concurrency edge cases, memory-safety UB, and platform-specific behavior \u2014 the exact categories being found by Miri, RUSTSEC, and external bug reports rather than in review.\n- **One caveat on the data**: 10 PRs (2.4%) did merge without any approval, and the contributor-association metric is heuristic (file-overlap-based), so it likely *undercounts* actual bug-causing commits. The true slip-through rate is probably higher than the 28 implicated commits suggest.",
+    "tool_name": null,
+    "tool_arguments": null
+   }
+  ],
+  "calls": [
+   {
+    "provider": "OpenInference",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.0001058366,
+    "prompt_tokens": 1343,
+    "completion_tokens": 498
+   },
+   {
+    "provider": "OpenInference",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.0002637775,
+    "prompt_tokens": 9385,
+    "completion_tokens": 1083
+   },
+   {
+    "provider": "OpenInference",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.0006366009,
+    "prompt_tokens": 58407,
+    "completion_tokens": 1677
+   },
+   {
+    "provider": "OpenInference",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.0006437985,
+    "prompt_tokens": 66815,
+    "completion_tokens": 1493
+   },
+   {
+    "provider": "OpenInference",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.0004363371,
+    "prompt_tokens": 69138,
+    "completion_tokens": 387
+   },
+   {
+    "provider": "OpenInference",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.0007382432,
+    "prompt_tokens": 69441,
+    "completion_tokens": 1900
+   }
+  ]
+ },
+ {
+  "id": "contributor_association",
+  "model": "z-ai/glm-5.3-flash",
+  "metrics": {
+   "converged": true,
+   "num_tool_calls": 1,
+   "distinct_tools_used": [
+    "query_contributor_associations"
+   ],
+   "num_distinct_tools": 1,
+   "had_error": false,
+   "final_answer_length_chars": 2180,
+   "final_answer_cites_a_number": true,
+   "bad_json_calls": 0,
+   "unknown_tool_calls": 0,
+   "other_tool_errors": 0,
+   "provider_failure": false,
+   "llm_calls": 2,
+   "cost_usd": 0.0014899,
+   "seconds": 20.9
+  },
+  "final_answer": "**Answer \u2014 based on `query_contributor_associations` for `sqlalchemy/sqlalchemy` (computed over the ingested window 2025\u201109\u201129 \u2192 2026\u201109\u201121):**\n\nThis metric counts, per contributor, how many of their commits touched files that were *also* touched by a later bug\u2011fix commit (file\u2011level association, not a proven causal link).\n\n**Most associated by volume (absolute implicated commits):**\n\n| Contributor | Commits | Implicated in later bug fixes | Association rate |\n|---|---|---|---|\n| **zzzeek** | 440 | **299** | 68.0% |\n| **CaselIT** | 77 | **62** | 80.5% |\n| dependabot[bot] | 10 | 10 | 100% |\n| ashm-dev | 5 | 5 | 100% |\n| dxbjavid | 6 | 4 | 66.7% |\n| dlax | 4 | 3 | 75% |\n| cjc0013 | 3 | 2 | 66.7% |\n\n**Most associated by rate (among contributors with meaningful volume):**\n\n- **CaselIT** stands out: 80.5% of their 77 commits were later implicated in bug fixes \u2014 the highest rate among anyone with a substantial commit count, and nearly double the raw volume of anyone except zzzeek.\n- **zzzeek** has by far the largest absolute footprint (299 implicated commits), though at a lower 68% rate \u2014 expected for the project's most prolific committer, since a large fraction of all changes in the repo flow through their commits.\n\n**Interpretation caveats:**\n\n- A long tail of contributors show a **100% association rate but with only 1\u20133 commits each** (e.g., jayaddison, fardyn, bekapono, ollz272, mattip, and ~40 others). These rates are statistically weak \u2014 small changes to commonly-touched files (docs, shared modules) get \"associated\" with almost any later bug fix, so they shouldn't be ranked above the high-volume contributors.\n- Contributors with **0% association** (e.g., ImadSaddik, krave1986, jvanasco, miketheman, and ~20 one-commit contributors) had no commits overlapping files later touched by bug fixes \u2014 typically doc-only, CI-config, or isolated changes.\n\n**Bottom line:** **CaselIT** (62/77, 80.5%) and **zzzeek** (299/440, 68.0%) are the contributors whose changes are most associated with later bug-fix commits \u2014 CaselIT on a rate basis, zzzeek on sheer volume. The data comes entirely from the single `query_contributor_associations` tool call cited above.",
+  "steps": [
+   {
+    "step_type": "tool_call",
+    "content": "Called query_contributor_associations",
+    "tool_name": "query_contributor_associations",
+    "tool_arguments": {
+     "repo": "sqlalchemy/sqlalchemy"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"sqlalchemy/sqlalchemy\", \"computed_window_start\": \"2025-09-29\", \"computed_window_end\": \"2026-09-21\", \"contributors\": [{\"author_login\": \"dependabot[bot]\", \"commit_count\": 10, \"implicated_commit_count\": 10, \"association_rate\": 1.0}, {\"author_login\": \"ashm-dev\", \"commit_count\": 5, \"implicated_commit_count\": 5, \"association_rate\": 1.0}, {\"author_login\": \"jayaddison\", \"commit_count\": 3, \"implicated_commit_count\": 3, \"association_rate\": 1.0}, {\"author_login\": \"fardyn\", \"commit_count\": 3, \"imp",
+    "tool_name": "query_contributor_associations",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "final_answer",
+    "content": "**Answer \u2014 based on `query_contributor_associations` for `sqlalchemy/sqlalchemy` (computed over the ingested window 2025\u201109\u201129 \u2192 2026\u201109\u201121):**\n\nThis metric counts, per contributor, how many of their commits touched files that were *also* touched by a later bug\u2011fix commit (file\u2011level association, not a proven causal link).\n\n**Most associated by volume (absolute implicated commits):**\n\n| Contributor | Commits | Implicated in later bug fixes | Association rate |\n|---|---|---|---|\n| **zzzeek** | 440 | **299** | 68.0% |\n| **CaselIT** | 77 | **62** | 80.5% |\n| dependabot[bot] | 10 | 10 | 100% |\n| ashm-dev | 5 | 5 | 100% |\n| dxbjavid | 6 | 4 | 66.7% |\n| dlax | 4 | 3 | 75% |\n| cjc0013 | 3 | 2 | 66.7% |\n\n**Most associated by rate (among contributors with meaningful volume):**\n\n- **CaselIT** stands out: 80.5% of their 77 commits were later implicated in bug fixes \u2014 the highest rate among anyone with a substantial commit count, and nearly double the raw volume of anyone except zzzeek.\n- **zzzeek** has by far the largest absolute footprint (299 implicated commits), though at a lower 68% rate \u2014 expected for the project's most prolific committer, since a large fraction of all changes in the repo flow through their commits.\n\n**Interpretation caveats:**\n\n- A long tail of contributors show a **100% association rate but with only 1\u20133 commits each** (e.g., jayaddison, fardyn, bekapono, ollz272, mattip, and ~40 others). These rates are statistically weak \u2014 small changes to commonly-touched files (docs, shared modules) get \"associated\" with almost any later bug fix, so they shouldn't be ranked above the high-volume contributors.\n- Contributors with **0% association** (e.g., ImadSaddik, krave1986, jvanasco, miketheman, and ~20 one-commit contributors) had no commits overlapping files later touched by bug fixes \u2014 typically doc-only, CI-config, or isolated changes.\n\n**Bottom line:** **CaselIT** (62/77, 80.5%) and **zzzeek** (299/440, 68.0%) are the contributors whose changes are most associated with later bug-fix commits \u2014 CaselIT on a rate basis, zzzeek on sheer volume. The data comes entirely from the single `query_contributor_associations` tool call cited above.",
+    "tool_name": null,
+    "tool_arguments": null
+   }
+  ],
+  "calls": [
+   {
+    "provider": "Crusoe",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.00022405,
+    "prompt_tokens": 1297,
+    "completion_tokens": 59
+   },
+   {
+    "provider": "Crusoe",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.00126585,
+    "prompt_tokens": 4439,
+    "completion_tokens": 1200
+   }
+  ]
+ },
+ {
+  "id": "cross_repo_ci_reliability",
+  "model": "z-ai/glm-5.3-flash",
+  "metrics": {
+   "converged": true,
+   "num_tool_calls": 6,
+   "distinct_tools_used": [
+    "compare_periods",
+    "query_ci_history"
+   ],
+   "num_distinct_tools": 2,
+   "had_error": false,
+   "final_answer_length_chars": 3443,
+   "final_answer_cites_a_number": true,
+   "bad_json_calls": 0,
+   "unknown_tool_calls": 0,
+   "other_tool_errors": 0,
+   "provider_failure": false,
+   "llm_calls": 3,
+   "cost_usd": 0.007386215,
+   "seconds": 22.0
+  },
+  "final_answer": "## Answer: eslint/eslint has the most reliable CI pipeline\n\nAll three figures below come from `query_ci_history` run over the identical window (2025-09-28 \u2192 2026-09-23), so the comparison is apples-to-apples.\n\n### Headline numbers\n\n| Repo | Total runs | Failed runs | Overall failure rate | Main CI workflow failure rate |\n|---|---|---|---|---|\n| **eslint/eslint** | 13,049 | 606 | **4.6%** | 11.7% (4,124 runs) |\n| tokio-rs/tokio | 10,536 | 883 | **8.4%** | 30.3% (2,486 runs) |\n| sqlalchemy/sqlalchemy | 1,017 | 315 | **31.0%** | 50.6% (\"Run tests on a pr\", 326 runs) |\n\n### Why eslint wins\n\n1. **Lowest overall failure rate, at the highest volume.** eslint ran the most CI jobs of the three (13,049) yet failed only 4.6% of them \u2014 roughly half tokio's rate (8.4%) and about one-seventh of sqlalchemy's (31.0%) (all from `query_ci_history`).\n\n2. **Its main CI workflow is dramatically more stable.** The workflow actually named \"CI\" is the best single proxy for pipeline reliability, since it's the one gating merges. eslint's CI workflow fails 11.7% of the time versus tokio's 30.3% and sqlalchemy's PR-test workflow at 50.6% \u2014 i.e., a tokio or sqlalchemy contributor is roughly 3\u20134\u00d7 more likely to hit a red run on their primary pipeline than an eslint contributor (per `query_ci_history` \"by_workflow\" breakdowns).\n\n3. **Its auxiliary workflows are also clean.** eslint's other workflows fail at 0\u20136.2% (CodeQL 0.07%, Types Integration CI 2.0%, Docs CI 4.4%, Test Ecosystem Plugins 6.2%). By contrast, tokio's failures are heavily concentrated in its main CI workflow (30.3%) and even its auxiliary workflows fail at 1.6\u20134.7% (Stress Test, Loom, Security Audit) (per `query_ci_history`).\n\n4. **Consistency over time.** eslint's worst single day in the whole year was 22.1% (2026-08-05); tokio hit 40.9% (2025-12-19) and sqlalchemy had *entire days* at 100% failure (e.g., 2025-10-24, 2025-12-04\u201307, 2026-01-26) (from the \"by_day\" series in `query_ci_history`).\n\n5. **The trend confirms it's not a fluke.** Splitting the year into two halves with `compare_periods` (`ci_failure_rate`, first half 2025-09-28\u21922026-03-25 vs. second half 2026-03-26\u21922026-09-23):\n   - eslint: 4.86% \u2192 4.45% (\u22128.4%) \u2014 already low and still improving\n   - tokio: 9.49% \u2192 7.40% (\u221222.0%) \u2014 improving, but from a much worse base\n   - sqlalchemy: 38.68% \u2192 24.73% (\u221236.1%) \u2014 improving, but still failing 1 in 4 runs at the end of the period\n\n   eslint remains the lowest-failure repo in **both** halves, so the ranking isn't an artifact of averaging a noisy year.\n\n### Ranking and caveats\n\n- **1st: eslint/eslint** \u2014 ~95% pass rate across 13k runs, most stable main CI workflow, fewest bad days.\n- **2nd: tokio-rs/tokio** \u2014 solid 8.4% overall, but that's flattered by very reliable auxiliary workflows; the main CI workflow that actually gates PRs fails 30% of the time.\n- **3rd: sqlalchemy/sqlalchemy** \u2014 fails ~31% of all runs and >50% of PR test runs, with multi-day stretches at 100% failure.\n\nOne caveat worth noting: CI failure rate is a measure of *pipeline reliability*, not necessarily code quality \u2014 sqlalchemy's high PR-test failure rate could partly reflect strict-but-flaky test matrices (its \"Create wheel\" workflow failed 65% of the time), and tokio's includes concurrency/stress suites that are inherently flakier. But strictly on the question asked \u2014 which pipeline most consistently returns green \u2014 the data unambiguously points to **eslint/eslint**.",
+  "steps": [
+   {
+    "step_type": "tool_call",
+    "content": "Called query_ci_history",
+    "tool_name": "query_ci_history",
+    "tool_arguments": {
+     "date_from": "2025-09-28",
+     "date_to": "2026-09-23",
+     "repo": "tokio-rs/tokio"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"tokio-rs/tokio\", \"date_from\": \"2025-09-28\", \"date_to\": \"2026-09-23\", \"total_runs\": 10536, \"failed_runs\": 883, \"overall_failure_rate\": 0.0838, \"by_workflow\": [{\"workflow_name\": \"benchmark\", \"total_runs\": 15, \"failed_runs\": 4, \"failure_rate\": 0.2667}, {\"workflow_name\": \"CI\", \"total_runs\": 2486, \"failed_runs\": 754, \"failure_rate\": 0.3033}, {\"workflow_name\": \"Loom\", \"total_runs\": 1225, \"failed_runs\": 58, \"failure_rate\": 0.0473}, {\"workflow_name\": \"Pull Request Labeler\", \"total_runs\": 2751,",
+    "tool_name": "query_ci_history",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_ci_history",
+    "tool_name": "query_ci_history",
+    "tool_arguments": {
+     "date_from": "2025-09-28",
+     "date_to": "2026-09-23",
+     "repo": "eslint/eslint"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"eslint/eslint\", \"date_from\": \"2025-09-28\", \"date_to\": \"2026-09-23\", \"total_runs\": 13049, \"failed_runs\": 606, \"overall_failure_rate\": 0.0464, \"by_workflow\": [{\"workflow_name\": \"Addressing comment on PR #20571\", \"total_runs\": 16, \"failed_runs\": 0, \"failure_rate\": 0.0}, {\"workflow_name\": \"CI\", \"total_runs\": 4124, \"failed_runs\": 481, \"failure_rate\": 0.1166}, {\"workflow_name\": \"CodeQL\", \"total_runs\": 2787, \"failed_runs\": 2, \"failure_rate\": 0.0007}, {\"workflow_name\": \"Copilot code review\", \"",
+    "tool_name": "query_ci_history",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called query_ci_history",
+    "tool_name": "query_ci_history",
+    "tool_arguments": {
+     "date_from": "2025-09-28",
+     "date_to": "2026-09-23",
+     "repo": "sqlalchemy/sqlalchemy"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"sqlalchemy/sqlalchemy\", \"date_from\": \"2025-09-28\", \"date_to\": \"2026-09-23\", \"total_runs\": 1017, \"failed_runs\": 315, \"overall_failure_rate\": 0.3097, \"by_workflow\": [{\"workflow_name\": \"Create wheel\", \"total_runs\": 17, \"failed_runs\": 11, \"failure_rate\": 0.6471}, {\"workflow_name\": \"Run tests\", \"total_runs\": 674, \"failed_runs\": 139, \"failure_rate\": 0.2062}, {\"workflow_name\": \"Run tests on a pr\", \"total_runs\": 326, \"failed_runs\": 165, \"failure_rate\": 0.5061}], \"by_day\": [{\"date\": \"2025-09-29",
+    "tool_name": "query_ci_history",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called compare_periods",
+    "tool_name": "compare_periods",
+    "tool_arguments": {
+     "metric": "ci_failure_rate",
+     "period_a_end": "2026-03-25",
+     "period_a_start": "2025-09-28",
+     "period_b_end": "2026-09-23",
+     "period_b_start": "2026-03-26",
+     "repo": "tokio-rs/tokio"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"tokio-rs/tokio\", \"metric\": \"ci_failure_rate\", \"period_a\": {\"start\": \"2025-09-28\", \"end\": \"2026-03-25\"}, \"period_a_value\": 0.0949, \"period_b\": {\"start\": \"2026-03-26\", \"end\": \"2026-09-23\"}, \"period_b_value\": 0.074, \"absolute_change\": -0.0209, \"percent_change\": -21.99}",
+    "tool_name": "compare_periods",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called compare_periods",
+    "tool_name": "compare_periods",
+    "tool_arguments": {
+     "metric": "ci_failure_rate",
+     "period_a_end": "2026-03-25",
+     "period_a_start": "2025-09-28",
+     "period_b_end": "2026-09-23",
+     "period_b_start": "2026-03-26",
+     "repo": "eslint/eslint"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"eslint/eslint\", \"metric\": \"ci_failure_rate\", \"period_a\": {\"start\": \"2025-09-28\", \"end\": \"2026-03-25\"}, \"period_a_value\": 0.0486, \"period_b\": {\"start\": \"2026-03-26\", \"end\": \"2026-09-23\"}, \"period_b_value\": 0.0445, \"absolute_change\": -0.0041, \"percent_change\": -8.37}",
+    "tool_name": "compare_periods",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "tool_call",
+    "content": "Called compare_periods",
+    "tool_name": "compare_periods",
+    "tool_arguments": {
+     "metric": "ci_failure_rate",
+     "period_a_end": "2026-03-25",
+     "period_a_start": "2025-09-28",
+     "period_b_end": "2026-09-23",
+     "period_b_start": "2026-03-26",
+     "repo": "sqlalchemy/sqlalchemy"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"sqlalchemy/sqlalchemy\", \"metric\": \"ci_failure_rate\", \"period_a\": {\"start\": \"2025-09-28\", \"end\": \"2026-03-25\"}, \"period_a_value\": 0.3868, \"period_b\": {\"start\": \"2026-03-26\", \"end\": \"2026-09-23\"}, \"period_b_value\": 0.2473, \"absolute_change\": -0.1395, \"percent_change\": -36.06}",
+    "tool_name": "compare_periods",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "final_answer",
+    "content": "## Answer: eslint/eslint has the most reliable CI pipeline\n\nAll three figures below come from `query_ci_history` run over the identical window (2025-09-28 \u2192 2026-09-23), so the comparison is apples-to-apples.\n\n### Headline numbers\n\n| Repo | Total runs | Failed runs | Overall failure rate | Main CI workflow failure rate |\n|---|---|---|---|---|\n| **eslint/eslint** | 13,049 | 606 | **4.6%** | 11.7% (4,124 runs) |\n| tokio-rs/tokio | 10,536 | 883 | **8.4%** | 30.3% (2,486 runs) |\n| sqlalchemy/sqlalchemy | 1,017 | 315 | **31.0%** | 50.6% (\"Run tests on a pr\", 326 runs) |\n\n### Why eslint wins\n\n1. **Lowest overall failure rate, at the highest volume.** eslint ran the most CI jobs of the three (13,049) yet failed only 4.6% of them \u2014 roughly half tokio's rate (8.4%) and about one-seventh of sqlalchemy's (31.0%) (all from `query_ci_history`).\n\n2. **Its main CI workflow is dramatically more stable.** The workflow actually named \"CI\" is the best single proxy for pipeline reliability, since it's the one gating merges. eslint's CI workflow fails 11.7% of the time versus tokio's 30.3% and sqlalchemy's PR-test workflow at 50.6% \u2014 i.e., a tokio or sqlalchemy contributor is roughly 3\u20134\u00d7 more likely to hit a red run on their primary pipeline than an eslint contributor (per `query_ci_history` \"by_workflow\" breakdowns).\n\n3. **Its auxiliary workflows are also clean.** eslint's other workflows fail at 0\u20136.2% (CodeQL 0.07%, Types Integration CI 2.0%, Docs CI 4.4%, Test Ecosystem Plugins 6.2%). By contrast, tokio's failures are heavily concentrated in its main CI workflow (30.3%) and even its auxiliary workflows fail at 1.6\u20134.7% (Stress Test, Loom, Security Audit) (per `query_ci_history`).\n\n4. **Consistency over time.** eslint's worst single day in the whole year was 22.1% (2026-08-05); tokio hit 40.9% (2025-12-19) and sqlalchemy had *entire days* at 100% failure (e.g., 2025-10-24, 2025-12-04\u201307, 2026-01-26) (from the \"by_day\" series in `query_ci_history`).\n\n5. **The trend confirms it's not a fluke.** Splitting the year into two halves with `compare_periods` (`ci_failure_rate`, first half 2025-09-28\u21922026-03-25 vs. second half 2026-03-26\u21922026-09-23):\n   - eslint: 4.86% \u2192 4.45% (\u22128.4%) \u2014 already low and still improving\n   - tokio: 9.49% \u2192 7.40% (\u221222.0%) \u2014 improving, but from a much worse base\n   - sqlalchemy: 38.68% \u2192 24.73% (\u221236.1%) \u2014 improving, but still failing 1 in 4 runs at the end of the period\n\n   eslint remains the lowest-failure repo in **both** halves, so the ranking isn't an artifact of averaging a noisy year.\n\n### Ranking and caveats\n\n- **1st: eslint/eslint** \u2014 ~95% pass rate across 13k runs, most stable main CI workflow, fewest bad days.\n- **2nd: tokio-rs/tokio** \u2014 solid 8.4% overall, but that's flattered by very reliable auxiliary workflows; the main CI workflow that actually gates PRs fails 30% of the time.\n- **3rd: sqlalchemy/sqlalchemy** \u2014 fails ~31% of all runs and >50% of PR test runs, with multi-day stretches at 100% failure.\n\nOne caveat worth noting: CI failure rate is a measure of *pipeline reliability*, not necessarily code quality \u2014 sqlalchemy's high PR-test failure rate could partly reflect strict-but-flaky test matrices (its \"Create wheel\" workflow failed 65% of the time), and tokio's includes concurrency/stress suites that are inherently flakier. But strictly on the question asked \u2014 which pipeline most consistently returns green \u2014 the data unambiguously points to **eslint/eslint**.",
+    "tool_name": null,
+    "tool_arguments": null
+   }
+  ],
+  "calls": [
+   {
+    "provider": "DigitalOcean",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.0002949625,
+    "prompt_tokens": 1304,
+    "completion_tokens": 283
+   },
+   {
+    "provider": "DigitalOcean",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.00531269375,
+    "prompt_tokens": 36121,
+    "completion_tokens": 1307
+   },
+   {
+    "provider": "DigitalOcean",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.00177855875,
+    "prompt_tokens": 36771,
+    "completion_tokens": 1358
+   }
+  ]
+ },
+ {
+  "id": "review_turnaround_trend",
+  "model": "z-ai/glm-5.3-flash",
+  "metrics": {
+   "converged": true,
+   "num_tool_calls": 1,
+   "distinct_tools_used": [
+    "compare_periods"
+   ],
+   "num_distinct_tools": 1,
+   "had_error": false,
+   "final_answer_length_chars": 922,
+   "final_answer_cites_a_number": true,
+   "bad_json_calls": 0,
+   "unknown_tool_calls": 0,
+   "other_tool_errors": 0,
+   "provider_failure": false,
+   "llm_calls": 2,
+   "cost_usd": 0.000280364,
+   "seconds": 6.8
+  },
+  "final_answer": "Based on the data for eslint/eslint (coverage window 2025-09-28 to 2026-09-23):\n\n**Typical time to first review:** On average, pull requests receive their first review about **30\u201352 hours** after opening, depending on the period.\n\n**Has it changed recently? Yes \u2014 it's improved significantly.** Using `compare_periods` for `avg_hours_to_first_review`:\n\n- **Sep 28, 2025 \u2013 Mar 31, 2026:** ~52.3 hours average time to first review\n- **Apr 1, 2026 \u2013 Sep 23, 2026:** ~30.8 hours average time to first review\n\nThat's a drop of ~21.5 hours, or a **~41% decrease** \u2014 meaning PRs are now getting their first review roughly a day faster than in the earlier part of the window. So review responsiveness has clearly sped up in the more recent half of the data.\n\nIf you'd like, I can break this down into finer quarters or cross-check it with review approval stats to see if the faster first review also translated into faster merges.",
+  "steps": [
+   {
+    "step_type": "tool_call",
+    "content": "Called compare_periods",
+    "tool_name": "compare_periods",
+    "tool_arguments": {
+     "metric": "avg_hours_to_first_review",
+     "period_a_end": "2026-03-31",
+     "period_a_start": "2025-09-28",
+     "period_b_end": "2026-09-23",
+     "period_b_start": "2026-04-01",
+     "repo": "eslint/eslint"
+    }
+   },
+   {
+    "step_type": "tool_result",
+    "content": "{\"repo\": \"eslint/eslint\", \"metric\": \"avg_hours_to_first_review\", \"period_a\": {\"start\": \"2025-09-28\", \"end\": \"2026-03-31\"}, \"period_a_value\": 52.2682, \"period_b\": {\"start\": \"2026-04-01\", \"end\": \"2026-09-23\"}, \"period_b_value\": 30.7944, \"absolute_change\": -21.4738, \"percent_change\": -41.08}",
+    "tool_name": "compare_periods",
+    "tool_arguments": null
+   },
+   {
+    "step_type": "final_answer",
+    "content": "Based on the data for eslint/eslint (coverage window 2025-09-28 to 2026-09-23):\n\n**Typical time to first review:** On average, pull requests receive their first review about **30\u201352 hours** after opening, depending on the period.\n\n**Has it changed recently? Yes \u2014 it's improved significantly.** Using `compare_periods` for `avg_hours_to_first_review`:\n\n- **Sep 28, 2025 \u2013 Mar 31, 2026:** ~52.3 hours average time to first review\n- **Apr 1, 2026 \u2013 Sep 23, 2026:** ~30.8 hours average time to first review\n\nThat's a drop of ~21.5 hours, or a **~41% decrease** \u2014 meaning PRs are now getting their first review roughly a day faster than in the earlier part of the window. So review responsiveness has clearly sped up in the more recent half of the data.\n\nIf you'd like, I can break this down into finer quarters or cross-check it with review approval stats to see if the faster first review also translated into faster merges.",
+    "tool_name": null,
+    "tool_arguments": null
+   }
+  ],
+  "calls": [
+   {
+    "provider": "Wafer",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.000118044,
+    "prompt_tokens": 1306,
+    "completion_tokens": 107
+   },
+   {
+    "provider": "Wafer",
+    "served_model": "z-ai/glm-5.3-flash",
+    "cost": 0.00016232,
+    "prompt_tokens": 1500,
+    "completion_tokens": 263
+   }
+  ]
+ }
+]

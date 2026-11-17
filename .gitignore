@@ -1,0 +1,58 @@
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- uv / venv ---
+.venv/
+venv/
+
+# --- Data (never commit data or large files) ---
+data/
+*.csv
+*.parquet
+*.jsonl
+!tests/**/fixtures/*.json
+
+# --- PySpark local artifacts ---
+spark-warehouse/
+metastore_db/
+derby.log
+*.checkpoint/
+**/_SUCCESS
+**/*.crc
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Logs ---
+*.log
+logs/
+
+# --- OS ---
+.DS_Store
+
+# --- IDE ---
+.vscode/
+.idea/
+
+# --- Test/coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+
+# Study run records are kept: they are the data (prompt practice rounds, smoke test, main runs).
+!study_runs/**/runs.jsonl
+# The main run file grows past GitHub's 100 MB limit, so each try is committed as a compressed snapshot instead.
+study_runs/main/runs.jsonl

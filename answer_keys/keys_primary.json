@@ -1,0 +1,479 @@
+{
+  "R1": {
+    "eslint": {
+      "h1_counted": 281,
+      "h1_failing": 7,
+      "h1_rate": 0.02491103202846975,
+      "h1_rerun_pass_share": 0.028469750889679714,
+      "h2_counted": 328,
+      "h2_failing": 4,
+      "h2_rate": 0.012195121951219513,
+      "h2_rerun_pass_share": 0.018292682926829267,
+      "verdict": "no clear change"
+    },
+    "junit-framework": {
+      "h1_counted": 438,
+      "h1_failing": 38,
+      "h1_rate": 0.0867579908675799,
+      "h1_rerun_pass_share": 0.0228310502283105,
+      "h2_counted": 399,
+      "h2_failing": 43,
+      "h2_rate": 0.10776942355889724,
+      "h2_rerun_pass_share": 0.03007518796992481,
+      "verdict": "no clear change"
+    },
+    "prometheus": {
+      "h1_counted": 693,
+      "h1_failing": 267,
+      "h1_rate": 0.3852813852813853,
+      "h1_rerun_pass_share": 0.015873015873015872,
+      "h2_counted": 667,
+      "h2_failing": 199,
+      "h2_rate": 0.2983508245877061,
+      "h2_rerun_pass_share": 0.0029985007496251873,
+      "verdict": "down"
+    },
+    "sqlalchemy": {
+      "h1_counted": 201,
+      "h1_failing": 43,
+      "h1_rate": 0.21393034825870647,
+      "h1_rerun_pass_share": 0.014925373134328358,
+      "h2_counted": 213,
+      "h2_failing": 16,
+      "h2_rate": 0.07511737089201878,
+      "h2_rerun_pass_share": 0.0,
+      "verdict": "down"
+    },
+    "tokio": {
+      "h1_counted": 173,
+      "h1_failing": 6,
+      "h1_rate": 0.03468208092485549,
+      "h1_rerun_pass_share": 0.06936416184971098,
+      "h2_counted": 245,
+      "h2_failing": 5,
+      "h2_rate": 0.02040816326530612,
+      "h2_rerun_pass_share": 0.13877551020408163,
+      "verdict": "no clear change"
+    },
+    "vite": {
+      "h1_counted": 534,
+      "h1_failing": 70,
+      "h1_rate": 0.13108614232209737,
+      "h1_rerun_pass_share": 0.06554307116104868,
+      "h2_counted": 568,
+      "h2_failing": 195,
+      "h2_rate": 0.34330985915492956,
+      "h2_rerun_pass_share": 0.014084507042253521,
+      "verdict": "up"
+    }
+  },
+  "R10": {
+    "eslint": {
+      "fix_commits": 127,
+      "share_changed_test": 0.7795275590551181
+    },
+    "junit-framework": {
+      "fix_commits": 42,
+      "share_changed_test": 0.30952380952380953
+    },
+    "prometheus": {
+      "fix_commits": 351,
+      "share_changed_test": 0.6011396011396012
+    },
+    "sqlalchemy": {
+      "fix_commits": 72,
+      "share_changed_test": 0.5555555555555556
+    },
+    "tokio": {
+      "fix_commits": 53,
+      "share_changed_test": 0.39622641509433965
+    },
+    "vite": {
+      "fix_commits": 322,
+      "share_changed_test": 0.484472049689441
+    }
+  },
+  "R11": {
+    "eslint": {
+      "closed_autoclosed_share": 0.5,
+      "closed_unmerged_share": 0.17721518987341772,
+      "merge_h1_h": 3.470972222222222,
+      "merge_h2_h": 7.676388888888889,
+      "merge_verdict": "no clear change",
+      "merged_share": 0.8227848101265823,
+      "opened": 79
+    },
+    "junit-framework": {
+      "closed_autoclosed_share": 0.5,
+      "closed_unmerged_share": 0.0288,
+      "merge_h1_h": 7.690555555555556,
+      "merge_h2_h": 10.235833333333334,
+      "merge_verdict": "no clear change",
+      "merged_share": 0.9712,
+      "opened": 625
+    },
+    "prometheus": {
+      "closed_autoclosed_share": 0.4731182795698925,
+      "closed_unmerged_share": 0.2743362831858407,
+      "merge_h1_h": 53.84972222222222,
+      "merge_h2_h": 20.15763888888889,
+      "merge_verdict": "down",
+      "merged_share": 0.7227138643067846,
+      "opened": 339
+    },
+    "vite": {
+      "closed_autoclosed_share": 0.18518518518518517,
+      "closed_unmerged_share": 0.16167664670658682,
+      "merge_h1_h": 3.471388888888889,
+      "merge_h2_h": 6.51,
+      "merge_verdict": "no clear change",
+      "merged_share": 0.8323353293413174,
+      "opened": 167
+    }
+  },
+  "R12": {
+    "eslint": {
+      "fix_median_lines": 41.0,
+      "h1_median_lines": 30.0,
+      "h2_median_lines": 27.0,
+      "other_median_lines": 22.5,
+      "verdict": "no clear change"
+    },
+    "junit-framework": {
+      "fix_median_lines": 5.0,
+      "h1_median_lines": 10.0,
+      "h2_median_lines": 10.0,
+      "other_median_lines": 11.0,
+      "verdict": "no clear change"
+    },
+    "prometheus": {
+      "fix_median_lines": 24.0,
+      "h1_median_lines": 35.0,
+      "h2_median_lines": 33.0,
+      "other_median_lines": 36.0,
+      "verdict": "no clear change"
+    },
+    "sqlalchemy": {
+      "fix_median_lines": 22.0,
+      "h1_median_lines": 35.0,
+      "h2_median_lines": 58.5,
+      "other_median_lines": 59.0,
+      "verdict": "no clear change"
+    },
+    "tokio": {
+      "fix_median_lines": 12.0,
+      "h1_median_lines": 21.0,
+      "h2_median_lines": 34.0,
+      "other_median_lines": 30.0,
+      "verdict": "up"
+    },
+    "vite": {
+      "fix_median_lines": 18.5,
+      "h1_median_lines": 20.0,
+      "h2_median_lines": 23.0,
+      "other_median_lines": 23.0,
+      "verdict": "no clear change"
+    }
+  },
+  "R2": {
+    "eslint": {
+      "main_h1_min": 5.566666666666666,
+      "main_h2_min": 5.074999999999999,
+      "main_verdict": "no clear change",
+      "pr_h1_min": 5.533333333333333,
+      "pr_h2_min": 5.083333333333333,
+      "pr_verdict": "no clear change"
+    },
+    "junit-framework": {
+      "main_h1_min": 7.716666666666667,
+      "main_h2_min": 8.491666666666667,
+      "main_verdict": "no clear change",
+      "pr_h1_min": 10.008333333333333,
+      "pr_h2_min": 11.75,
+      "pr_verdict": "no clear change"
+    },
+    "prometheus": {
+      "main_h1_min": 26.85,
+      "main_h2_min": 44.675,
+      "main_verdict": "up",
+      "pr_h1_min": 21.34166666666667,
+      "pr_h2_min": 23.833333333333332,
+      "pr_verdict": "no clear change"
+    },
+    "sqlalchemy": {
+      "main_h1_min": 43.33333333333333,
+      "main_h2_min": 42.63333333333333,
+      "main_verdict": "no clear change",
+      "pr_h1_min": null,
+      "pr_h2_min": null,
+      "pr_verdict": "none"
+    },
+    "tokio": {
+      "main_h1_min": 18.183333333333334,
+      "main_h2_min": 21.066666666666666,
+      "main_verdict": "no clear change",
+      "pr_h1_min": 18.3,
+      "pr_h2_min": 20.683333333333334,
+      "pr_verdict": "no clear change"
+    },
+    "vite": {
+      "main_h1_min": 5.2,
+      "main_h2_min": 5.383333333333333,
+      "main_verdict": "no clear change",
+      "pr_h1_min": 5.283333333333333,
+      "pr_h2_min": 5.45,
+      "pr_verdict": "no clear change"
+    }
+  },
+  "R3": {
+    "eslint": {
+      "after_h1_h": 4.2716666666666665,
+      "after_h2_h": 0.17638888888888887,
+      "after_verdict": "no clear change",
+      "h2_no_review_share": 0.013100436681222707,
+      "wait_h1_h": 6.8318055555555555,
+      "wait_h2_h": 6.001944444444445,
+      "wait_verdict": "no clear change"
+    },
+    "junit-framework": {
+      "after_h1_h": 25.374444444444446,
+      "after_h2_h": 12.798333333333334,
+      "after_verdict": "no clear change",
+      "h2_no_review_share": 0.2962962962962963,
+      "wait_h1_h": 18.784444444444443,
+      "wait_h2_h": 12.495,
+      "wait_verdict": "no clear change"
+    },
+    "prometheus": {
+      "after_h1_h": 2.2730555555555556,
+      "after_h2_h": 1.5061111111111112,
+      "after_verdict": "no clear change",
+      "h2_no_review_share": 0.007575757575757576,
+      "wait_h1_h": 8.943055555555556,
+      "wait_h2_h": 17.660833333333333,
+      "wait_verdict": "up"
+    },
+    "tokio": {
+      "after_h1_h": 3.6693055555555554,
+      "after_h2_h": 1.6627777777777777,
+      "after_verdict": "no clear change",
+      "h2_no_review_share": 0.0,
+      "wait_h1_h": 4.074722222222222,
+      "wait_h2_h": 9.440972222222221,
+      "wait_verdict": "up"
+    },
+    "vite": {
+      "after_h1_h": 1.5031944444444445,
+      "after_h2_h": 0.715,
+      "after_verdict": "no clear change",
+      "h2_no_review_share": 0.1928721174004193,
+      "wait_h1_h": 11.700277777777778,
+      "wait_h2_h": 22.884444444444444,
+      "wait_verdict": "up"
+    }
+  },
+  "R4": {
+    "eslint": {
+      "merged_h2": 288,
+      "unapproved": 4,
+      "unapproved_bot_prs": 0,
+      "unapproved_share": 0.013888888888888888
+    },
+    "junit-framework": {
+      "merged_h2": 424,
+      "unapproved": 29,
+      "unapproved_bot_prs": 1,
+      "unapproved_share": 0.06839622641509434
+    },
+    "prometheus": {
+      "merged_h2": 687,
+      "unapproved": 6,
+      "unapproved_bot_prs": 2,
+      "unapproved_share": 0.008733624454148471
+    },
+    "tokio": {
+      "merged_h2": 252,
+      "unapproved": 3,
+      "unapproved_bot_prs": 0,
+      "unapproved_share": 0.011904761904761904
+    },
+    "vite": {
+      "merged_h2": 547,
+      "unapproved": 130,
+      "unapproved_bot_prs": 4,
+      "unapproved_share": 0.2376599634369287
+    }
+  },
+  "R5": {
+    "eslint": {
+      "closed": 88,
+      "h1_bugs": 43,
+      "median_days_to_close": 2.3938425925925926,
+      "opened": 89,
+      "share_not_closed": 0.09302325581395349,
+      "verdict": "balanced"
+    },
+    "junit-framework": {
+      "closed": 40,
+      "h1_bugs": 26,
+      "median_days_to_close": 5.90796875,
+      "opened": 41,
+      "share_not_closed": 0.038461538461538464,
+      "verdict": "balanced"
+    },
+    "prometheus": {
+      "closed": 46,
+      "h1_bugs": 24,
+      "median_days_to_close": 46.70318865740741,
+      "opened": 32,
+      "share_not_closed": 0.2916666666666667,
+      "verdict": "balanced"
+    },
+    "sqlalchemy": {
+      "closed": 115,
+      "h1_bugs": 39,
+      "median_days_to_close": 1.968738425925926,
+      "opened": 103,
+      "share_not_closed": 0.05128205128205128,
+      "verdict": "balanced"
+    },
+    "tokio": {
+      "closed": 66,
+      "h1_bugs": 22,
+      "median_days_to_close": 2.250138888888889,
+      "opened": 57,
+      "share_not_closed": 0.22727272727272727,
+      "verdict": "balanced"
+    },
+    "vite": {
+      "closed": 62,
+      "h1_bugs": 17,
+      "median_days_to_close": 87.73372685185186,
+      "opened": 61,
+      "share_not_closed": 0.23529411764705882,
+      "verdict": "balanced"
+    }
+  },
+  "R6": {
+    "eslint": {
+      "most_fixes_count": 59,
+      "most_fixes_module": "lib/rules",
+      "most_fixes_module_commits": 112,
+      "top_share": 0.6666666666666666,
+      "top_share_module": "lib/linter"
+    },
+    "prometheus": {
+      "most_fixes_count": 60,
+      "most_fixes_module": "promql",
+      "most_fixes_module_commits": 202,
+      "top_share": 0.323943661971831,
+      "top_share_module": "model"
+    },
+    "sqlalchemy": {
+      "most_fixes_count": 18,
+      "most_fixes_module": "lib/sqlalchemy/dialects",
+      "most_fixes_module_commits": 109,
+      "top_share": 0.19736842105263158,
+      "top_share_module": "lib/sqlalchemy/orm"
+    },
+    "vite": {
+      "most_fixes_count": 246,
+      "most_fixes_module": "packages/vite",
+      "most_fixes_module_commits": 555,
+      "top_share": 0.44324324324324327,
+      "top_share_module": "packages/vite"
+    }
+  },
+  "R7": {
+    "eslint": {
+      "failing_commits": 1,
+      "first_failing_sha": "9ac7eb60525ec768c2fdc6699e5a292aa913ce9e",
+      "hours_red": 17.099166666666665,
+      "next_passing_sha": "92086c87e042413a3d0363d8fc3fbb11db98d06a"
+    },
+    "junit-framework": {
+      "failing_commits": 4,
+      "first_failing_sha": "d2dd0bca20bddd16658ea6e501645a6d5ec3ebed",
+      "hours_red": 33.1425,
+      "next_passing_sha": "f05dd1b2b42999e721a19da13208f15a04c07517"
+    },
+    "prometheus": {
+      "failing_commits": 3,
+      "first_failing_sha": "e48be9d71a7b89cf6a05563ad8e4445c668022f6",
+      "hours_red": 169.44722222222222,
+      "next_passing_sha": "9c23509790a38e4f5ec38b0c60c91d2a4fb45bd0"
+    },
+    "sqlalchemy": {
+      "failing_commits": 1,
+      "first_failing_sha": "aa1a5575358d3aa14953b04dced02f4763fed2e7",
+      "hours_red": 119.89111111111112,
+      "next_passing_sha": "2dd1451c5639f59d49111cf8eb34e0240b7f550a"
+    },
+    "tokio": {
+      "failing_commits": 1,
+      "first_failing_sha": "9c880b082b38187e670965b6f30872edf864ac80",
+      "hours_red": 171.79222222222222,
+      "next_passing_sha": "6858348ad2e576f1b5380bf3ec5cac1d19bd4608"
+    },
+    "vite": {
+      "failing_commits": 2,
+      "first_failing_sha": "a07a4bd052ac75f916391c999c408ad5f2867e61",
+      "hours_red": 87.57194444444444,
+      "next_passing_sha": "dfc8aa5057dd8ec2b1223980d1e2eeb946ac3384"
+    }
+  },
+  "R8": {
+    "eslint": {
+      "h1_top2_share": 0.3448275862068966,
+      "h2_top2_share": 0.25892857142857145,
+      "verdict": "no clear change"
+    },
+    "junit-framework": {
+      "h1_top2_share": 0.8255813953488372,
+      "h2_top2_share": 0.8549222797927462,
+      "verdict": "no clear change"
+    },
+    "prometheus": {
+      "h1_top2_share": 0.2005420054200542,
+      "h2_top2_share": 0.2801556420233463,
+      "verdict": "more concentrated"
+    },
+    "sqlalchemy": {
+      "h1_top2_share": 0.7652173913043478,
+      "h2_top2_share": 0.71875,
+      "verdict": "no clear change"
+    },
+    "tokio": {
+      "h1_top2_share": 0.2786885245901639,
+      "h2_top2_share": 0.2931726907630522,
+      "verdict": "no clear change"
+    },
+    "vite": {
+      "h1_top2_share": 0.6301369863013698,
+      "h2_top2_share": 0.4900398406374502,
+      "verdict": "less concentrated"
+    }
+  },
+  "R9": {
+    "eslint": {
+      "reviewers": 23,
+      "top2_share": 0.5394456289978679
+    },
+    "junit-framework": {
+      "reviewers": 7,
+      "top2_share": 0.9593301435406698
+    },
+    "prometheus": {
+      "reviewers": 57,
+      "top2_share": 0.3833693304535637
+    },
+    "tokio": {
+      "reviewers": 26,
+      "top2_share": 0.5853658536585366
+    },
+    "vite": {
+      "reviewers": 29,
+      "top2_share": 0.81195079086116
+    }
+  }
+}
