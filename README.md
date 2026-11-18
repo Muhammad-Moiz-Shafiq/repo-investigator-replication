@@ -122,16 +122,16 @@ MIT. See LICENSE.
 
 ## Citation
 
-If you use this package, please cite it. It is archived on Zenodo with the DOI [10.5281/zenodo.24314682](https://doi.org/10.5281/zenodo.24314682). GitHub's "Cite this repository" button (from CITATION.cff) gives the same details. A citation for the paper itself will be added here once it is public.
+If you use this package, please cite it. It is archived on Zenodo. This DOI always points to the latest version: [10.5281/zenodo.24314681](https://doi.org/10.5281/zenodo.24314681). GitHub's "Cite this repository" button (from CITATION.cff) gives the same details. A citation for the paper itself will be added here once it is public.
 
 ```
 @misc{moiz2026curatedtools,
   author       = {Muhammad Moiz},
   title        = {Curated Tools or Open Code? How Tool Coverage Shapes {LLM} Agents' Answers About Software Repository Data: Replication Package},
   year         = {2026},
-  version      = {v1.0},
+  version      = {v1.1},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.24314682},
+  doi          = {10.5281/zenodo.24314681},
   howpublished = {\url{https://github.com/Muhammad-Moiz-Shafiq/repo-investigator-replication}}
 }
 ```
